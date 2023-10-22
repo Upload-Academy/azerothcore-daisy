@@ -1,4 +1,5 @@
--- BEGIN: achievement_reward_locale
+
+-- START achievement_reward_locale
 SET
 @id := {id},
 @locale := '{locale}',
@@ -22,5 +23,4 @@ VALUES (
     @subject,
     @text
 );
-
--- END: achievement_reward_locale
+-- EOF achievement_reward_locale

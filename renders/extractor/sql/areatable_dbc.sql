@@ -1,4 +1,5 @@
--- BEGIN: areatable_dbc
+
+-- START areatable_dbc
 SET
 @id := {id},
 @continentid := {continentid},
@@ -117,5 +118,4 @@ VALUES (
     @ambient_multiplier,
     @lightid
 );
-
--- END: areatable_dbc
+-- EOF areatable_dbc

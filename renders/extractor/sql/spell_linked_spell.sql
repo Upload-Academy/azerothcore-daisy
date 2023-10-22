@@ -1,4 +1,5 @@
--- BEGIN: spell_linked_spell
+
+-- START spell_linked_spell
 SET
 @spell_trigger := {spell_trigger},
 @spell_effect := {spell_effect},
@@ -23,5 +24,4 @@ VALUES (
     @type,
     @comment
 );
-
--- END: spell_linked_spell
+-- EOF spell_linked_spell

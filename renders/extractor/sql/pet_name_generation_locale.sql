@@ -1,4 +1,5 @@
--- BEGIN: pet_name_generation_locale
+
+-- START pet_name_generation_locale
 SET
 @id := {id},
 @locale := '{locale}',
@@ -25,5 +26,4 @@ VALUES (
     @entry,
     @half
 );
-
--- END: pet_name_generation_locale
+-- EOF pet_name_generation_locale

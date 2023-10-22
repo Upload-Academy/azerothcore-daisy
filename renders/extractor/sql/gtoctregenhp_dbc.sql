@@ -1,4 +1,5 @@
--- BEGIN: gtoctregenhp_dbc
+
+-- START gtoctregenhp_dbc
 SET
 @id := {id},
 @data := {data};
@@ -15,5 +16,4 @@ VALUES (
     @id,
     @data
 );
-
--- END: gtoctregenhp_dbc
+-- EOF gtoctregenhp_dbc

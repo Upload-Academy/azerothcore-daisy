@@ -1,4 +1,5 @@
--- BEGIN: skill_fishing_base_level
+
+-- START skill_fishing_base_level
 SET
 @entry := {entry},
 @skill := {skill};
@@ -15,5 +16,4 @@ VALUES (
     @entry,
     @skill
 );
-
--- END: skill_fishing_base_level
+-- EOF skill_fishing_base_level

@@ -1,4 +1,5 @@
--- BEGIN: linked_respawn
+
+-- START linked_respawn
 SET
 @guid := {guid},
 @linkedguid := {linkedguid},
@@ -19,5 +20,4 @@ VALUES (
     @linkedguid,
     @linktype
 );
-
--- END: linked_respawn
+-- EOF linked_respawn

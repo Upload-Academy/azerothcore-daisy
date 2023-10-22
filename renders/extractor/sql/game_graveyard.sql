@@ -1,4 +1,5 @@
--- BEGIN: game_graveyard
+
+-- START game_graveyard
 SET
 @id := {id},
 @map := {map},
@@ -27,5 +28,4 @@ VALUES (
     @z,
     @comment
 );
-
--- END: game_graveyard
+-- EOF game_graveyard

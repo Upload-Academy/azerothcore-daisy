@@ -1,4 +1,5 @@
--- BEGIN: factiontemplate_dbc
+
+-- START factiontemplate_dbc
 SET
 @id := {id},
 @faction := {faction},
@@ -51,5 +52,4 @@ VALUES (
     @friend_3,
     @friend_4
 );
-
--- END: factiontemplate_dbc
+-- EOF factiontemplate_dbc

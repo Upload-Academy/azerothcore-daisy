@@ -1,4 +1,5 @@
--- BEGIN: emotestext_dbc
+
+-- START emotestext_dbc
 SET
 @id := {id},
 @name := '{name}',
@@ -66,5 +67,4 @@ VALUES (
     @emotetext_15,
     @emotetext_16
 );
-
--- END: emotestext_dbc
+-- EOF emotestext_dbc

@@ -1,4 +1,5 @@
--- BEGIN: item_dbc
+
+-- START item_dbc
 SET
 @id := {id},
 @classid := {classid},
@@ -33,5 +34,4 @@ VALUES (
     @inventorytype,
     @sheathetype
 );
-
--- END: item_dbc
+-- EOF item_dbc

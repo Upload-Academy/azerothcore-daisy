@@ -1,4 +1,5 @@
--- BEGIN: points_of_interest_locale
+
+-- START points_of_interest_locale
 SET
 @id := {id},
 @locale := '{locale}',
@@ -22,5 +23,4 @@ VALUES (
     @name,
     @verifiedbuild
 );
-
--- END: points_of_interest_locale
+-- EOF points_of_interest_locale

@@ -1,4 +1,5 @@
--- BEGIN: taxipathnode_dbc
+
+-- START taxipathnode_dbc
 SET
 @id := {id},
 @pathid := {pathid},
@@ -42,5 +43,4 @@ VALUES (
     @arrivaleventid,
     @departureeventid
 );
-
--- END: taxipathnode_dbc
+-- EOF taxipathnode_dbc

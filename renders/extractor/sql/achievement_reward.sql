@@ -1,4 +1,5 @@
--- BEGIN: achievement_reward
+
+-- START achievement_reward
 SET
 @id := {id},
 @titlea := {titlea},
@@ -33,5 +34,4 @@ VALUES (
     @body,
     @mailtemplateid
 );
-
--- END: achievement_reward
+-- EOF achievement_reward

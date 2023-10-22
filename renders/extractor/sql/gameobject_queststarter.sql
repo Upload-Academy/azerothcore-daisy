@@ -1,4 +1,5 @@
--- BEGIN: gameobject_queststarter
+
+-- START gameobject_queststarter
 SET
 @id := {id},
 @quest := {quest};
@@ -16,5 +17,4 @@ VALUES (
     @id,
     @quest
 );
-
--- END: gameobject_queststarter
+-- EOF gameobject_queststarter

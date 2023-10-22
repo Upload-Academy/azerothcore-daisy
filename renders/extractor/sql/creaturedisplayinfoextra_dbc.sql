@@ -1,4 +1,5 @@
--- BEGIN: creaturedisplayinfoextra_dbc
+
+-- START creaturedisplayinfoextra_dbc
 SET
 @id := {id},
 @displayraceid := {displayraceid},
@@ -72,5 +73,4 @@ VALUES (
     @flags,
     @bakename
 );
-
--- END: creaturedisplayinfoextra_dbc
+-- EOF creaturedisplayinfoextra_dbc

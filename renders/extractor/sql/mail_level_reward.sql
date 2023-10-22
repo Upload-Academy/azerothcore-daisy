@@ -1,4 +1,5 @@
--- BEGIN: mail_level_reward
+
+-- START mail_level_reward
 SET
 @level := {level},
 @racemask := {racemask},
@@ -22,5 +23,4 @@ VALUES (
     @mailtemplateid,
     @senderentry
 );
-
--- END: mail_level_reward
+-- EOF mail_level_reward

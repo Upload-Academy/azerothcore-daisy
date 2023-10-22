@@ -1,4 +1,5 @@
--- BEGIN: script_waypoint
+
+-- START script_waypoint
 SET
 @entry := {entry},
 @pointid := {pointid},
@@ -31,5 +32,4 @@ VALUES (
     @waittime,
     @point_comment
 );
-
--- END: script_waypoint
+-- EOF script_waypoint

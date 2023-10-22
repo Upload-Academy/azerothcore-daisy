@@ -1,4 +1,5 @@
--- BEGIN: creature_template_spell
+
+-- START creature_template_spell
 SET
 @creatureid := {creatureid},
 @index := {index},
@@ -22,5 +23,4 @@ VALUES (
     @spell,
     @verifiedbuild
 );
-
--- END: creature_template_spell
+-- EOF creature_template_spell

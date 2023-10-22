@@ -1,4 +1,5 @@
--- BEGIN: talent_dbc
+
+-- START talent_dbc
 SET
 @id := {id},
 @tabid := {tabid},
@@ -78,5 +79,4 @@ VALUES (
     @categorymask_1,
     @categorymask_2
 );
-
--- END: talent_dbc
+-- EOF talent_dbc

@@ -1,4 +1,5 @@
--- BEGIN: areatrigger
+
+-- START areatrigger
 SET
 @entry := {entry},
 @map := {map},
@@ -39,5 +40,4 @@ VALUES (
     @height,
     @orientation
 );
-
--- END: areatrigger
+-- EOF areatrigger

@@ -1,4 +1,5 @@
--- BEGIN: game_event_seasonal_questrelation
+
+-- START game_event_seasonal_questrelation
 SET
 @questid := {questid},
 @evententry := {evententry};
@@ -16,5 +17,4 @@ VALUES (
     @questid,
     @evententry
 );
-
--- END: game_event_seasonal_questrelation
+-- EOF game_event_seasonal_questrelation

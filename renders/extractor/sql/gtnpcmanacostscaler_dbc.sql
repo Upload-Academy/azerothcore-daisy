@@ -1,4 +1,5 @@
--- BEGIN: gtnpcmanacostscaler_dbc
+
+-- START gtnpcmanacostscaler_dbc
 SET
 @id := {id},
 @data := {data};
@@ -15,5 +16,4 @@ VALUES (
     @id,
     @data
 );
-
--- END: gtnpcmanacostscaler_dbc
+-- EOF gtnpcmanacostscaler_dbc

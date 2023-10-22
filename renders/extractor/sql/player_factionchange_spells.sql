@@ -1,4 +1,5 @@
--- BEGIN: player_factionchange_spells
+
+-- START player_factionchange_spells
 SET
 @alliance_id := {alliance_id},
 @alliance_comment := '{alliance_comment}',
@@ -22,5 +23,4 @@ VALUES (
     @horde_id,
     @horde_comment
 );
-
--- END: player_factionchange_spells
+-- EOF player_factionchange_spells

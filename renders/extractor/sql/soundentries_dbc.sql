@@ -1,4 +1,5 @@
--- BEGIN: soundentries_dbc
+
+-- START soundentries_dbc
 SET
 @id := {id},
 @soundtype := {soundtype},
@@ -99,5 +100,4 @@ VALUES (
     @eaxdef,
     @soundentriesadvancedid
 );
-
--- END: soundentries_dbc
+-- EOF soundentries_dbc

@@ -1,4 +1,5 @@
--- BEGIN: areatrigger_scripts
+
+-- START areatrigger_scripts
 SET
 @entry := {entry},
 @scriptname := '{scriptname}';
@@ -15,5 +16,4 @@ VALUES (
     @entry,
     @scriptname
 );
-
--- END: areatrigger_scripts
+-- EOF areatrigger_scripts

@@ -1,4 +1,5 @@
--- BEGIN: gameobject
+
+-- START gameobject
 SET
 @guid := {guid},
 @id := {id},
@@ -72,5 +73,4 @@ VALUES (
     @verifiedbuild,
     @comment
 );
-
--- END: gameobject
+-- EOF gameobject

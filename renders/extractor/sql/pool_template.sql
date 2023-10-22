@@ -1,4 +1,5 @@
--- BEGIN: pool_template
+
+-- START pool_template
 SET
 @entry := {entry},
 @max_limit := {max_limit},
@@ -18,5 +19,4 @@ VALUES (
     @max_limit,
     @description
 );
-
--- END: pool_template
+-- EOF pool_template

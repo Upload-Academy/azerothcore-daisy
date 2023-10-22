@@ -1,4 +1,5 @@
--- BEGIN: barbershopstyle_dbc
+
+-- START barbershopstyle_dbc
 SET
 @id := {id},
 @type := {type},
@@ -129,5 +130,4 @@ VALUES (
     @sex,
     @data
 );
-
--- END: barbershopstyle_dbc
+-- EOF barbershopstyle_dbc

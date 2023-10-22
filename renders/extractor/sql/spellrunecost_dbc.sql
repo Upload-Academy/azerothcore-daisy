@@ -1,4 +1,5 @@
--- BEGIN: spellrunecost_dbc
+
+-- START spellrunecost_dbc
 SET
 @id := {id},
 @blood := {blood},
@@ -24,5 +25,4 @@ VALUES (
     @frost,
     @runicpower
 );
-
--- END: spellrunecost_dbc
+-- EOF spellrunecost_dbc

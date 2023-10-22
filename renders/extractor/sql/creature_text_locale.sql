@@ -1,4 +1,5 @@
--- BEGIN: creature_text_locale
+
+-- START creature_text_locale
 SET
 @creatureid := {creatureid},
 @groupid := {groupid},
@@ -27,5 +28,4 @@ VALUES (
     @locale,
     @text
 );
-
--- END: creature_text_locale
+-- EOF creature_text_locale

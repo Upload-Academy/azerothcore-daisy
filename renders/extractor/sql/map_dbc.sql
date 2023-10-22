@@ -1,4 +1,5 @@
--- BEGIN: map_dbc
+
+-- START map_dbc
 SET
 @id := {id},
 @directory := '{directory}',
@@ -207,5 +208,4 @@ VALUES (
     @raidoffset,
     @maxplayers
 );
-
--- END: map_dbc
+-- EOF map_dbc

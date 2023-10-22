@@ -1,4 +1,5 @@
--- BEGIN: creature_template_locale
+
+-- START creature_template_locale
 SET
 @entry := {entry},
 @locale := '{locale}',
@@ -25,5 +26,4 @@ VALUES (
     @title,
     @verifiedbuild
 );
-
--- END: creature_template_locale
+-- EOF creature_template_locale

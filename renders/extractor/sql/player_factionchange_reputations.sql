@@ -1,4 +1,5 @@
--- BEGIN: player_factionchange_reputations
+
+-- START player_factionchange_reputations
 SET
 @alliance_id := {alliance_id},
 @horde_id := {horde_id};
@@ -16,5 +17,4 @@ VALUES (
     @alliance_id,
     @horde_id
 );
-
--- END: player_factionchange_reputations
+-- EOF player_factionchange_reputations

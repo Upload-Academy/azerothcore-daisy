@@ -1,4 +1,5 @@
--- BEGIN: game_event_npcflag
+
+-- START game_event_npcflag
 SET
 @evententry := {evententry},
 @guid := {guid},
@@ -19,5 +20,4 @@ VALUES (
     @guid,
     @npcflag
 );
-
--- END: game_event_npcflag
+-- EOF game_event_npcflag

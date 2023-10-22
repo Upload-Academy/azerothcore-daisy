@@ -1,4 +1,5 @@
--- BEGIN: creature_classlevelstats
+
+-- START creature_classlevelstats
 SET
 @level := {level},
 @class := {class},
@@ -49,5 +50,4 @@ VALUES (
     @damage_exp2,
     @comment
 );
-
--- END: creature_classlevelstats
+-- EOF creature_classlevelstats

@@ -1,4 +1,5 @@
--- BEGIN: gameobject_template
+
+-- START gameobject_template
 SET
 @entry := {entry},
 @type := {type},
@@ -114,5 +115,4 @@ VALUES (
     @scriptname,
     @verifiedbuild
 );
-
--- END: gameobject_template
+-- EOF gameobject_template

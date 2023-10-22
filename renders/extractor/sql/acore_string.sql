@@ -1,4 +1,5 @@
--- BEGIN: acore_string
+
+-- START acore_string
 SET
 @entry := {entry},
 @content_default := '{content_default}',
@@ -39,5 +40,4 @@ VALUES (
     @locale_esmx,
     @locale_ruru
 );
-
--- END: acore_string
+-- EOF acore_string

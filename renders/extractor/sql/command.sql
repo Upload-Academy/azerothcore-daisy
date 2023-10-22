@@ -1,4 +1,5 @@
--- BEGIN: command
+
+-- START command
 SET
 @name := '{name}',
 @security := {security},
@@ -18,5 +19,4 @@ VALUES (
     @security,
     @help
 );
-
--- END: command
+-- EOF command

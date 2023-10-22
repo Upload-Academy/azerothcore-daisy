@@ -1,4 +1,5 @@
--- BEGIN: charstartoutfit_dbc
+
+-- START charstartoutfit_dbc
 SET
 @id := {id},
 @raceid := {raceid},
@@ -240,5 +241,4 @@ VALUES (
     @inventorytype_23,
     @inventorytype_24
 );
-
--- END: charstartoutfit_dbc
+-- EOF charstartoutfit_dbc

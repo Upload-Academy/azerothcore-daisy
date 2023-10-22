@@ -1,4 +1,5 @@
--- BEGIN: holidays_dbc
+
+-- START holidays_dbc
 SET
 @id := {id},
 @duration_1 := {duration_1},
@@ -174,5 +175,4 @@ VALUES (
     @calendarfiltertype,
     @flags
 );
-
--- END: holidays_dbc
+-- EOF holidays_dbc

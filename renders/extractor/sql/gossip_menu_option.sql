@@ -1,4 +1,5 @@
--- BEGIN: gossip_menu_option
+
+-- START gossip_menu_option
 SET
 @menuid := {menuid},
 @optionid := {optionid},
@@ -52,5 +53,4 @@ VALUES (
     @boxbroadcasttextid,
     @verifiedbuild
 );
-
--- END: gossip_menu_option
+-- EOF gossip_menu_option

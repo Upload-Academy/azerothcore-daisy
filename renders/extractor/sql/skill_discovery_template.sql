@@ -1,4 +1,5 @@
--- BEGIN: skill_discovery_template
+
+-- START skill_discovery_template
 SET
 @spellid := {spellid},
 @reqspell := {reqspell},
@@ -22,5 +23,4 @@ VALUES (
     @reqskillvalue,
     @chance
 );
-
--- END: skill_discovery_template
+-- EOF skill_discovery_template

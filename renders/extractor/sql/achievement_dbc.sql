@@ -1,4 +1,5 @@
--- BEGIN: achievement_dbc
+
+-- START achievement_dbc
 SET
 @id := {id},
 @faction := {faction},
@@ -195,5 +196,4 @@ VALUES (
     @minimum_criteria,
     @shares_criteria
 );
-
--- END: achievement_dbc
+-- EOF achievement_dbc

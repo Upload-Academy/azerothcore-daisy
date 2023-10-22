@@ -1,4 +1,5 @@
--- BEGIN: currencytypes_dbc
+
+-- START currencytypes_dbc
 SET
 @id := {id},
 @itemid := {itemid},
@@ -21,5 +22,4 @@ VALUES (
     @categoryid,
     @bitindex
 );
-
--- END: currencytypes_dbc
+-- EOF currencytypes_dbc

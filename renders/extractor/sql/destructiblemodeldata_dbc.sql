@@ -1,4 +1,5 @@
--- BEGIN: destructiblemodeldata_dbc
+
+-- START destructiblemodeldata_dbc
 SET
 @id := {id},
 @state0wmo := {state0wmo},
@@ -66,5 +67,4 @@ VALUES (
     @field17,
     @field18
 );
-
--- END: destructiblemodeldata_dbc
+-- EOF destructiblemodeldata_dbc

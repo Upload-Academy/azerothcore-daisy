@@ -1,4 +1,5 @@
--- BEGIN: quest_template_addon
+
+-- START quest_template_addon
 SET
 @id := {id},
 @maxlevel := {maxlevel},
@@ -60,5 +61,4 @@ VALUES (
     @provideditemcount,
     @specialflags
 );
-
--- END: quest_template_addon
+-- EOF quest_template_addon

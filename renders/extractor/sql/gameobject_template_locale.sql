@@ -1,4 +1,5 @@
--- BEGIN: gameobject_template_locale
+
+-- START gameobject_template_locale
 SET
 @entry := {entry},
 @locale := '{locale}',
@@ -25,5 +26,4 @@ VALUES (
     @castbarcaption,
     @verifiedbuild
 );
-
--- END: gameobject_template_locale
+-- EOF gameobject_template_locale

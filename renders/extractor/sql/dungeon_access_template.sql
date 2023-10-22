@@ -1,4 +1,5 @@
--- BEGIN: dungeon_access_template
+
+-- START dungeon_access_template
 SET
 @id := {id},
 @map_id := {map_id},
@@ -30,5 +31,4 @@ VALUES (
     @min_avg_item_level,
     @comment
 );
-
--- END: dungeon_access_template
+-- EOF dungeon_access_template

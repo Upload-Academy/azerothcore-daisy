@@ -1,4 +1,5 @@
--- BEGIN: npc_text_locale
+
+-- START npc_text_locale
 SET
 @id := {id},
 @locale := '{locale}',
@@ -64,5 +65,4 @@ VALUES (
     @text7_0,
     @text7_1
 );
-
--- END: npc_text_locale
+-- EOF npc_text_locale

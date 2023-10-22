@@ -1,4 +1,5 @@
--- BEGIN: holiday_dates
+
+-- START holiday_dates
 SET
 @id := {id},
 @date_id := {date_id},
@@ -22,5 +23,4 @@ VALUES (
     @date_value,
     @holiday_duration
 );
-
--- END: holiday_dates
+-- EOF holiday_dates

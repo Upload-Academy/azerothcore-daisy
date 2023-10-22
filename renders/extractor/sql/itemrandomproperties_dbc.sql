@@ -1,4 +1,5 @@
--- BEGIN: itemrandomproperties_dbc
+
+-- START itemrandomproperties_dbc
 SET
 @id := {id},
 @name := '{name}',
@@ -81,5 +82,4 @@ VALUES (
     @name_lang_unk,
     @name_lang_mask
 );
-
--- END: itemrandomproperties_dbc
+-- EOF itemrandomproperties_dbc

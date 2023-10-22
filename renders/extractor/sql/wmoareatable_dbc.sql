@@ -1,4 +1,5 @@
--- BEGIN: wmoareatable_dbc
+
+-- START wmoareatable_dbc
 SET
 @id := {id},
 @wmoid := {wmoid},
@@ -93,5 +94,4 @@ VALUES (
     @areaname_lang_unk,
     @areaname_lang_mask
 );
-
--- END: wmoareatable_dbc
+-- EOF wmoareatable_dbc

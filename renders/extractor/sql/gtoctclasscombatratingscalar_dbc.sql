@@ -1,4 +1,5 @@
--- BEGIN: gtoctclasscombatratingscalar_dbc
+
+-- START gtoctclasscombatratingscalar_dbc
 SET
 @id := {id},
 @data := {data};
@@ -15,5 +16,4 @@ VALUES (
     @id,
     @data
 );
-
--- END: gtoctclasscombatratingscalar_dbc
+-- EOF gtoctclasscombatratingscalar_dbc

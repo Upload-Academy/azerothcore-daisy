@@ -1,4 +1,5 @@
--- BEGIN: creaturefamily_dbc
+
+-- START creaturefamily_dbc
 SET
 @id := {id},
 @minscale := {minscale},
@@ -93,5 +94,4 @@ VALUES (
     @name_lang_mask,
     @iconfile
 );
-
--- END: creaturefamily_dbc
+-- EOF creaturefamily_dbc

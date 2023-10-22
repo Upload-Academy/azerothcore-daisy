@@ -1,4 +1,5 @@
--- BEGIN: spellcasttimes_dbc
+
+-- START spellcasttimes_dbc
 SET
 @id := {id},
 @base := {base},
@@ -21,5 +22,4 @@ VALUES (
     @perlevel,
     @minimum
 );
-
--- END: spellcasttimes_dbc
+-- EOF spellcasttimes_dbc

@@ -1,4 +1,5 @@
--- BEGIN: liquidtype_dbc
+
+-- START liquidtype_dbc
 SET
 @id := {id},
 @name := '{name}',
@@ -144,5 +145,4 @@ VALUES (
     @int_3,
     @int_4
 );
-
--- END: liquidtype_dbc
+-- EOF liquidtype_dbc

@@ -1,4 +1,5 @@
--- BEGIN: transportanimation_dbc
+
+-- START transportanimation_dbc
 SET
 @id := {id},
 @transportid := {transportid},
@@ -30,5 +31,4 @@ VALUES (
     @posz,
     @sequenceid
 );
-
--- END: transportanimation_dbc
+-- EOF transportanimation_dbc

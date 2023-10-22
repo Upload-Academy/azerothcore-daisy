@@ -1,4 +1,5 @@
--- BEGIN: dungeonencounter_dbc
+
+-- START dungeonencounter_dbc
 SET
 @id := {id},
 @mapid := {mapid},
@@ -78,5 +79,4 @@ VALUES (
     @name_lang_mask,
     @spelliconid
 );
-
--- END: dungeonencounter_dbc
+-- EOF dungeonencounter_dbc

@@ -1,4 +1,5 @@
--- BEGIN: points_of_interest
+
+-- START points_of_interest
 SET
 @id := {id},
 @positionx := {positionx},
@@ -30,5 +31,4 @@ VALUES (
     @importance,
     @name
 );
-
--- END: points_of_interest
+-- EOF points_of_interest

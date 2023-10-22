@@ -1,4 +1,5 @@
--- BEGIN: questxp_dbc
+
+-- START questxp_dbc
 SET
 @id := {id},
 @difficulty_1 := {difficulty_1},
@@ -42,5 +43,4 @@ VALUES (
     @difficulty_9,
     @difficulty_10
 );
-
--- END: questxp_dbc
+-- EOF questxp_dbc

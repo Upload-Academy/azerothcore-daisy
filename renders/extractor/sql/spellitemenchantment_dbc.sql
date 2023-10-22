@@ -1,4 +1,5 @@
--- BEGIN: spellitemenchantment_dbc
+
+-- START spellitemenchantment_dbc
 SET
 @id := {id},
 @charges := {charges},
@@ -123,5 +124,4 @@ VALUES (
     @requiredskillrank,
     @minlevel
 );
-
--- END: spellitemenchantment_dbc
+-- EOF spellitemenchantment_dbc

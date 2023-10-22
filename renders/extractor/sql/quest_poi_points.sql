@@ -1,4 +1,5 @@
--- BEGIN: quest_poi_points
+
+-- START quest_poi_points
 SET
 @questid := {questid},
 @idx1 := {idx1},
@@ -29,5 +30,4 @@ VALUES (
     @y,
     @verifiedbuild
 );
-
--- END: quest_poi_points
+-- EOF quest_poi_points

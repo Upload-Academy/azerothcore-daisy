@@ -1,4 +1,5 @@
--- BEGIN: scalingstatdistribution_dbc
+
+-- START scalingstatdistribution_dbc
 SET
 @id := {id},
 @statid_1 := {statid_1},
@@ -75,5 +76,4 @@ VALUES (
     @bonus_10,
     @maxlevel
 );
-
--- END: scalingstatdistribution_dbc
+-- EOF scalingstatdistribution_dbc

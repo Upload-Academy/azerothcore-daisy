@@ -1,4 +1,5 @@
--- BEGIN: talenttab_dbc
+
+-- START talenttab_dbc
 SET
 @id := {id},
 @name_lang_enus := '{name_lang_enus}',
@@ -81,5 +82,4 @@ VALUES (
     @orderindex,
     @backgroundfile
 );
-
--- END: talenttab_dbc
+-- EOF talenttab_dbc

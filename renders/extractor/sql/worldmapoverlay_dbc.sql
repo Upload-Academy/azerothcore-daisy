@@ -1,4 +1,5 @@
--- BEGIN: worldmapoverlay_dbc
+
+-- START worldmapoverlay_dbc
 SET
 @id := {id},
 @mapareaid := {mapareaid},
@@ -60,5 +61,4 @@ VALUES (
     @hitrectbottom,
     @hitrectright
 );
-
--- END: worldmapoverlay_dbc
+-- EOF worldmapoverlay_dbc

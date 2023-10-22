@@ -1,4 +1,5 @@
--- BEGIN: creaturetype_dbc
+
+-- START creaturetype_dbc
 SET
 @id := {id},
 @name_lang_enus := '{name_lang_enus}',
@@ -66,5 +67,4 @@ VALUES (
     @name_lang_mask,
     @flags
 );
-
--- END: creaturetype_dbc
+-- EOF creaturetype_dbc

@@ -1,4 +1,5 @@
--- BEGIN: creaturespelldata_dbc
+
+-- START creaturespelldata_dbc
 SET
 @id := {id},
 @spells_1 := {spells_1},
@@ -36,5 +37,4 @@ VALUES (
     @availability_3,
     @availability_4
 );
-
--- END: creaturespelldata_dbc
+-- EOF creaturespelldata_dbc

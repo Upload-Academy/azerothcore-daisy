@@ -1,4 +1,5 @@
--- BEGIN: creaturemodeldata_dbc
+
+-- START creaturemodeldata_dbc
 SET
 @id := {id},
 @flags := {flags},
@@ -93,5 +94,4 @@ VALUES (
     @missilecollisionpush,
     @missilecollisionraise
 );
-
--- END: creaturemodeldata_dbc
+-- EOF creaturemodeldata_dbc

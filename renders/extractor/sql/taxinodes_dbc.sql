@@ -1,4 +1,5 @@
--- BEGIN: taxinodes_dbc
+
+-- START taxinodes_dbc
 SET
 @id := {id},
 @continentid := {continentid},
@@ -81,5 +82,4 @@ VALUES (
     @mountcreatureid_1,
     @mountcreatureid_2
 );
-
--- END: taxinodes_dbc
+-- EOF taxinodes_dbc

@@ -1,4 +1,5 @@
--- BEGIN: achievement_category_dbc
+
+-- START achievement_category_dbc
 SET
 @id := {id},
 @parent := {parent},
@@ -69,5 +70,4 @@ VALUES (
     @name_lang_mask,
     @ui_order
 );
-
--- END: achievement_category_dbc
+-- EOF achievement_category_dbc

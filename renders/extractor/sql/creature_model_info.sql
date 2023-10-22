@@ -1,4 +1,5 @@
--- BEGIN: creature_model_info
+
+-- START creature_model_info
 SET
 @displayid := {displayid},
 @boundingradius := {boundingradius},
@@ -24,5 +25,4 @@ VALUES (
     @gender,
     @displayid_other_gender
 );
-
--- END: creature_model_info
+-- EOF creature_model_info

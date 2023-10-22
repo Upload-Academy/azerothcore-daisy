@@ -1,4 +1,5 @@
--- BEGIN: quest_mail_sender
+
+-- START quest_mail_sender
 SET
 @questid := {questid},
 @rewardmailsenderentry := {rewardmailsenderentry};
@@ -15,5 +16,4 @@ VALUES (
     @questid,
     @rewardmailsenderentry
 );
-
--- END: quest_mail_sender
+-- EOF quest_mail_sender

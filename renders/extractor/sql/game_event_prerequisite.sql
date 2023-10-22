@@ -1,4 +1,5 @@
--- BEGIN: game_event_prerequisite
+
+-- START game_event_prerequisite
 SET
 @evententry := {evententry},
 @prerequisite_event := {prerequisite_event};
@@ -16,5 +17,4 @@ VALUES (
     @evententry,
     @prerequisite_event
 );
-
--- END: game_event_prerequisite
+-- EOF game_event_prerequisite

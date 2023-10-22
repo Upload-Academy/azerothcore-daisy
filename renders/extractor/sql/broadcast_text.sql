@@ -1,4 +1,5 @@
--- BEGIN: broadcast_text
+
+-- START broadcast_text
 SET
 @id := {id},
 @languageid := {languageid},
@@ -51,5 +52,4 @@ VALUES (
     @flags,
     @verifiedbuild
 );
-
--- END: broadcast_text
+-- EOF broadcast_text

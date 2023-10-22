@@ -1,8 +1,8 @@
 # WoS Daisy
 
-Bark! Daisy is a World of Solocraft project.
+Woof! Daisy is a World of Solocraft project.
 
-Daisy is a set of Python tools that can extract (`extrtactor.py`) information about the tables in an [AzerothCore](https://www.azerothcore.org/) database, specifically the `acore_world` database, but that can be configured. Once this data is extracted, Daisy can then generate all the templates and files needed to make manipulating an AzerothCore database much, much easier using her second tool: `daisy.py`.
+Daisy is a set of Python tools that can extract (`extractor.py`) information about the tables in an [AzerothCore](https://www.azerothcore.org/) database, specifically the `acore_world` database, but that can be configured. Once this data is extracted, Daisy can then generate all the templates and files needed to make manipulating an AzerothCore database much, much easier using her second tool: `daisy.py`.
 
 ## Why?
 
@@ -10,7 +10,7 @@ Daisy exists because although this author loves [Keira3](https://github.com/azer
 
 Keira3 (K3) is very slow to work with, because you're restricted to a GUI, clicking about, and moving between fields. And besides the resulting SQL you can extract from K3, sharing your work is harder. K3 also "hides" certain facts from you, one example being the "Factions" UI that leads people to believe there is a "factions" table in the database, but it is in fact in the client-side DBC files. This isn't a big issue, but I like a true reflection of the state of things so I can come to understand them fully.
 
-So Daisy is designed to compliment K3 for a lot of things. It's aimed at people (such as the Repack commuity) who want to mass-produce NPCs, quests, spells, and more. Doing that work with K3 is slow and painful. Daisy makes it easier! Bark!
+So Daisy is designed to compliment K3 for a lot of things. It's aimed at people (such as the Repack community) who want to mass produce NPCs, quests, spells, and more. Doing that work with K3 is slow and painful. Daisy makes it easier! Woof!
 
 ## Packs
 

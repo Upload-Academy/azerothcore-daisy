@@ -1,4 +1,5 @@
--- BEGIN: page_text
+
+-- START page_text
 SET
 @id := {id},
 @text := '{text}',
@@ -21,5 +22,4 @@ VALUES (
     @nextpageid,
     @verifiedbuild
 );
-
--- END: page_text
+-- EOF page_text

@@ -1,4 +1,5 @@
--- BEGIN: skilllineability_dbc
+
+-- START skilllineability_dbc
 SET
 @id := {id},
 @skillline := {skillline},
@@ -51,5 +52,4 @@ VALUES (
     @characterpoints_1,
     @characterpoints_2
 );
-
--- END: skilllineability_dbc
+-- EOF skilllineability_dbc

@@ -1,4 +1,5 @@
--- BEGIN: playercreateinfo_skills
+
+-- START playercreateinfo_skills
 SET
 @racemask := {racemask},
 @classmask := {classmask},
@@ -26,5 +27,4 @@ VALUES (
     @rank,
     @comment
 );
-
--- END: playercreateinfo_skills
+-- EOF playercreateinfo_skills

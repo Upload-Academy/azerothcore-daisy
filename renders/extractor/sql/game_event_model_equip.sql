@@ -1,4 +1,5 @@
--- BEGIN: game_event_model_equip
+
+-- START game_event_model_equip
 SET
 @evententry := {evententry},
 @guid := {guid},
@@ -21,5 +22,4 @@ VALUES (
     @modelid,
     @equipment_id
 );
-
--- END: game_event_model_equip
+-- EOF game_event_model_equip

@@ -1,4 +1,5 @@
--- BEGIN: spell_target_position
+
+-- START spell_target_position
 SET
 @id := {id},
 @effectindex := {effectindex},
@@ -34,5 +35,4 @@ VALUES (
     @orientation,
     @verifiedbuild
 );
-
--- END: spell_target_position
+-- EOF spell_target_position

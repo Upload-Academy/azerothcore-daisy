@@ -1,4 +1,5 @@
--- BEGIN: glyphslot_dbc
+
+-- START glyphslot_dbc
 SET
 @id := {id},
 @type := {type},
@@ -18,5 +19,4 @@ VALUES (
     @type,
     @tooltip
 );
-
--- END: glyphslot_dbc
+-- EOF glyphslot_dbc

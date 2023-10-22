@@ -1,4 +1,5 @@
--- BEGIN: playercreateinfo
+
+-- START playercreateinfo
 SET
 @race := {race},
 @class := {class},
@@ -34,5 +35,4 @@ VALUES (
     @position_z,
     @orientation
 );
-
--- END: playercreateinfo
+-- EOF playercreateinfo

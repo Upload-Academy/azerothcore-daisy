@@ -1,4 +1,5 @@
--- BEGIN: quest_poi
+
+-- START quest_poi
 SET
 @questid := {questid},
 @id := {id},
@@ -37,5 +38,4 @@ VALUES (
     @flags,
     @verifiedbuild
 );
-
--- END: quest_poi
+-- EOF quest_poi

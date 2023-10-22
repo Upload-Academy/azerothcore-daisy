@@ -1,4 +1,5 @@
--- BEGIN: game_weather
+
+-- START game_weather
 SET
 @zone := {zone},
 @spring_rain_chance := {spring_rain_chance},
@@ -51,5 +52,4 @@ VALUES (
     @winter_storm_chance,
     @scriptname
 );
-
--- END: game_weather
+-- EOF game_weather

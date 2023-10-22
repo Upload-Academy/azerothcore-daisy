@@ -1,4 +1,5 @@
--- BEGIN: conditions
+
+-- START conditions
 SET
 @sourcetypeorreferenceid := {sourcetypeorreferenceid},
 @sourcegroup := {sourcegroup},
@@ -63,5 +64,4 @@ VALUES (
     @scriptname,
     @comment
 );
-
--- END: conditions
+-- EOF conditions

@@ -1,4 +1,5 @@
--- BEGIN: chrclasses_dbc
+
+-- START chrclasses_dbc
 SET
 @id := {id},
 @field01 := {field01},
@@ -189,5 +190,4 @@ VALUES (
     @cinematicsequenceid,
     @required_expansion
 );
-
--- END: chrclasses_dbc
+-- EOF chrclasses_dbc

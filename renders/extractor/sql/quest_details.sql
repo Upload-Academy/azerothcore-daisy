@@ -1,4 +1,5 @@
--- BEGIN: quest_details
+
+-- START quest_details
 SET
 @id := {id},
 @emote1 := {emote1},
@@ -39,5 +40,4 @@ VALUES (
     @emotedelay4,
     @verifiedbuild
 );
-
--- END: quest_details
+-- EOF quest_details

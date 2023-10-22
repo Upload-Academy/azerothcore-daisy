@@ -1,4 +1,5 @@
--- BEGIN: itemset_dbc
+
+-- START itemset_dbc
 SET
 @id := {id},
 @name_lang_enus := '{name_lang_enus}',
@@ -168,5 +169,4 @@ VALUES (
     @requiredskill,
     @requiredskillrank
 );
-
--- END: itemset_dbc
+-- EOF itemset_dbc

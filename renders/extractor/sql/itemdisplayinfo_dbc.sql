@@ -1,4 +1,5 @@
--- BEGIN: itemdisplayinfo_dbc
+
+-- START itemdisplayinfo_dbc
 SET
 @id := {id},
 @modelname_1 := '{modelname_1}',
@@ -84,5 +85,4 @@ VALUES (
     @itemvisual,
     @particlecolorid
 );
-
--- END: itemdisplayinfo_dbc
+-- EOF itemdisplayinfo_dbc

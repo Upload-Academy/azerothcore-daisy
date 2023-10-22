@@ -1,4 +1,5 @@
--- BEGIN: creature_questitem
+
+-- START creature_questitem
 SET
 @creatureentry := {creatureentry},
 @idx := {idx},
@@ -22,5 +23,4 @@ VALUES (
     @itemid,
     @verifiedbuild
 );
-
--- END: creature_questitem
+-- EOF creature_questitem

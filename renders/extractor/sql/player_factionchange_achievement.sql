@@ -1,4 +1,5 @@
--- BEGIN: player_factionchange_achievement
+
+-- START player_factionchange_achievement
 SET
 @alliance_id := {alliance_id},
 @horde_id := {horde_id};
@@ -16,5 +17,4 @@ VALUES (
     @alliance_id,
     @horde_id
 );
-
--- END: player_factionchange_achievement
+-- EOF player_factionchange_achievement

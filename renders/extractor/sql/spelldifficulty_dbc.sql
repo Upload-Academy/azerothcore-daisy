@@ -1,4 +1,5 @@
--- BEGIN: spelldifficulty_dbc
+
+-- START spelldifficulty_dbc
 SET
 @id := {id},
 @difficultyspellid_1 := {difficultyspellid_1},
@@ -24,5 +25,4 @@ VALUES (
     @difficultyspellid_3,
     @difficultyspellid_4
 );
-
--- END: spelldifficulty_dbc
+-- EOF spelldifficulty_dbc

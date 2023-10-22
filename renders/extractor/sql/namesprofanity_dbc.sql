@@ -1,4 +1,5 @@
--- BEGIN: namesprofanity_dbc
+
+-- START namesprofanity_dbc
 SET
 @id := {id},
 @pattern := '{pattern}',
@@ -18,5 +19,4 @@ VALUES (
     @pattern,
     @languagueid
 );
-
--- END: namesprofanity_dbc
+-- EOF namesprofanity_dbc

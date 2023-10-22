@@ -1,4 +1,5 @@
--- BEGIN: movie_dbc
+
+-- START movie_dbc
 SET
 @id := {id},
 @filename := '{filename}',
@@ -18,5 +19,4 @@ VALUES (
     @filename,
     @volume
 );
-
--- END: movie_dbc
+-- EOF movie_dbc

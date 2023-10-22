@@ -1,4 +1,5 @@
--- BEGIN: game_event_arena_seasons
+
+-- START game_event_arena_seasons
 SET
 @evententry := {evententry},
 @season := {season};
@@ -16,5 +17,4 @@ VALUES (
     @evententry,
     @season
 );
-
--- END: game_event_arena_seasons
+-- EOF game_event_arena_seasons

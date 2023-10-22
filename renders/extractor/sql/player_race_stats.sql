@@ -1,4 +1,5 @@
--- BEGIN: player_race_stats
+
+-- START player_race_stats
 SET
 @race := {race},
 @strength := {strength},
@@ -27,5 +28,4 @@ VALUES (
     @intellect,
     @spirit
 );
-
--- END: player_race_stats
+-- EOF player_race_stats

@@ -1,4 +1,5 @@
--- BEGIN: gtchancetospellcrit_dbc
+
+-- START gtchancetospellcrit_dbc
 SET
 @id := {id},
 @data := {data};
@@ -15,5 +16,4 @@ VALUES (
     @id,
     @data
 );
-
--- END: gtchancetospellcrit_dbc
+-- EOF gtchancetospellcrit_dbc

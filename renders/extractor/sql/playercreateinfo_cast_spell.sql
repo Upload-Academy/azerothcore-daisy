@@ -1,4 +1,5 @@
--- BEGIN: playercreateinfo_cast_spell
+
+-- START playercreateinfo_cast_spell
 SET
 @racemask := {racemask},
 @classmask := {classmask},
@@ -20,5 +21,4 @@ VALUES (
     @spell,
     @note
 );
-
--- END: playercreateinfo_cast_spell
+-- EOF playercreateinfo_cast_spell

@@ -1,4 +1,5 @@
--- BEGIN: game_event_pool
+
+-- START game_event_pool
 SET
 @evententry := {evententry},
 @pool_entry := {pool_entry};
@@ -15,5 +16,4 @@ VALUES (
     @evententry,
     @pool_entry
 );
-
--- END: game_event_pool
+-- EOF game_event_pool

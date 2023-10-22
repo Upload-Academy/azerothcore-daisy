@@ -1,4 +1,5 @@
--- BEGIN: spellfocusobject_dbc
+
+-- START spellfocusobject_dbc
 SET
 @id := {id},
 @name_lang_enus := '{name_lang_enus}',
@@ -63,5 +64,4 @@ VALUES (
     @name_lang_unk,
     @name_lang_mask
 );
-
--- END: spellfocusobject_dbc
+-- EOF spellfocusobject_dbc

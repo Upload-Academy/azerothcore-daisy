@@ -1,4 +1,5 @@
--- BEGIN: gameobjectdisplayinfo_dbc
+
+-- START gameobjectdisplayinfo_dbc
 SET
 @id := {id},
 @modelname := '{modelname}',
@@ -66,5 +67,4 @@ VALUES (
     @geoboxmaxz,
     @objecteffectpackageid
 );
-
--- END: gameobjectdisplayinfo_dbc
+-- EOF gameobjectdisplayinfo_dbc

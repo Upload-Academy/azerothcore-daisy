@@ -1,4 +1,5 @@
--- BEGIN: game_event_condition
+
+-- START game_event_condition
 SET
 @evententry := {evententry},
 @condition_id := {condition_id},
@@ -28,5 +29,4 @@ VALUES (
     @done_world_state_field,
     @description
 );
-
--- END: game_event_condition
+-- EOF game_event_condition

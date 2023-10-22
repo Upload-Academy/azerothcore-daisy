@@ -1,4 +1,5 @@
--- BEGIN: creature_queststarter
+
+-- START creature_queststarter
 SET
 @id := {id},
 @quest := {quest};
@@ -16,5 +17,4 @@ VALUES (
     @id,
     @quest
 );
-
--- END: creature_queststarter
+-- EOF creature_queststarter

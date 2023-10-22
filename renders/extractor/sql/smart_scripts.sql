@@ -1,4 +1,5 @@
--- BEGIN: smart_scripts
+
+-- START smart_scripts
 SET
 @entryorguid := {entryorguid},
 @source_type := {source_type},
@@ -105,5 +106,4 @@ VALUES (
     @target_o,
     @comment
 );
-
--- END: smart_scripts
+-- EOF smart_scripts

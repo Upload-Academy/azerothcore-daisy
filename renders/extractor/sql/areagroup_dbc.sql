@@ -1,4 +1,5 @@
--- BEGIN: areagroup_dbc
+
+-- START areagroup_dbc
 SET
 @id := {id},
 @areaid_1 := {areaid_1},
@@ -33,5 +34,4 @@ VALUES (
     @areaid_6,
     @nextareaid
 );
-
--- END: areagroup_dbc
+-- EOF areagroup_dbc

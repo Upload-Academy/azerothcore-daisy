@@ -1,4 +1,5 @@
--- BEGIN: spell_script_names
+
+-- START spell_script_names
 SET
 @spell_id := {spell_id},
 @scriptname := '{scriptname}';
@@ -16,5 +17,4 @@ VALUES (
     @spell_id,
     @scriptname
 );
-
--- END: spell_script_names
+-- EOF spell_script_names

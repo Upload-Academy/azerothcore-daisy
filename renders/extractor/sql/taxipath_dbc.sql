@@ -1,4 +1,5 @@
--- BEGIN: taxipath_dbc
+
+-- START taxipath_dbc
 SET
 @id := {id},
 @fromtaxinode := {fromtaxinode},
@@ -21,5 +22,4 @@ VALUES (
     @totaxinode,
     @cost
 );
-
--- END: taxipath_dbc
+-- EOF taxipath_dbc

@@ -1,4 +1,5 @@
--- BEGIN: gtchancetomeleecrit_dbc
+
+-- START gtchancetomeleecrit_dbc
 SET
 @id := {id},
 @data := {data};
@@ -15,5 +16,4 @@ VALUES (
     @id,
     @data
 );
-
--- END: gtchancetomeleecrit_dbc
+-- EOF gtchancetomeleecrit_dbc

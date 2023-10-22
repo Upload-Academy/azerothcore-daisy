@@ -1,4 +1,5 @@
--- BEGIN: prospecting_loot_template
+
+-- START prospecting_loot_template
 SET
 @entry := {entry},
 @item := {item},
@@ -40,5 +41,4 @@ VALUES (
     @maxcount,
     @comment
 );
-
--- END: prospecting_loot_template
+-- EOF prospecting_loot_template

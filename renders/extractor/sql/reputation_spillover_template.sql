@@ -1,4 +1,5 @@
--- BEGIN: reputation_spillover_template
+
+-- START reputation_spillover_template
 SET
 @faction := {faction},
 @faction1 := {faction1},
@@ -48,5 +49,4 @@ VALUES (
     @rate_4,
     @rank_4
 );
-
--- END: reputation_spillover_template
+-- EOF reputation_spillover_template

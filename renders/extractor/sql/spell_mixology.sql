@@ -1,4 +1,5 @@
--- BEGIN: spell_mixology
+
+-- START spell_mixology
 SET
 @entry := {entry},
 @pctmod := {pctmod};
@@ -15,5 +16,4 @@ VALUES (
     @entry,
     @pctmod
 );
-
--- END: spell_mixology
+-- EOF spell_mixology

@@ -1,4 +1,5 @@
--- BEGIN: randproppoints_dbc
+
+-- START randproppoints_dbc
 SET
 @id := {id},
 @epic_1 := {epic_1},
@@ -57,5 +58,4 @@ VALUES (
     @good_4,
     @good_5
 );
-
--- END: randproppoints_dbc
+-- EOF randproppoints_dbc

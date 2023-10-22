@@ -1,4 +1,5 @@
--- BEGIN: spell_custom_attr
+
+-- START spell_custom_attr
 SET
 @spell_id := {spell_id},
 @attributes := {attributes};
@@ -15,5 +16,4 @@ VALUES (
     @spell_id,
     @attributes
 );
-
--- END: spell_custom_attr
+-- EOF spell_custom_attr

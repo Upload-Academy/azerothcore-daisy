@@ -1,4 +1,5 @@
--- BEGIN: light_dbc
+
+-- START light_dbc
 SET
 @id := {id},
 @continentid := {continentid},
@@ -54,5 +55,4 @@ VALUES (
     @lightparamsid_7,
     @lightparamsid_8
 );
-
--- END: light_dbc
+-- EOF light_dbc

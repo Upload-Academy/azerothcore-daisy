@@ -1,4 +1,5 @@
--- BEGIN: gtcombatratings_dbc
+
+-- START gtcombatratings_dbc
 SET
 @id := {id},
 @data := {data};
@@ -15,5 +16,4 @@ VALUES (
     @id,
     @data
 );
-
--- END: gtcombatratings_dbc
+-- EOF gtcombatratings_dbc

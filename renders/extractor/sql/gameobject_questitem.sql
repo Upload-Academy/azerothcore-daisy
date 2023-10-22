@@ -1,4 +1,5 @@
--- BEGIN: gameobject_questitem
+
+-- START gameobject_questitem
 SET
 @gameobjectentry := {gameobjectentry},
 @idx := {idx},
@@ -22,5 +23,4 @@ VALUES (
     @itemid,
     @verifiedbuild
 );
-
--- END: gameobject_questitem
+-- EOF gameobject_questitem

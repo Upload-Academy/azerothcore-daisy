@@ -1,4 +1,5 @@
--- BEGIN: game_event_npc_vendor
+
+-- START game_event_npc_vendor
 SET
 @evententry := {evententry},
 @guid := {guid},
@@ -31,5 +32,4 @@ VALUES (
     @incrtime,
     @extendedcost
 );
-
--- END: game_event_npc_vendor
+-- EOF game_event_npc_vendor

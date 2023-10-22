@@ -1,4 +1,5 @@
--- BEGIN: spellitemenchantmentcondition_dbc
+
+-- START spellitemenchantmentcondition_dbc
 SET
 @id := {id},
 @lt_operandtype_1 := {lt_operandtype_1},
@@ -102,5 +103,4 @@ VALUES (
     @logic_4,
     @logic_5
 );
-
--- END: spellitemenchantmentcondition_dbc
+-- EOF spellitemenchantmentcondition_dbc

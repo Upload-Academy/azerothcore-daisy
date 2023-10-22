@@ -1,4 +1,5 @@
--- BEGIN: creature_movement_override
+
+-- START creature_movement_override
 SET
 @spawnid := {spawnid},
 @ground := {ground},
@@ -33,5 +34,4 @@ VALUES (
     @random,
     @interactionpausetimer
 );
-
--- END: creature_movement_override
+-- EOF creature_movement_override

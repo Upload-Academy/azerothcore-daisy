@@ -1,4 +1,5 @@
--- BEGIN: summonproperties_dbc
+
+-- START summonproperties_dbc
 SET
 @id := {id},
 @control := {control},
@@ -27,5 +28,4 @@ VALUES (
     @slot,
     @flags
 );
-
--- END: summonproperties_dbc
+-- EOF summonproperties_dbc

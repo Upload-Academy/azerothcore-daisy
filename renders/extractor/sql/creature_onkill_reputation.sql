@@ -1,4 +1,5 @@
--- BEGIN: creature_onkill_reputation
+
+-- START creature_onkill_reputation
 SET
 @creature_id := {creature_id},
 @rewonkillrepfaction1 := {rewonkillrepfaction1},
@@ -39,5 +40,4 @@ VALUES (
     @rewonkillrepvalue2,
     @teamdependent
 );
-
--- END: creature_onkill_reputation
+-- EOF creature_onkill_reputation

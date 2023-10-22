@@ -1,4 +1,5 @@
--- BEGIN: pool_quest
+
+-- START pool_quest
 SET
 @entry := {entry},
 @pool_entry := {pool_entry},
@@ -18,5 +19,4 @@ VALUES (
     @pool_entry,
     @description
 );
-
--- END: pool_quest
+-- EOF pool_quest

@@ -1,4 +1,5 @@
--- BEGIN: spellrange_dbc
+
+-- START spellrange_dbc
 SET
 @id := {id},
 @rangemin_1 := {rangemin_1},
@@ -129,5 +130,4 @@ VALUES (
     @displaynameshort_lang_unk,
     @displaynameshort_lang_mask
 );
-
--- END: spellrange_dbc
+-- EOF spellrange_dbc

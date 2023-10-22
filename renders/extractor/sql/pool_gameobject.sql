@@ -1,4 +1,5 @@
--- BEGIN: pool_gameobject
+
+-- START pool_gameobject
 SET
 @guid := {guid},
 @pool_entry := {pool_entry},
@@ -21,5 +22,4 @@ VALUES (
     @chance,
     @description
 );
-
--- END: pool_gameobject
+-- EOF pool_gameobject

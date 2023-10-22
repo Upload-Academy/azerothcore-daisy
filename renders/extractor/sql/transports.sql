@@ -1,4 +1,5 @@
--- BEGIN: transports
+
+-- START transports
 SET
 @guid := {guid},
 @entry := {entry},
@@ -21,5 +22,4 @@ VALUES (
     @name,
     @scriptname
 );
-
--- END: transports
+-- EOF transports

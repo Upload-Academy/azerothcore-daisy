@@ -1,4 +1,5 @@
--- BEGIN: gtregenhpperspt_dbc
+
+-- START gtregenhpperspt_dbc
 SET
 @id := {id},
 @data := {data};
@@ -15,5 +16,4 @@ VALUES (
     @id,
     @data
 );
-
--- END: gtregenhpperspt_dbc
+-- EOF gtregenhpperspt_dbc

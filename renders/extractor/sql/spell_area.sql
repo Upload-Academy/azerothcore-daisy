@@ -1,4 +1,5 @@
--- BEGIN: spell_area
+
+-- START spell_area
 SET
 @spell := {spell},
 @area := {area},
@@ -44,5 +45,4 @@ VALUES (
     @quest_start_status,
     @quest_end_status
 );
-
--- END: spell_area
+-- EOF spell_area

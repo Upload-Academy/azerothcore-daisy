@@ -1,4 +1,5 @@
--- BEGIN: battlemaster_entry
+
+-- START battlemaster_entry
 SET
 @entry := {entry},
 @bg_template := {bg_template};
@@ -15,5 +16,4 @@ VALUES (
     @entry,
     @bg_template
 );
-
--- END: battlemaster_entry
+-- EOF battlemaster_entry

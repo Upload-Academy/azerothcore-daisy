@@ -1,4 +1,5 @@
--- BEGIN: gameobject_loot_template
+
+-- START gameobject_loot_template
 SET
 @entry := {entry},
 @item := {item},
@@ -40,5 +41,4 @@ VALUES (
     @maxcount,
     @comment
 );
-
--- END: gameobject_loot_template
+-- EOF gameobject_loot_template

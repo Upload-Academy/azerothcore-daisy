@@ -1,4 +1,5 @@
--- BEGIN: updates
+
+-- START updates
 SET
 @name := '{name}',
 @hash := '{hash}',
@@ -24,5 +25,4 @@ VALUES (
     @timestamp,
     @speed
 );
-
--- END: updates
+-- EOF updates

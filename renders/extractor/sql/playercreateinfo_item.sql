@@ -1,4 +1,5 @@
--- BEGIN: playercreateinfo_item
+
+-- START playercreateinfo_item
 SET
 @race := {race},
 @class := {class},
@@ -26,5 +27,4 @@ VALUES (
     @amount,
     @note
 );
-
--- END: playercreateinfo_item
+-- EOF playercreateinfo_item

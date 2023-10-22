@@ -1,4 +1,5 @@
--- BEGIN: npc_spellclick_spells
+
+-- START npc_spellclick_spells
 SET
 @npc_entry := {npc_entry},
 @spell_id := {spell_id},
@@ -22,5 +23,4 @@ VALUES (
     @cast_flags,
     @user_type
 );
-
--- END: npc_spellclick_spells
+-- EOF npc_spellclick_spells

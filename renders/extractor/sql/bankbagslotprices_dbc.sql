@@ -1,4 +1,5 @@
--- BEGIN: bankbagslotprices_dbc
+
+-- START bankbagslotprices_dbc
 SET
 @id := {id},
 @cost := {cost};
@@ -15,5 +16,4 @@ VALUES (
     @id,
     @cost
 );
-
--- END: bankbagslotprices_dbc
+-- EOF bankbagslotprices_dbc

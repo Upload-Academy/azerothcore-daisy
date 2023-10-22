@@ -1,4 +1,5 @@
--- BEGIN: battlemasterlist_dbc
+
+-- START battlemasterlist_dbc
 SET
 @id := {id},
 @mapid_1 := {mapid_1},
@@ -105,5 +106,4 @@ VALUES (
     @minlevel,
     @maxlevel
 );
-
--- END: battlemasterlist_dbc
+-- EOF battlemasterlist_dbc

@@ -1,4 +1,5 @@
--- BEGIN: waypoint_scripts
+
+-- START waypoint_scripts
 SET
 @id := {id},
 @delay := {delay},
@@ -42,5 +43,4 @@ VALUES (
     @o,
     @guid
 );
-
--- END: waypoint_scripts
+-- EOF waypoint_scripts

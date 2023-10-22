@@ -1,4 +1,5 @@
--- BEGIN: quest_offer_reward_locale
+
+-- START quest_offer_reward_locale
 SET
 @id := {id},
 @locale := '{locale}',
@@ -22,5 +23,4 @@ VALUES (
     @rewardtext,
     @verifiedbuild
 );
-
--- END: quest_offer_reward_locale
+-- EOF quest_offer_reward_locale

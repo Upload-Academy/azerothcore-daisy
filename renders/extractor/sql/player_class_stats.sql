@@ -1,4 +1,5 @@
--- BEGIN: player_class_stats
+
+-- START player_class_stats
 SET
 @class := {class},
 @level := {level},
@@ -37,5 +38,4 @@ VALUES (
     @intellect,
     @spirit
 );
-
--- END: player_class_stats
+-- EOF player_class_stats

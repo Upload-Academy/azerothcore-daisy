@@ -1,4 +1,5 @@
--- BEGIN: gossip_menu
+
+-- START gossip_menu
 SET
 @menuid := {menuid},
 @textid := {textid};
@@ -16,5 +17,4 @@ VALUES (
     @menuid,
     @textid
 );
-
--- END: gossip_menu
+-- EOF gossip_menu

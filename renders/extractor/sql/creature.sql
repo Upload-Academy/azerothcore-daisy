@@ -1,4 +1,5 @@
--- BEGIN: creature
+
+-- START creature
 SET
 @guid := {guid},
 @id1 := {id1},
@@ -90,5 +91,4 @@ VALUES (
     @createobject,
     @comment
 );
-
--- END: creature
+-- EOF creature

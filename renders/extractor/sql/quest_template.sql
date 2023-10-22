@@ -1,4 +1,5 @@
--- BEGIN: quest_template
+
+-- START quest_template
 SET
 @id := {id},
 @questtype := {questtype},
@@ -327,5 +328,4 @@ VALUES (
     @objectivetext4,
     @verifiedbuild
 );
-
--- END: quest_template
+-- EOF quest_template

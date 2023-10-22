@@ -1,4 +1,5 @@
--- BEGIN: quest_money_reward
+
+-- START quest_money_reward
 SET
 @level := {level},
 @money0 := {money0},
@@ -42,5 +43,4 @@ VALUES (
     @money8,
     @money9
 );
-
--- END: quest_money_reward
+-- EOF quest_money_reward

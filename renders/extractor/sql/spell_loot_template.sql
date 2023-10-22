@@ -1,4 +1,5 @@
--- BEGIN: spell_loot_template
+
+-- START spell_loot_template
 SET
 @entry := {entry},
 @item := {item},
@@ -40,5 +41,4 @@ VALUES (
     @maxcount,
     @comment
 );
-
--- END: spell_loot_template
+-- EOF spell_loot_template

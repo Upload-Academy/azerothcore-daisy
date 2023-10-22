@@ -1,4 +1,5 @@
--- BEGIN: achievement_criteria_dbc
+
+-- START achievement_criteria_dbc
 SET
 @id := {id},
 @achievement_id := {achievement_id},
@@ -102,5 +103,4 @@ VALUES (
     @timer_time,
     @ui_order
 );
-
--- END: achievement_criteria_dbc
+-- EOF achievement_criteria_dbc

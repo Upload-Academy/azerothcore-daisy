@@ -1,4 +1,5 @@
--- BEGIN: skillline_dbc
+
+-- START skillline_dbc
 SET
 @id := {id},
 @categoryid := {categoryid},
@@ -177,5 +178,4 @@ VALUES (
     @alternateverb_lang_mask,
     @canlink
 );
-
--- END: skillline_dbc
+-- EOF skillline_dbc

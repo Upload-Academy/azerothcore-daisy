@@ -1,4 +1,5 @@
--- BEGIN: game_event_gameobject
+
+-- START game_event_gameobject
 SET
 @evententry := {evententry},
 @guid := {guid};
@@ -16,5 +17,4 @@ VALUES (
     @evententry,
     @guid
 );
-
--- END: game_event_gameobject
+-- EOF game_event_gameobject

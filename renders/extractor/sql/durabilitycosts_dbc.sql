@@ -1,4 +1,5 @@
--- BEGIN: durabilitycosts_dbc
+
+-- START durabilitycosts_dbc
 SET
 @id := {id},
 @weaponsubclasscost_1 := {weaponsubclasscost_1},
@@ -99,5 +100,4 @@ VALUES (
     @armorsubclasscost_7,
     @armorsubclasscost_8
 );
-
--- END: durabilitycosts_dbc
+-- EOF durabilitycosts_dbc

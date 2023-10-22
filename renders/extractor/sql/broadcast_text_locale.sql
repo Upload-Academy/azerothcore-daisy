@@ -1,4 +1,5 @@
--- BEGIN: broadcast_text_locale
+
+-- START broadcast_text_locale
 SET
 @id := {id},
 @locale := '{locale}',
@@ -25,5 +26,4 @@ VALUES (
     @femaletext,
     @verifiedbuild
 );
-
--- END: broadcast_text_locale
+-- EOF broadcast_text_locale

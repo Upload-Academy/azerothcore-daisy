@@ -1,4 +1,5 @@
--- BEGIN: spell_threat
+
+-- START spell_threat
 SET
 @entry := {entry},
 @flatmod := {flatmod},
@@ -21,5 +22,4 @@ VALUES (
     @pctmod,
     @appctmod
 );
-
--- END: spell_threat
+-- EOF spell_threat

@@ -1,4 +1,5 @@
--- BEGIN: spell_scripts
+
+-- START spell_scripts
 SET
 @id := {id},
 @effindex := {effindex},
@@ -41,5 +42,4 @@ VALUES (
     @z,
     @o
 );
-
--- END: spell_scripts
+-- EOF spell_scripts

@@ -1,4 +1,5 @@
--- BEGIN: quest_offer_reward
+
+-- START quest_offer_reward
 SET
 @id := {id},
 @emote1 := {emote1},
@@ -42,5 +43,4 @@ VALUES (
     @rewardtext,
     @verifiedbuild
 );
-
--- END: quest_offer_reward
+-- EOF quest_offer_reward

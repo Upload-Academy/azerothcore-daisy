@@ -1,4 +1,5 @@
--- BEGIN: reputation_reward_rate
+
+-- START reputation_reward_rate
 SET
 @faction := {faction},
 @quest_rate := {quest_rate},
@@ -33,5 +34,4 @@ VALUES (
     @creature_rate,
     @spell_rate
 );
-
--- END: reputation_reward_rate
+-- EOF reputation_reward_rate

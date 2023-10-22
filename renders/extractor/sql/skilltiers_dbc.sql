@@ -1,4 +1,5 @@
--- BEGIN: skilltiers_dbc
+
+-- START skilltiers_dbc
 SET
 @id := {id},
 @cost_1 := {cost_1},
@@ -108,5 +109,4 @@ VALUES (
     @value_15,
     @value_16
 );
-
--- END: skilltiers_dbc
+-- EOF skilltiers_dbc

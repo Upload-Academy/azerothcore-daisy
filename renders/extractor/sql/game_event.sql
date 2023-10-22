@@ -1,4 +1,5 @@
--- BEGIN: game_event
+
+-- START game_event
 SET
 @evententry := {evententry},
 @start_time := {start_time},
@@ -39,5 +40,4 @@ VALUES (
     @world_event,
     @announce
 );
-
--- END: game_event
+-- EOF game_event

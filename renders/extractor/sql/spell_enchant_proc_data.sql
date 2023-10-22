@@ -1,4 +1,5 @@
--- BEGIN: spell_enchant_proc_data
+
+-- START spell_enchant_proc_data
 SET
 @entry := {entry},
 @customchance := {customchance},
@@ -24,5 +25,4 @@ VALUES (
     @procex,
     @attributemask
 );
-
--- END: spell_enchant_proc_data
+-- EOF spell_enchant_proc_data

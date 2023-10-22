@@ -1,4 +1,5 @@
--- BEGIN: spell_pet_auras
+
+-- START spell_pet_auras
 SET
 @spell := {spell},
 @effectid := {effectid},
@@ -23,5 +24,4 @@ VALUES (
     @pet,
     @aura
 );
-
--- END: spell_pet_auras
+-- EOF spell_pet_auras

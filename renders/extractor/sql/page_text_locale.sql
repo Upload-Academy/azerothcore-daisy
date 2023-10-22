@@ -1,4 +1,5 @@
--- BEGIN: page_text_locale
+
+-- START page_text_locale
 SET
 @id := {id},
 @locale := '{locale}',
@@ -22,5 +23,4 @@ VALUES (
     @text,
     @verifiedbuild
 );
-
--- END: page_text_locale
+-- EOF page_text_locale

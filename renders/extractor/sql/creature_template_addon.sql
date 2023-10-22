@@ -1,4 +1,5 @@
--- BEGIN: creature_template_addon
+
+-- START creature_template_addon
 SET
 @entry := {entry},
 @path_id := {path_id},
@@ -33,5 +34,4 @@ VALUES (
     @visibilitydistancetype,
     @auras
 );
-
--- END: creature_template_addon
+-- EOF creature_template_addon

@@ -1,4 +1,5 @@
--- BEGIN: gameobjectartkit_dbc
+
+-- START gameobjectartkit_dbc
 SET
 @id := {id},
 @texture_1 := {texture_1},
@@ -33,5 +34,4 @@ VALUES (
     @attach_model_3,
     @attach_model_4
 );
-
--- END: gameobjectartkit_dbc
+-- EOF gameobjectartkit_dbc

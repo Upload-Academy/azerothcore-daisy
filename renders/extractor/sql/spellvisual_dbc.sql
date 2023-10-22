@@ -1,4 +1,5 @@
--- BEGIN: spellvisual_dbc
+
+-- START spellvisual_dbc
 SET
 @id := {id},
 @precastkit := {precastkit},
@@ -105,5 +106,4 @@ VALUES (
     @missileimpactoffsety,
     @missileimpactoffsetz
 );
-
--- END: spellvisual_dbc
+-- EOF spellvisual_dbc

@@ -1,4 +1,5 @@
--- BEGIN: worldmaparea_dbc
+
+-- START worldmaparea_dbc
 SET
 @id := {id},
 @mapid := {mapid},
@@ -42,5 +43,4 @@ VALUES (
     @defaultdungeonfloor,
     @parentworldmapid
 );
-
--- END: worldmaparea_dbc
+-- EOF worldmaparea_dbc

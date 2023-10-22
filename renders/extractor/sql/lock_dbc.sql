@@ -1,4 +1,5 @@
--- BEGIN: lock_dbc
+
+-- START lock_dbc
 SET
 @id := {id},
 @type_1 := {type_1},
@@ -108,5 +109,4 @@ VALUES (
     @action_7,
     @action_8
 );
-
--- END: lock_dbc
+-- EOF lock_dbc

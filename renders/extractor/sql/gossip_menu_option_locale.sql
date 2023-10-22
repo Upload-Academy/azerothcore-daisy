@@ -1,4 +1,5 @@
--- BEGIN: gossip_menu_option_locale
+
+-- START gossip_menu_option_locale
 SET
 @menuid := {menuid},
 @optionid := {optionid},
@@ -26,5 +27,4 @@ VALUES (
     @optiontext,
     @boxtext
 );
-
--- END: gossip_menu_option_locale
+-- EOF gossip_menu_option_locale

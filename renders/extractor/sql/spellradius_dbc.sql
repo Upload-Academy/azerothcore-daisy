@@ -1,4 +1,5 @@
--- BEGIN: spellradius_dbc
+
+-- START spellradius_dbc
 SET
 @id := {id},
 @radius := {radius},
@@ -21,5 +22,4 @@ VALUES (
     @radiusperlevel,
     @radiusmax
 );
-
--- END: spellradius_dbc
+-- EOF spellradius_dbc

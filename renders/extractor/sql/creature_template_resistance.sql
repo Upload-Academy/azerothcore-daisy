@@ -1,4 +1,5 @@
--- BEGIN: creature_template_resistance
+
+-- START creature_template_resistance
 SET
 @creatureid := {creatureid},
 @school := {school},
@@ -22,5 +23,4 @@ VALUES (
     @resistance,
     @verifiedbuild
 );
-
--- END: creature_template_resistance
+-- EOF creature_template_resistance

@@ -1,4 +1,5 @@
--- BEGIN: battleground_template
+
+-- START battleground_template
 SET
 @id := {id},
 @minplayersperteam := {minplayersperteam},
@@ -48,5 +49,4 @@ VALUES (
     @scriptname,
     @comment
 );
-
--- END: battleground_template
+-- EOF battleground_template

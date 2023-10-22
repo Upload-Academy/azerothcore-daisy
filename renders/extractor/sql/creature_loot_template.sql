@@ -1,4 +1,5 @@
--- BEGIN: creature_loot_template
+
+-- START creature_loot_template
 SET
 @entry := {entry},
 @item := {item},
@@ -42,5 +43,4 @@ VALUES (
     @maxcount,
     @comment
 );
-
--- END: creature_loot_template
+-- EOF creature_loot_template

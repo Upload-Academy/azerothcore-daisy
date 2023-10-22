@@ -1,4 +1,5 @@
--- BEGIN: spellshapeshiftform_dbc
+
+-- START spellshapeshiftform_dbc
 SET
 @id := {id},
 @bonusactionbar := {bonusactionbar},
@@ -114,5 +115,4 @@ VALUES (
     @presetspellid_7,
     @presetspellid_8
 );
-
--- END: spellshapeshiftform_dbc
+-- EOF spellshapeshiftform_dbc

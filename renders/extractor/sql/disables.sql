@@ -1,4 +1,5 @@
--- BEGIN: disables
+
+-- START disables
 SET
 @sourcetype := {sourcetype},
 @entry := {entry},
@@ -28,5 +29,4 @@ VALUES (
     @params_1,
     @comment
 );
-
--- END: disables
+-- EOF disables

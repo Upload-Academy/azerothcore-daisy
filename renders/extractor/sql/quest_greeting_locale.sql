@@ -1,4 +1,5 @@
--- BEGIN: quest_greeting_locale
+
+-- START quest_greeting_locale
 SET
 @id := {id},
 @type := {type},
@@ -26,5 +27,4 @@ VALUES (
     @greeting,
     @verifiedbuild
 );
-
--- END: quest_greeting_locale
+-- EOF quest_greeting_locale

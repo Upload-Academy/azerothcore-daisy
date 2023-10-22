@@ -1,4 +1,5 @@
--- BEGIN: cinematiccamera_dbc
+
+-- START cinematiccamera_dbc
 SET
 @id := {id},
 @model := '{model}',
@@ -30,5 +31,4 @@ VALUES (
     @locationz,
     @rotation
 );
-
--- END: cinematiccamera_dbc
+-- EOF cinematiccamera_dbc

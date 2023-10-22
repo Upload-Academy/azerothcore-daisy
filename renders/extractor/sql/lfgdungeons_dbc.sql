@@ -1,4 +1,5 @@
--- BEGIN: lfgdungeons_dbc
+
+-- START lfgdungeons_dbc
 SET
 @id := {id},
 @name_lang_enus := '{name_lang_enus}',
@@ -156,5 +157,4 @@ VALUES (
     @description_lang_unk,
     @description_lang_mask
 );
-
--- END: lfgdungeons_dbc
+-- EOF lfgdungeons_dbc

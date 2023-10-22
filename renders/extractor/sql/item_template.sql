@@ -1,4 +1,5 @@
--- BEGIN: item_template
+
+-- START item_template
 SET
 @entry := {entry},
 @class := {class},
@@ -426,5 +427,4 @@ VALUES (
     @flagscustom,
     @verifiedbuild
 );
-
--- END: item_template
+-- EOF item_template

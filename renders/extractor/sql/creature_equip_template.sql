@@ -1,4 +1,5 @@
--- BEGIN: creature_equip_template
+
+-- START creature_equip_template
 SET
 @creatureid := {creatureid},
 @id := {id},
@@ -28,5 +29,4 @@ VALUES (
     @itemid3,
     @verifiedbuild
 );
-
--- END: creature_equip_template
+-- EOF creature_equip_template

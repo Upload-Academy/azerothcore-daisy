@@ -1,4 +1,5 @@
--- BEGIN: quest_request_items
+
+-- START quest_request_items
 SET
 @id := {id},
 @emoteoncomplete := {emoteoncomplete},
@@ -24,5 +25,4 @@ VALUES (
     @completiontext,
     @verifiedbuild
 );
-
--- END: quest_request_items
+-- EOF quest_request_items

@@ -1,4 +1,5 @@
--- BEGIN: teamcontributionpoints_dbc
+
+-- START teamcontributionpoints_dbc
 SET
 @id := {id},
 @data := {data};
@@ -15,5 +16,4 @@ VALUES (
     @id,
     @data
 );
-
--- END: teamcontributionpoints_dbc
+-- EOF teamcontributionpoints_dbc

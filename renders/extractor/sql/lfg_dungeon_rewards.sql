@@ -1,4 +1,5 @@
--- BEGIN: lfg_dungeon_rewards
+
+-- START lfg_dungeon_rewards
 SET
 @dungeonid := {dungeonid},
 @maxlevel := {maxlevel},
@@ -22,5 +23,4 @@ VALUES (
     @firstquestid,
     @otherquestid
 );
-
--- END: lfg_dungeon_rewards
+-- EOF lfg_dungeon_rewards

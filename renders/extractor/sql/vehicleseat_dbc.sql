@@ -1,4 +1,5 @@
--- BEGIN: vehicleseat_dbc
+
+-- START vehicleseat_dbc
 SET
 @id := {id},
 @flags := {flags},
@@ -183,5 +184,4 @@ VALUES (
     @cameraseatzoommin,
     @cameraseatzoommax
 );
-
--- END: vehicleseat_dbc
+-- EOF vehicleseat_dbc

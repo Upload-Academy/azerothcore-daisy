@@ -1,4 +1,5 @@
--- BEGIN: skill_perfect_item_template
+
+-- START skill_perfect_item_template
 SET
 @spellid := {spellid},
 @requiredspecialization := {requiredspecialization},
@@ -21,5 +22,4 @@ VALUES (
     @perfectcreatechance,
     @perfectitemtype
 );
-
--- END: skill_perfect_item_template
+-- EOF skill_perfect_item_template

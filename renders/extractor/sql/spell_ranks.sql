@@ -1,4 +1,5 @@
--- BEGIN: spell_ranks
+
+-- START spell_ranks
 SET
 @first_spell_id := {first_spell_id},
 @spell_id := {spell_id},
@@ -19,5 +20,4 @@ VALUES (
     @spell_id,
     @rank
 );
-
--- END: spell_ranks
+-- EOF spell_ranks

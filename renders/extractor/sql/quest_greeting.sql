@@ -1,4 +1,5 @@
--- BEGIN: quest_greeting
+
+-- START quest_greeting
 SET
 @id := {id},
 @type := {type},
@@ -28,5 +29,4 @@ VALUES (
     @greeting,
     @verifiedbuild
 );
-
--- END: quest_greeting
+-- EOF quest_greeting

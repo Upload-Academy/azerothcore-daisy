@@ -1,4 +1,5 @@
--- BEGIN: npc_vendor
+
+-- START npc_vendor
 SET
 @entry := {entry},
 @slot := {slot},
@@ -32,5 +33,4 @@ VALUES (
     @extendedcost,
     @verifiedbuild
 );
-
--- END: npc_vendor
+-- EOF npc_vendor

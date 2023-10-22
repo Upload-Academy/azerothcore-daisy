@@ -1,4 +1,5 @@
--- BEGIN: spell_required
+
+-- START spell_required
 SET
 @spell_id := {spell_id},
 @req_spell := {req_spell};
@@ -16,5 +17,4 @@ VALUES (
     @spell_id,
     @req_spell
 );
-
--- END: spell_required
+-- EOF spell_required

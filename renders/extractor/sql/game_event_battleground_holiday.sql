@@ -1,4 +1,5 @@
--- BEGIN: game_event_battleground_holiday
+
+-- START game_event_battleground_holiday
 SET
 @evententry := {evententry},
 @bgflag := {bgflag};
@@ -15,5 +16,4 @@ VALUES (
     @evententry,
     @bgflag
 );
-
--- END: game_event_battleground_holiday
+-- EOF game_event_battleground_holiday

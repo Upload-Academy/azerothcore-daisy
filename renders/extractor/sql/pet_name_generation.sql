@@ -1,4 +1,5 @@
--- BEGIN: pet_name_generation
+
+-- START pet_name_generation
 SET
 @id := {id},
 @word := '{word}',
@@ -21,5 +22,4 @@ VALUES (
     @entry,
     @half
 );
-
--- END: pet_name_generation
+-- EOF pet_name_generation

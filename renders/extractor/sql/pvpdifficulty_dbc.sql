@@ -1,4 +1,5 @@
--- BEGIN: pvpdifficulty_dbc
+
+-- START pvpdifficulty_dbc
 SET
 @id := {id},
 @mapid := {mapid},
@@ -27,5 +28,4 @@ VALUES (
     @maxlevel,
     @difficulty
 );
-
--- END: pvpdifficulty_dbc
+-- EOF pvpdifficulty_dbc

@@ -1,4 +1,5 @@
--- BEGIN: version
+
+-- START version
 SET
 @core_version := '{core_version}',
 @core_revision := '{core_revision}',
@@ -21,5 +22,4 @@ VALUES (
     @db_version,
     @cache_id
 );
-
--- END: version
+-- EOF version

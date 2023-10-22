@@ -1,5 +1,6 @@
 
 import os
+import shutil
 import ruamel.yaml
 import importlib
 
@@ -21,9 +22,6 @@ def parse_yaml(this, constants=False):
         with open(this, 'r') as fd:
             results += fd.read()
 
-        test = open('test.yaml', 'w')
-        test.write(results)
-
         return yaml.load(results)
     
     with open(this, 'r') as fd:
@@ -42,7 +40,8 @@ def tables(data):
     for ti, tk in enumerate(data['tables']):
         for ei, entry in enumerate(data['tables'][tk]):
             # Open file we're going to write the SQL to
-            final_result = open(f"{config['daisy']['output_to']}/{data['meta']['pack']}-{data['meta']['version']}-{tk}.sql", "w")
+            final_file_path = f"{config['daisy']['output_to']}/{data['meta']['pack']}-{data['meta']['version']}-{tk}.sql"
+            final_result = open(final_file_path, "a")
 
             # Open the YAML file containing the table's column fields and their
             # default values
@@ -58,8 +57,6 @@ def tables(data):
             # Extract and merge the defaults with our values
             # (Our values "win", and override identical keys found in defaults)
             merged = {**defaults[tk], **entry}
-
-            print(merged)
 
             # And finally, write the .sql file, ready to be imported into the DB
             final_result.write(sqlfunc(merged, f"{config['daisy']['templates']}/sql/{tk}.sql"))
@@ -84,6 +81,12 @@ def find_packs(name, path):
     return all_packs
 
 def main():
+    # We have to delete any and all previously generated SQL files
+    # otherwise we'll open then for appending, and they will just
+    # keep growing. We want them to be _replaced_
+    shutil.rmtree(f"{config['daisy']['output_to']}/", ignore_errors=True)
+    os.mkdir(config['daisy']['output_to'])
+
     packs = find_packs(".yaml", "./packs")
     for pack in packs:
         data  = parse_yaml(pack, constants=True)

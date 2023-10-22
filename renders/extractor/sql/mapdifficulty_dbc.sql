@@ -1,4 +1,5 @@
--- BEGIN: mapdifficulty_dbc
+
+-- START mapdifficulty_dbc
 SET
 @id := {id},
 @mapid := {mapid},
@@ -78,5 +79,4 @@ VALUES (
     @maxplayers,
     @difficultystring
 );
-
--- END: mapdifficulty_dbc
+-- EOF mapdifficulty_dbc

@@ -1,4 +1,5 @@
--- BEGIN: glyphproperties_dbc
+
+-- START glyphproperties_dbc
 SET
 @id := {id},
 @spellid := {spellid},
@@ -21,5 +22,4 @@ VALUES (
     @glyphslotflags,
     @spelliconid
 );
-
--- END: glyphproperties_dbc
+-- EOF glyphproperties_dbc

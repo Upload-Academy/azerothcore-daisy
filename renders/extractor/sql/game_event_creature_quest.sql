@@ -1,4 +1,5 @@
--- BEGIN: game_event_creature_quest
+
+-- START game_event_creature_quest
 SET
 @evententry := {evententry},
 @id := {id},
@@ -19,5 +20,4 @@ VALUES (
     @id,
     @quest
 );
-
--- END: game_event_creature_quest
+-- EOF game_event_creature_quest

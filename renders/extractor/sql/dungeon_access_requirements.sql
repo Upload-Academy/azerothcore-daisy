@@ -1,4 +1,5 @@
--- BEGIN: dungeon_access_requirements
+
+-- START dungeon_access_requirements
 SET
 @dungeon_access_id := {dungeon_access_id},
 @requirement_type := {requirement_type},
@@ -35,5 +36,4 @@ VALUES (
     @leader_only,
     @comment
 );
-
--- END: dungeon_access_requirements
+-- EOF dungeon_access_requirements

@@ -1,4 +1,5 @@
--- BEGIN: item_template_locale
+
+-- START item_template_locale
 SET
 @id := {id},
 @locale := '{locale}',
@@ -25,5 +26,4 @@ VALUES (
     @description,
     @verifiedbuild
 );
-
--- END: item_template_locale
+-- EOF item_template_locale

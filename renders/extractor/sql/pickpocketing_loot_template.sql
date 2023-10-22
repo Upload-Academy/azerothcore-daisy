@@ -1,4 +1,5 @@
--- BEGIN: pickpocketing_loot_template
+
+-- START pickpocketing_loot_template
 SET
 @entry := {entry},
 @item := {item},
@@ -40,5 +41,4 @@ VALUES (
     @maxcount,
     @comment
 );
-
--- END: pickpocketing_loot_template
+-- EOF pickpocketing_loot_template

@@ -1,4 +1,5 @@
--- BEGIN: creature_text
+
+-- START creature_text
 SET
 @creatureid := {creatureid},
 @groupid := {groupid},
@@ -50,5 +51,4 @@ VALUES (
     @textrange,
     @comment
 );
-
--- END: creature_text
+-- EOF creature_text

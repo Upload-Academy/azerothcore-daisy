@@ -1,4 +1,5 @@
--- BEGIN: creature_template
+
+-- START creature_template
 SET
 @entry := {entry},
 @difficulty_entry_1 := {difficulty_entry_1},
@@ -204,5 +205,4 @@ VALUES (
     @scriptname,
     @verifiedbuild
 );
-
--- END: creature_template
+-- EOF creature_template

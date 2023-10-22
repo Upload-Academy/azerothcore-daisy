@@ -1,4 +1,5 @@
--- BEGIN: warden_checks
+
+-- START warden_checks
 SET
 @id := {id},
 @type := {type},
@@ -33,5 +34,4 @@ VALUES (
     @result,
     @comment
 );
-
--- END: warden_checks
+-- EOF warden_checks

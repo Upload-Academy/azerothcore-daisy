@@ -1,4 +1,5 @@
--- BEGIN: achievement_criteria_data
+
+-- START achievement_criteria_data
 SET
 @criteria_id := {criteria_id},
 @type := {type},
@@ -25,5 +26,4 @@ VALUES (
     @value2,
     @scriptname
 );
-
--- END: achievement_criteria_data
+-- EOF achievement_criteria_data

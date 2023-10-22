@@ -1,4 +1,5 @@
--- BEGIN: waypoint_data
+
+-- START waypoint_data
 SET
 @id := {id},
 @point := {point},
@@ -43,5 +44,4 @@ VALUES (
     @action_chance,
     @wpguid
 );
-
--- END: waypoint_data
+-- EOF waypoint_data

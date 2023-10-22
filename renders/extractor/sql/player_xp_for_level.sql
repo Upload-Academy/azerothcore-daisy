@@ -1,4 +1,5 @@
--- BEGIN: player_xp_for_level
+
+-- START player_xp_for_level
 SET
 @level := {level},
 @experience := {experience};
@@ -15,5 +16,4 @@ VALUES (
     @level,
     @experience
 );
-
--- END: player_xp_for_level
+-- EOF player_xp_for_level

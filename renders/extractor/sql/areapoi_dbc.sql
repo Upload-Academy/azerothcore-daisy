@@ -1,4 +1,5 @@
--- BEGIN: areapoi_dbc
+
+-- START areapoi_dbc
 SET
 @id := {id},
 @importance := {importance},
@@ -171,5 +172,4 @@ VALUES (
     @worldstateid,
     @worldmaplink
 );
-
--- END: areapoi_dbc
+-- EOF areapoi_dbc

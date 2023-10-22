@@ -1,4 +1,5 @@
--- BEGIN: scalingstatvalues_dbc
+
+-- START scalingstatvalues_dbc
 SET
 @id := {id},
 @charlevel := {charlevel},
@@ -81,5 +82,4 @@ VALUES (
     @mailchestarmor,
     @platechestarmor
 );
-
--- END: scalingstatvalues_dbc
+-- EOF scalingstatvalues_dbc

@@ -1,4 +1,5 @@
--- BEGIN: item_set_names_locale
+
+-- START item_set_names_locale
 SET
 @id := {id},
 @locale := '{locale}',
@@ -22,5 +23,4 @@ VALUES (
     @name,
     @verifiedbuild
 );
-
--- END: item_set_names_locale
+-- EOF item_set_names_locale

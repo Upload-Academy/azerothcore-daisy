@@ -1,4 +1,5 @@
--- BEGIN: lfg_dungeon_template
+
+-- START lfg_dungeon_template
 SET
 @dungeonid := {dungeonid},
 @name := '{name}',
@@ -30,5 +31,4 @@ VALUES (
     @orientation,
     @verifiedbuild
 );
-
--- END: lfg_dungeon_template
+-- EOF lfg_dungeon_template

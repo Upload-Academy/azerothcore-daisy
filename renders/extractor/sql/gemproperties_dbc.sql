@@ -1,4 +1,5 @@
--- BEGIN: gemproperties_dbc
+
+-- START gemproperties_dbc
 SET
 @id := {id},
 @enchant_id := {enchant_id},
@@ -24,5 +25,4 @@ VALUES (
     @maxcount_item,
     @type
 );
-
--- END: gemproperties_dbc
+-- EOF gemproperties_dbc

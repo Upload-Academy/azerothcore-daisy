@@ -1,4 +1,5 @@
--- BEGIN: overridespelldata_dbc
+
+-- START overridespelldata_dbc
 SET
 @id := {id},
 @spells_1 := {spells_1},
@@ -45,5 +46,4 @@ VALUES (
     @spells_10,
     @flags
 );
-
--- END: overridespelldata_dbc
+-- EOF overridespelldata_dbc

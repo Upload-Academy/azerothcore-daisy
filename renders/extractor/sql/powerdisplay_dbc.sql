@@ -1,4 +1,5 @@
--- BEGIN: powerdisplay_dbc
+
+-- START powerdisplay_dbc
 SET
 @id := {id},
 @actualtype := {actualtype},
@@ -27,5 +28,4 @@ VALUES (
     @green,
     @blue
 );
-
--- END: powerdisplay_dbc
+-- EOF powerdisplay_dbc

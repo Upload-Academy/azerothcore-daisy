@@ -1,4 +1,5 @@
--- BEGIN: playercreateinfo_action
+
+-- START playercreateinfo_action
 SET
 @race := {race},
 @class := {class},
@@ -26,5 +27,4 @@ VALUES (
     @action,
     @type
 );
-
--- END: playercreateinfo_action
+-- EOF playercreateinfo_action

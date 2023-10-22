@@ -1,4 +1,5 @@
--- BEGIN: mailtemplate_dbc
+
+-- START mailtemplate_dbc
 SET
 @id := {id},
 @subject_lang_enus := '{subject_lang_enus}',
@@ -114,5 +115,4 @@ VALUES (
     @body_lang_unk,
     @body_lang_mask
 );
-
--- END: mailtemplate_dbc
+-- EOF mailtemplate_dbc

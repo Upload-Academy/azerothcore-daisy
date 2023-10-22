@@ -1,4 +1,5 @@
--- BEGIN: chatchannels_dbc
+
+-- START chatchannels_dbc
 SET
 @id := {id},
 @flags := {flags},
@@ -120,5 +121,4 @@ VALUES (
     @shortcut_lang_unk,
     @shortcut_lang_mask
 );
-
--- END: chatchannels_dbc
+-- EOF chatchannels_dbc

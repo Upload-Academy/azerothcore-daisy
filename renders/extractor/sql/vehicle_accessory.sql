@@ -1,4 +1,5 @@
--- BEGIN: vehicle_accessory
+
+-- START vehicle_accessory
 SET
 @guid := {guid},
 @accessory_entry := {accessory_entry},
@@ -31,5 +32,4 @@ VALUES (
     @summontype,
     @summontimer
 );
-
--- END: vehicle_accessory
+-- EOF vehicle_accessory

@@ -1,4 +1,5 @@
--- BEGIN: gameobject_addon
+
+-- START gameobject_addon
 SET
 @guid := {guid},
 @invisibilitytype := {invisibilitytype},
@@ -18,5 +19,4 @@ VALUES (
     @invisibilitytype,
     @invisibilityvalue
 );
-
--- END: gameobject_addon
+-- EOF gameobject_addon

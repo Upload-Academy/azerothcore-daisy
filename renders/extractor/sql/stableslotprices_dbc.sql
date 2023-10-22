@@ -1,4 +1,5 @@
--- BEGIN: stableslotprices_dbc
+
+-- START stableslotprices_dbc
 SET
 @id := {id},
 @cost := {cost};
@@ -15,5 +16,4 @@ VALUES (
     @id,
     @cost
 );
-
--- END: stableslotprices_dbc
+-- EOF stableslotprices_dbc

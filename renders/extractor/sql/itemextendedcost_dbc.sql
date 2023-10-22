@@ -1,4 +1,5 @@
--- BEGIN: itemextendedcost_dbc
+
+-- START itemextendedcost_dbc
 SET
 @id := {id},
 @honorpoints := {honorpoints},
@@ -57,5 +58,4 @@ VALUES (
     @requiredarenarating,
     @itempurchasegroup
 );
-
--- END: itemextendedcost_dbc
+-- EOF itemextendedcost_dbc

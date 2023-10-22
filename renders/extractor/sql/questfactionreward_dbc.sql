@@ -1,4 +1,5 @@
--- BEGIN: questfactionreward_dbc
+
+-- START questfactionreward_dbc
 SET
 @id := {id},
 @difficulty_1 := {difficulty_1},
@@ -42,5 +43,4 @@ VALUES (
     @difficulty_9,
     @difficulty_10
 );
-
--- END: questfactionreward_dbc
+-- EOF questfactionreward_dbc

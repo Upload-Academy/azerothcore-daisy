@@ -1,4 +1,5 @@
--- BEGIN: creature_summon_groups
+
+-- START creature_summon_groups
 SET
 @summonerid := {summonerid},
 @summonertype := {summonertype},
@@ -41,5 +42,4 @@ VALUES (
     @summontime,
     @comment
 );
-
--- END: creature_summon_groups
+-- EOF creature_summon_groups

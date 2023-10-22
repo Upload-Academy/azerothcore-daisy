@@ -1,4 +1,5 @@
--- BEGIN: durabilityquality_dbc
+
+-- START durabilityquality_dbc
 SET
 @id := {id},
 @data := {data};
@@ -15,5 +16,4 @@ VALUES (
     @id,
     @data
 );
-
--- END: durabilityquality_dbc
+-- EOF durabilityquality_dbc

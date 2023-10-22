@@ -1,4 +1,5 @@
--- BEGIN: totemcategory_dbc
+
+-- START totemcategory_dbc
 SET
 @id := {id},
 @name_lang_enus := '{name_lang_enus}',
@@ -69,5 +70,4 @@ VALUES (
     @totemcategorytype,
     @totemcategorymask
 );
-
--- END: totemcategory_dbc
+-- EOF totemcategory_dbc

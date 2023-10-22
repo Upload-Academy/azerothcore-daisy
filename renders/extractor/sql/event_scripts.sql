@@ -1,4 +1,5 @@
--- BEGIN: event_scripts
+
+-- START event_scripts
 SET
 @id := {id},
 @delay := {delay},
@@ -38,5 +39,4 @@ VALUES (
     @z,
     @o
 );
-
--- END: event_scripts
+-- EOF event_scripts

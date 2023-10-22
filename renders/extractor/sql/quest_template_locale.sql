@@ -1,4 +1,5 @@
--- BEGIN: quest_template_locale
+
+-- START quest_template_locale
 SET
 @id := {id},
 @locale := '{locale}',
@@ -46,5 +47,4 @@ VALUES (
     @objectivetext4,
     @verifiedbuild
 );
-
--- END: quest_template_locale
+-- EOF quest_template_locale

@@ -1,4 +1,5 @@
--- BEGIN: itemrandomsuffix_dbc
+
+-- START itemrandomsuffix_dbc
 SET
 @id := {id},
 @name_lang_enus := '{name_lang_enus}',
@@ -96,5 +97,4 @@ VALUES (
     @allocationpct_4,
     @allocationpct_5
 );
-
--- END: itemrandomsuffix_dbc
+-- EOF itemrandomsuffix_dbc

@@ -1,4 +1,5 @@
--- BEGIN: npc_trainer
+
+-- START npc_trainer
 SET
 @id := {id},
 @spellid := {spellid},
@@ -31,5 +32,4 @@ VALUES (
     @reqlevel,
     @reqspell
 );
-
--- END: npc_trainer
+-- EOF npc_trainer

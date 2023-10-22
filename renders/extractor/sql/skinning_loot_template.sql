@@ -1,4 +1,5 @@
--- BEGIN: skinning_loot_template
+
+-- START skinning_loot_template
 SET
 @entry := {entry},
 @item := {item},
@@ -40,5 +41,4 @@ VALUES (
     @maxcount,
     @comment
 );
-
--- END: skinning_loot_template
+-- EOF skinning_loot_template

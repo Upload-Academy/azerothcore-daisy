@@ -1,4 +1,5 @@
--- BEGIN: vehicle_dbc
+
+-- START vehicle_dbc
 SET
 @id := {id},
 @flags := {flags},
@@ -129,5 +130,4 @@ VALUES (
     @powerdisplayid_2,
     @powerdisplayid_3
 );
-
--- END: vehicle_dbc
+-- EOF vehicle_dbc

@@ -1,4 +1,5 @@
--- BEGIN: creature_template_movement
+
+-- START creature_template_movement
 SET
 @creatureid := {creatureid},
 @ground := {ground},
@@ -33,5 +34,4 @@ VALUES (
     @random,
     @interactionpausetimer
 );
-
--- END: creature_template_movement
+-- EOF creature_template_movement

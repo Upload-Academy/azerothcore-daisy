@@ -1,4 +1,5 @@
--- BEGIN: game_tele
+
+-- START game_tele
 SET
 @id := {id},
 @position_x := {position_x},
@@ -30,5 +31,4 @@ VALUES (
     @map,
     @name
 );
-
--- END: game_tele
+-- EOF game_tele

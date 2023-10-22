@@ -1,4 +1,5 @@
--- BEGIN: emotes_dbc
+
+-- START emotes_dbc
 SET
 @id := {id},
 @emoteslashcommand := '{emoteslashcommand}',
@@ -30,5 +31,4 @@ VALUES (
     @emotespecprocparam,
     @eventsoundid
 );
-
--- END: emotes_dbc
+-- EOF emotes_dbc

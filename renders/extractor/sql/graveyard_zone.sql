@@ -1,4 +1,5 @@
--- BEGIN: graveyard_zone
+
+-- START graveyard_zone
 SET
 @id := {id},
 @ghostzone := {ghostzone},
@@ -22,5 +23,4 @@ VALUES (
     @faction,
     @comment
 );
-
--- END: graveyard_zone
+-- EOF graveyard_zone

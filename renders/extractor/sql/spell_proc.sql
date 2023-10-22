@@ -1,4 +1,5 @@
--- BEGIN: spell_proc
+
+-- START spell_proc
 SET
 @spellid := {spellid},
 @schoolmask := {schoolmask},
@@ -54,5 +55,4 @@ VALUES (
     @cooldown,
     @charges
 );
-
--- END: spell_proc
+-- EOF spell_proc

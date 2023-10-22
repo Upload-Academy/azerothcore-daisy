@@ -1,4 +1,5 @@
--- BEGIN: milling_loot_template
+
+-- START milling_loot_template
 SET
 @entry := {entry},
 @item := {item},
@@ -40,5 +41,4 @@ VALUES (
     @maxcount,
     @comment
 );
-
--- END: milling_loot_template
+-- EOF milling_loot_template

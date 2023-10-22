@@ -1,4 +1,5 @@
--- BEGIN: pool_pool
+
+-- START pool_pool
 SET
 @pool_id := {pool_id},
 @mother_pool := {mother_pool},
@@ -21,5 +22,4 @@ VALUES (
     @chance,
     @description
 );
-
--- END: pool_pool
+-- EOF pool_pool

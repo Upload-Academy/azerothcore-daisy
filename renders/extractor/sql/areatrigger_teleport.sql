@@ -1,4 +1,5 @@
--- BEGIN: areatrigger_teleport
+
+-- START areatrigger_teleport
 SET
 @id := {id},
 @name := '{name}',
@@ -30,5 +31,4 @@ VALUES (
     @target_position_z,
     @target_orientation
 );
-
--- END: areatrigger_teleport
+-- EOF areatrigger_teleport

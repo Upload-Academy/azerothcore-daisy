@@ -1,4 +1,5 @@
--- BEGIN: mail_loot_template
+
+-- START mail_loot_template
 SET
 @entry := {entry},
 @item := {item},
@@ -40,5 +41,4 @@ VALUES (
     @maxcount,
     @comment
 );
-
--- END: mail_loot_template
+-- EOF mail_loot_template

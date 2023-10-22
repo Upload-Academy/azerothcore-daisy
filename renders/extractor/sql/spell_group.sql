@@ -1,4 +1,5 @@
--- BEGIN: spell_group
+
+-- START spell_group
 SET
 @id := {id},
 @spell_id := {spell_id},
@@ -19,5 +20,4 @@ VALUES (
     @spell_id,
     @special_flag
 );
-
--- END: spell_group
+-- EOF spell_group

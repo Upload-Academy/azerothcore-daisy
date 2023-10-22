@@ -1,4 +1,5 @@
--- BEGIN: game_event_quest_condition
+
+-- START game_event_quest_condition
 SET
 @evententry := {evententry},
 @quest := {quest},
@@ -21,5 +22,4 @@ VALUES (
     @condition_id,
     @num
 );
-
--- END: game_event_quest_condition
+-- EOF game_event_quest_condition

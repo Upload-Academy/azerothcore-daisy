@@ -1,4 +1,5 @@
--- BEGIN: faction_dbc
+
+-- START faction_dbc
 SET
 @id := {id},
 @reputationindex := {reputationindex},
@@ -180,5 +181,4 @@ VALUES (
     @description_lang_unk,
     @description_lang_mask
 );
-
--- END: faction_dbc
+-- EOF faction_dbc

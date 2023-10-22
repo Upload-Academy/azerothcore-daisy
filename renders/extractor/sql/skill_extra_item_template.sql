@@ -1,4 +1,5 @@
--- BEGIN: skill_extra_item_template
+
+-- START skill_extra_item_template
 SET
 @spellid := {spellid},
 @requiredspecialization := {requiredspecialization},
@@ -21,5 +22,4 @@ VALUES (
     @additionalcreatechance,
     @additionalmaxnum
 );
-
--- END: skill_extra_item_template
+-- EOF skill_extra_item_template

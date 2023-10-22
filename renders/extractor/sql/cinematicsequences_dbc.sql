@@ -1,4 +1,5 @@
--- BEGIN: cinematicsequences_dbc
+
+-- START cinematicsequences_dbc
 SET
 @id := {id},
 @soundid := {soundid},
@@ -39,5 +40,4 @@ VALUES (
     @camera_7,
     @camera_8
 );
-
--- END: cinematicsequences_dbc
+-- EOF cinematicsequences_dbc

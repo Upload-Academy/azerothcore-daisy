@@ -1,4 +1,5 @@
--- BEGIN: skillraceclassinfo_dbc
+
+-- START skillraceclassinfo_dbc
 SET
 @id := {id},
 @skillid := {skillid},
@@ -33,5 +34,4 @@ VALUES (
     @skilltierid,
     @skillcostindex
 );
-
--- END: skillraceclassinfo_dbc
+-- EOF skillraceclassinfo_dbc

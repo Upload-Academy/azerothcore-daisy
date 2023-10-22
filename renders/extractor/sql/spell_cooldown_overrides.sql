@@ -1,4 +1,5 @@
--- BEGIN: spell_cooldown_overrides
+
+-- START spell_cooldown_overrides
 SET
 @id := {id},
 @recoverytime := {recoverytime},
@@ -24,5 +25,4 @@ VALUES (
     @startrecoverytime,
     @startrecoverycategory
 );
-
--- END: spell_cooldown_overrides
+-- EOF spell_cooldown_overrides

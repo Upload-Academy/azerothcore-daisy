@@ -1,4 +1,5 @@
--- BEGIN: creaturedisplayinfo_dbc
+
+-- START creaturedisplayinfo_dbc
 SET
 @id := {id},
 @modelid := {modelid},
@@ -57,5 +58,4 @@ VALUES (
     @creaturegeosetdata,
     @objecteffectpackageid
 );
-
--- END: creaturedisplayinfo_dbc
+-- EOF creaturedisplayinfo_dbc

@@ -1,4 +1,5 @@
--- BEGIN: areatrigger_involvedrelation
+
+-- START areatrigger_involvedrelation
 SET
 @id := {id},
 @quest := {quest};
@@ -15,5 +16,4 @@ VALUES (
     @id,
     @quest
 );
-
--- END: areatrigger_involvedrelation
+-- EOF areatrigger_involvedrelation

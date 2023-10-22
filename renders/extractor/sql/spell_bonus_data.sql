@@ -1,4 +1,5 @@
--- BEGIN: spell_bonus_data
+
+-- START spell_bonus_data
 SET
 @entry := {entry},
 @direct_bonus := {direct_bonus},
@@ -27,5 +28,4 @@ VALUES (
     @ap_dot_bonus,
     @comments
 );
-
--- END: spell_bonus_data
+-- EOF spell_bonus_data

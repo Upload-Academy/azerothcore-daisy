@@ -1,4 +1,5 @@
--- BEGIN: creature_formations
+
+-- START creature_formations
 SET
 @leaderguid := {leaderguid},
 @memberguid := {memberguid},
@@ -30,5 +31,4 @@ VALUES (
     @point_1,
     @point_2
 );
-
--- END: creature_formations
+-- EOF creature_formations

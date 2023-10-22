@@ -1,4 +1,5 @@
--- BEGIN: chartitles_dbc
+
+-- START chartitles_dbc
 SET
 @id := {id},
 @condition_id := {condition_id},
@@ -120,5 +121,4 @@ VALUES (
     @name1_lang_mask,
     @mask_id
 );
-
--- END: chartitles_dbc
+-- EOF chartitles_dbc

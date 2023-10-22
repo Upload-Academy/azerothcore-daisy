@@ -1,4 +1,5 @@
--- BEGIN: namesreserved_dbc
+
+-- START namesreserved_dbc
 SET
 @id := {id},
 @pattern := '{pattern}',
@@ -18,5 +19,4 @@ VALUES (
     @pattern,
     @languagueid
 );
-
--- END: namesreserved_dbc
+-- EOF namesreserved_dbc

@@ -1,4 +1,5 @@
--- BEGIN: disenchant_loot_template
+
+-- START disenchant_loot_template
 SET
 @entry := {entry},
 @item := {item},
@@ -40,5 +41,4 @@ VALUES (
     @maxcount,
     @comment
 );
-
--- END: disenchant_loot_template
+-- EOF disenchant_loot_template

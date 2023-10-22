@@ -1,4 +1,5 @@
--- BEGIN: instance_template
+
+-- START instance_template
 SET
 @map := {map},
 @parent := {parent},
@@ -21,5 +22,4 @@ VALUES (
     @script,
     @allowmount
 );
-
--- END: instance_template
+-- EOF instance_template

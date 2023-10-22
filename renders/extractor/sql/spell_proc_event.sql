@@ -1,4 +1,5 @@
--- BEGIN: spell_proc_event
+
+-- START spell_proc_event
 SET
 @entry := {entry},
 @schoolmask := {schoolmask},
@@ -45,5 +46,4 @@ VALUES (
     @customchance,
     @cooldown
 );
-
--- END: spell_proc_event
+-- EOF spell_proc_event

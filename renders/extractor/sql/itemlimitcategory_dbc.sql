@@ -1,4 +1,5 @@
--- BEGIN: itemlimitcategory_dbc
+
+-- START itemlimitcategory_dbc
 SET
 @id := {id},
 @name_lang_enus := '{name_lang_enus}',
@@ -69,5 +70,4 @@ VALUES (
     @quantity,
     @flags
 );
-
--- END: itemlimitcategory_dbc
+-- EOF itemlimitcategory_dbc

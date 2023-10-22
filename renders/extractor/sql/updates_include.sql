@@ -1,4 +1,5 @@
--- BEGIN: updates_include
+
+-- START updates_include
 SET
 @path := '{path}',
 @state := {state};
@@ -15,5 +16,4 @@ VALUES (
     @path,
     @state
 );
-
--- END: updates_include
+-- EOF updates_include

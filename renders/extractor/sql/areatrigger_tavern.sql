@@ -1,4 +1,5 @@
--- BEGIN: areatrigger_tavern
+
+-- START areatrigger_tavern
 SET
 @id := {id},
 @name := '{name}',
@@ -18,5 +19,4 @@ VALUES (
     @name,
     @faction
 );
-
--- END: areatrigger_tavern
+-- EOF areatrigger_tavern

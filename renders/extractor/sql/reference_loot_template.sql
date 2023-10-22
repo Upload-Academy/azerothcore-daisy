@@ -1,4 +1,5 @@
--- BEGIN: reference_loot_template
+
+-- START reference_loot_template
 SET
 @entry := {entry},
 @item := {item},
@@ -40,5 +41,4 @@ VALUES (
     @maxcount,
     @comment
 );
-
--- END: reference_loot_template
+-- EOF reference_loot_template

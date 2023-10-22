@@ -1,4 +1,5 @@
--- BEGIN: pet_levelstats
+
+-- START pet_levelstats
 SET
 @creature_entry := {creature_entry},
 @level := {level},
@@ -46,5 +47,4 @@ VALUES (
     @min_dmg,
     @max_dmg
 );
-
--- END: pet_levelstats
+-- EOF pet_levelstats

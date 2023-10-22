@@ -1,4 +1,5 @@
--- BEGIN: gameobject_questender
+
+-- START gameobject_questender
 SET
 @id := {id},
 @quest := {quest};
@@ -16,5 +17,4 @@ VALUES (
     @id,
     @quest
 );
-
--- END: gameobject_questender
+-- EOF gameobject_questender

@@ -1,4 +1,5 @@
--- BEGIN: exploration_basexp
+
+-- START exploration_basexp
 SET
 @level := {level},
 @basexp := {basexp};
@@ -15,5 +16,4 @@ VALUES (
     @level,
     @basexp
 );
-
--- END: exploration_basexp
+-- EOF exploration_basexp

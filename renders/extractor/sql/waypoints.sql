@@ -1,4 +1,5 @@
--- BEGIN: waypoints
+
+-- START waypoints
 SET
 @entry := {entry},
 @pointid := {pointid},
@@ -34,5 +35,4 @@ VALUES (
     @delay,
     @point_comment
 );
-
--- END: waypoints
+-- EOF waypoints

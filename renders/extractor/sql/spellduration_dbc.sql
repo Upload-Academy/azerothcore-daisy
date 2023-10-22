@@ -1,4 +1,5 @@
--- BEGIN: spellduration_dbc
+
+-- START spellduration_dbc
 SET
 @id := {id},
 @duration := {duration},
@@ -21,5 +22,4 @@ VALUES (
     @durationperlevel,
     @maxduration
 );
-
--- END: spellduration_dbc
+-- EOF spellduration_dbc

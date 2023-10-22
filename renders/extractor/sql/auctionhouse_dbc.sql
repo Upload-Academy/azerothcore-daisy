@@ -1,4 +1,5 @@
--- BEGIN: auctionhouse_dbc
+
+-- START auctionhouse_dbc
 SET
 @id := {id},
 @factionid := {factionid},
@@ -72,5 +73,4 @@ VALUES (
     @name_lang_unk,
     @name_lang_mask
 );
-
--- END: auctionhouse_dbc
+-- EOF auctionhouse_dbc

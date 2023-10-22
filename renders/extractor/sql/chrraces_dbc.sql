@@ -1,4 +1,5 @@
--- BEGIN: chrraces_dbc
+
+-- START chrraces_dbc
 SET
 @id := {id},
 @flags := {flags},
@@ -216,5 +217,4 @@ VALUES (
     @haircustomization,
     @required_expansion
 );
-
--- END: chrraces_dbc
+-- EOF chrraces_dbc

@@ -1,4 +1,5 @@
--- BEGIN: questsort_dbc
+
+-- START questsort_dbc
 SET
 @id := {id},
 @sortname_lang_enus := '{sortname_lang_enus}',
@@ -63,5 +64,4 @@ VALUES (
     @sortname_lang_unk,
     @sortname_lang_mask
 );
-
--- END: questsort_dbc
+-- EOF questsort_dbc

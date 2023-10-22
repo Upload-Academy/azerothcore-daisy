@@ -1,4 +1,5 @@
--- BEGIN: spell_dbc
+
+-- START spell_dbc
 SET
 @id := {id},
 @category := {category},
@@ -711,5 +712,4 @@ VALUES (
     @spelldescriptionvariableid,
     @spelldifficultyid
 );
-
--- END: spell_dbc
+-- EOF spell_dbc

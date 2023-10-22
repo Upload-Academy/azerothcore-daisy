@@ -1,4 +1,5 @@
--- BEGIN: item_set_names
+
+-- START item_set_names
 SET
 @entry := {entry},
 @name := '{name}',
@@ -21,5 +22,4 @@ VALUES (
     @inventorytype,
     @verifiedbuild
 );
-
--- END: item_set_names
+-- EOF item_set_names

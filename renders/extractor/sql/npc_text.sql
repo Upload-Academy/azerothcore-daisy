@@ -1,4 +1,5 @@
--- BEGIN: npc_text
+
+-- START npc_text
 SET
 @id := {id},
 @text0_0 := '{text0_0}',
@@ -279,5 +280,4 @@ VALUES (
     @em7_5,
     @verifiedbuild
 );
-
--- END: npc_text
+-- EOF npc_text

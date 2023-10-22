@@ -1,4 +1,5 @@
--- BEGIN: outdoorpvp_template
+
+-- START outdoorpvp_template
 SET
 @typeid := {typeid},
 @scriptname := '{scriptname}',
@@ -18,5 +19,4 @@ VALUES (
     @scriptname,
     @comment
 );
-
--- END: outdoorpvp_template
+-- EOF outdoorpvp_template

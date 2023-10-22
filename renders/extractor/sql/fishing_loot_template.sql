@@ -1,4 +1,5 @@
--- BEGIN: fishing_loot_template
+
+-- START fishing_loot_template
 SET
 @entry := {entry},
 @item := {item},
@@ -40,5 +41,4 @@ VALUES (
     @maxcount,
     @comment
 );
-
--- END: fishing_loot_template
+-- EOF fishing_loot_template

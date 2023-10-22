@@ -1,4 +1,5 @@
--- BEGIN: item_enchantment_template
+
+-- START item_enchantment_template
 SET
 @entry := {entry},
 @ench := {ench},
@@ -19,5 +20,4 @@ VALUES (
     @ench,
     @chance
 );
-
--- END: item_enchantment_template
+-- EOF item_enchantment_template

@@ -1,4 +1,5 @@
--- BEGIN: gtbarbershopcostbase_dbc
+
+-- START gtbarbershopcostbase_dbc
 SET
 @id := {id},
 @data := {data};
@@ -15,5 +16,4 @@ VALUES (
     @id,
     @data
 );
-
--- END: gtbarbershopcostbase_dbc
+-- EOF gtbarbershopcostbase_dbc

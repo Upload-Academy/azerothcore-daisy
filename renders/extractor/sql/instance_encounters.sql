@@ -1,4 +1,5 @@
--- BEGIN: instance_encounters
+
+-- START instance_encounters
 SET
 @entry := {entry},
 @credittype := {credittype},
@@ -24,5 +25,4 @@ VALUES (
     @lastencounterdungeon,
     @comment
 );
-
--- END: instance_encounters
+-- EOF instance_encounters

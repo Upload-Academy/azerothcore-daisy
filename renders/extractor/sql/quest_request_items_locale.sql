@@ -1,4 +1,5 @@
--- BEGIN: quest_request_items_locale
+
+-- START quest_request_items_locale
 SET
 @id := {id},
 @locale := '{locale}',
@@ -22,5 +23,4 @@ VALUES (
     @completiontext,
     @verifiedbuild
 );
-
--- END: quest_request_items_locale
+-- EOF quest_request_items_locale

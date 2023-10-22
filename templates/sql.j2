@@ -1,4 +1,5 @@
--- BEGIN: {{data['table']['name']}}
+
+-- START {{data['table']['name']}}
 SET
 {%- for v in data['variables'] %}
 
@@ -44,5 +45,4 @@ VALUES (
 {%- endif %}
 {%- endfor %}
 );
-
--- END: {{data['table']['name']}}
+-- EOF {{data['table']['name']}}

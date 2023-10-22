@@ -1,4 +1,5 @@
--- BEGIN: spellcategory_dbc
+
+-- START spellcategory_dbc
 SET
 @id := {id},
 @flags := {flags};
@@ -15,5 +16,4 @@ VALUES (
     @id,
     @flags
 );
-
--- END: spellcategory_dbc
+-- EOF spellcategory_dbc

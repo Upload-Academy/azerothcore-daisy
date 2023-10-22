@@ -1,4 +1,5 @@
--- BEGIN: spell_group_stack_rules
+
+-- START spell_group_stack_rules
 SET
 @group_id := {group_id},
 @stack_rule := {stack_rule},
@@ -18,5 +19,4 @@ VALUES (
     @stack_rule,
     @description
 );
-
--- END: spell_group_stack_rules
+-- EOF spell_group_stack_rules

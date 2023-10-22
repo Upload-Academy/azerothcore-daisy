@@ -1,4 +1,5 @@
--- BEGIN: creature_addon
+
+-- START creature_addon
 SET
 @guid := {guid},
 @path_id := {path_id},
@@ -33,5 +34,4 @@ VALUES (
     @visibilitydistancetype,
     @auras
 );
-
--- END: creature_addon
+-- EOF creature_addon

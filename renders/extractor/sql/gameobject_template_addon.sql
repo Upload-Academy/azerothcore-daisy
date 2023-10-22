@@ -1,4 +1,5 @@
--- BEGIN: gameobject_template_addon
+
+-- START gameobject_template_addon
 SET
 @entry := {entry},
 @faction := {faction},
@@ -36,5 +37,4 @@ VALUES (
     @artkit2,
     @artkit3
 );
-
--- END: gameobject_template_addon
+-- EOF gameobject_template_addon

@@ -1,4 +1,5 @@
--- BEGIN: transportrotation_dbc
+
+-- START transportrotation_dbc
 SET
 @id := {id},
 @gameobjectsid := {gameobjectsid},
@@ -30,5 +31,4 @@ VALUES (
     @rotz,
     @rotw
 );
-
--- END: transportrotation_dbc
+-- EOF transportrotation_dbc
