@@ -6,9 +6,49 @@ Daisy is a set of Python tools that can extract (`extrtactor.py`) information ab
 
 ## Why?
 
-Daisy exists because although this author loves [Keira3](https://github.com/azerothcore/Keira3) (and still uses it, in fact), they also love YAML, code, and doing things from the CLI. It's faster and easier to work with, and it makes it incredibly easy to share database changes in the form of YAML.
+Daisy exists because although this author loves [Keira3](https://github.com/azerothcore/Keira3) (and still uses it, in fact), they also love YAML, code, and doing things from the CLI. It's faster and easier to work with, and it makes it incredibly easy to share database changes in the form of YAML (see "Packs" below.)
+
+Keira3 (K3) is very slow to work with, because you're restricted to a GUI, clicking about, and moving between fields. And besides the resulting SQL you can extract from K3, sharing your work is harder. K3 also "hides" certain facts from you, one example being the "Factions" UI that leads people to believe there is a "factions" table in the database, but it is in fact in the client-side DBC files. This isn't a big issue, but I like a true reflection of the state of things so I can come to understand them fully.
+
+So Daisy is designed to compliment K3 for a lot of things. It's aimed at people (such as the Repack commuity) who want to mass-produce NPCs, quests, spells, and more. Doing that work with K3 is slow and painful. Daisy makes it easier! Bark!
 
 ## Packs
+
+A "Pack" is a unit of work that is sharable. Under the `packs/` directory at the root of this repository, you'll see examples. These are, in simple terms, just directories that contain YAML files. No directories are actually required at all: you can simply define a flat YAML file at `./packs/my.yaml` and it'll be loaded. The key to a Pack is the `meta.*` block inside that YAML file:
+
+```yaml
+# packs/mcrilly/example/data.yaml
+meta:
+  pack: example
+  version: 0.1.0
+
+tables:
+  creature_template:
+    - entry: 910001
+      modelid1: 7106
+      name: "Rixxle"
+      subname: "Totally Legit Warez"
+      minlevel: 60
+      maxlevel: 60
+      npcflag: 1
+      faction: 120
+
+  creature:
+    - guid: 910001
+      id1: 910001
+      map: 0
+      position_x: -11280.18
+      position_y: 1433.82
+      position_z: 89.41
+      orientation: 6.17
+      comment: "Some random goblin"
+```
+
+The `meta.pack` variable defines the name of the Pack. The `meta.version` variable defines its current version. This can be anything.
+
+Creating a Pack simply involves placing YAML files inside of `packs/` with that `meta.*` key and variables in place, and you're done. Every YAML file _must_ have the `meta.*` document in there. 
+
+This structure might change in the future, and Daisy is absolutely going to support downloading Packs from remote HTTPS servers, to make sharing even easier.
 
 ## Installation & Usage
 
