@@ -1,7 +1,6 @@
 meta:
   pack: random_goblin
   version: v1
-  constants: true
 
 entry_ids:
   # Recommended structure:

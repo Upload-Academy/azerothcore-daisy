@@ -4,7 +4,6 @@
 meta:
   pack: example
   version: 0.1.0
-  constants: false
 
 tables:
   creature_template:
