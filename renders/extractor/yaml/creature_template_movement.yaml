@@ -1,0 +1,9 @@
+creature_template_movement:
+  creatureid: '0'
+  ground: 0
+  swim: 0
+  flight: 0
+  rooted: 0
+  chase: 0
+  random: 0
+  interactionpausetimer: 0

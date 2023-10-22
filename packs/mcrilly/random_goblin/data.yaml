@@ -1,0 +1,73 @@
+meta:
+  pack: random_goblin
+  version: v1
+  constants: true
+
+entry_ids:
+  # Recommended structure:
+  # 
+  #   5ABC00
+  #   5 = this "expansion" of our work. "6" will become another large body of work.
+  #       You use whatever you like, but don't write over existing entry IDs!!
+  #       And keep in mind any modules you install into your core may also overlap
+  #       with the entry IDs you choose here.
+  #   A = the group, organisation, or "namespace" of the IDs
+  #   B = the "type" of the thing being created
+  #   C = 0-8 is all you can eat, 9 is reserved
+  #   00 = go nuts
+  generic:
+    quests: {} # 501000
+    npcs: {} # 502000
+    conditions: {} # 503000
+
+  vanguardalliance:
+    quests: {} # 511000
+    npcs: {} # 512000
+    gameobjects: {} # 513000
+    creatures: {} # 514000
+  
+  vendorgroups:
+    quests: {} # 521000
+    
+    npcs: # 522000
+      defaults:
+        minlevel: &vendorGroupMinLevel 60
+        maxlevel: &vendorGroupMaxLevel 60
+        npcflag: &vendorGroupNPCFlag 129
+        faction: &vendorGroupFaction 120
+      deadmines:
+        rixxle:
+          entry: &vendorGroupDeadminesRixxleEntry 599000
+          name: &vendorGroupDeadminesRixxleName Rixxle
+          subname: &vendorGroupDeadminesRixxleSubname Totally Legit Weapons
+          model: &vendorGroupDeadminesRixxleModel 7106
+    
+    gameobjects: # 523000
+      deadmines:
+        tent:
+          entry: &vendorGroupsDeadminesTent01 523000
+          displayid: 7194
+
+    creatures: {} # 524000
+
+tables:
+  creature_template:
+    - entry: *vendorGroupDeadminesRixxleEntry
+      modelid1: *vendorGroupDeadminesRixxleModel
+      name: *vendorGroupDeadminesRixxleName
+      subname: *vendorGroupDeadminesRixxleSubname
+      minlevel: *vendorGroupMinLevel
+      maxlevel: *vendorGroupMaxLevel
+      npcflag: *vendorGroupNPCFlag
+      faction: *vendorGroupFaction
+
+  creature:
+    - guid: *vendorGroupDeadminesRixxleEntry
+      id1: *vendorGroupDeadminesRixxleEntry
+      # notice the use of a constant from packs/_constants/constants.yaml
+      # These constants are always read into memory when rendering packs
+      map: *MAP_EASTERNKINGDOM 
+      position_x: -11280.18
+      position_y: 1433.82
+      position_z: 89.41
+      orientation: 6.17

@@ -1,0 +1,28 @@
+
+# This file (data.yaml) can be called whatever you like
+
+meta:
+  pack: example
+  version: 0.1.0
+  constants: false
+
+tables:
+  creature_template:
+    - entry: 910001
+      modelid1: 7106
+      name: "Rixxle"
+      subname: "Totally Legit Warez"
+      minlevel: 60
+      maxlevel: 60
+      npcflag: 1
+      faction: 120
+
+  creature:
+    - guid: 910001
+      id1: 910001
+      map: 0
+      position_x: -11280.18
+      position_y: 1433.82
+      position_z: 89.41
+      orientation: 6.17
+      comment: "Some random goblin"

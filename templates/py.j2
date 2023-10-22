@@ -1,0 +1,7 @@
+def sql_new_{{data['table']['name']}}(data, path):
+    with open(path, 'r') as fd:
+        return fd.read().format(
+        {%- for c in data['table']['columns'] %}
+            {{c|string|lower()}} = data['{{c|string|lower()}}'],
+        {%- endfor %}
+        )

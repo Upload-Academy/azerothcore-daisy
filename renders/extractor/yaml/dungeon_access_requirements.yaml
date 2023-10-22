@@ -1,0 +1,9 @@
+dungeon_access_requirements:
+  dungeon_access_id: 0
+  requirement_type: 0
+  requirement_id: 0
+  requirement_note: ''
+  faction: '2'
+  priority: 0
+  leader_only: '0'
+  comment: ''

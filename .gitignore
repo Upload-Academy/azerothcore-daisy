@@ -1,0 +1,6 @@
+venv/
+*.pyo
+*.pyc
+data/
+renders/daisy/
+__pycache__/

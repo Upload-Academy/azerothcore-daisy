@@ -1,0 +1,26 @@
+def sql_new_scalingstatdistribution_dbc(data, path):
+    with open(path, 'r') as fd:
+        return fd.read().format(
+            id = data['id'],
+            statid_1 = data['statid_1'],
+            statid_2 = data['statid_2'],
+            statid_3 = data['statid_3'],
+            statid_4 = data['statid_4'],
+            statid_5 = data['statid_5'],
+            statid_6 = data['statid_6'],
+            statid_7 = data['statid_7'],
+            statid_8 = data['statid_8'],
+            statid_9 = data['statid_9'],
+            statid_10 = data['statid_10'],
+            bonus_1 = data['bonus_1'],
+            bonus_2 = data['bonus_2'],
+            bonus_3 = data['bonus_3'],
+            bonus_4 = data['bonus_4'],
+            bonus_5 = data['bonus_5'],
+            bonus_6 = data['bonus_6'],
+            bonus_7 = data['bonus_7'],
+            bonus_8 = data['bonus_8'],
+            bonus_9 = data['bonus_9'],
+            bonus_10 = data['bonus_10'],
+            maxlevel = data['maxlevel'],
+        )

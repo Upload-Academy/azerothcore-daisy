@@ -1,0 +1,48 @@
+-- BEGIN: {{data['table']['name']}}
+SET
+{%- for v in data['variables'] %}
+
+{%- if v['type'] == "string" %}
+{%- set value = "'{}'".format(v['value']) %}
+{%- else %}
+{%- set value = v['value'] %}
+{%- endif %}
+
+{%- if loop.last %}
+@{{v['key']}} := {{ value }};
+{%- else %}
+@{{v['key']}} := {{ value }},
+{%- endif %}
+
+{%- endfor %}
+
+DELETE FROM {{data['table']['name']}} WHERE
+{%- for v in data['table']['conditions'] %}
+{%- if loop.last %}
+    {{v.column}}{{v.comparison}}{{v.value}}
+{%- else %}
+    {{v.column}}{{v.comparison}}{{v.value}} AND
+{%- endif %}
+{%- endfor %}
+;
+
+INSERT INTO {{data['table']['name']}} (
+{%- for v in data['table']['columns'] %}
+{%- if loop.last %}
+    {{v}}
+{%- else %}
+    {{v}},
+{%- endif %}
+{%- endfor %}
+)
+VALUES (
+{%- for v in data['table']['values'] %}
+{%- if loop.last %}
+    {{v}}
+{%- else %}
+    {{v}},
+{%- endif %}
+{%- endfor %}
+);
+
+-- END: {{data['table']['name']}}

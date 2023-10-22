@@ -1,0 +1,85 @@
+-- BEGIN: itemrandomproperties_dbc
+SET
+@id := {id},
+@name := '{name}',
+@enchantment_1 := {enchantment_1},
+@enchantment_2 := {enchantment_2},
+@enchantment_3 := {enchantment_3},
+@enchantment_4 := {enchantment_4},
+@enchantment_5 := {enchantment_5},
+@name_lang_enus := '{name_lang_enus}',
+@name_lang_engb := '{name_lang_engb}',
+@name_lang_kokr := '{name_lang_kokr}',
+@name_lang_frfr := '{name_lang_frfr}',
+@name_lang_dede := '{name_lang_dede}',
+@name_lang_encn := '{name_lang_encn}',
+@name_lang_zhcn := '{name_lang_zhcn}',
+@name_lang_entw := '{name_lang_entw}',
+@name_lang_zhtw := '{name_lang_zhtw}',
+@name_lang_eses := '{name_lang_eses}',
+@name_lang_esmx := '{name_lang_esmx}',
+@name_lang_ruru := '{name_lang_ruru}',
+@name_lang_ptpt := '{name_lang_ptpt}',
+@name_lang_ptbr := '{name_lang_ptbr}',
+@name_lang_itit := '{name_lang_itit}',
+@name_lang_unk := '{name_lang_unk}',
+@name_lang_mask := {name_lang_mask};
+
+DELETE FROM itemrandomproperties_dbc WHERE
+    id=@id
+;
+
+INSERT INTO itemrandomproperties_dbc (
+    id,
+    name,
+    enchantment_1,
+    enchantment_2,
+    enchantment_3,
+    enchantment_4,
+    enchantment_5,
+    name_lang_enus,
+    name_lang_engb,
+    name_lang_kokr,
+    name_lang_frfr,
+    name_lang_dede,
+    name_lang_encn,
+    name_lang_zhcn,
+    name_lang_entw,
+    name_lang_zhtw,
+    name_lang_eses,
+    name_lang_esmx,
+    name_lang_ruru,
+    name_lang_ptpt,
+    name_lang_ptbr,
+    name_lang_itit,
+    name_lang_unk,
+    name_lang_mask
+)
+VALUES (
+    @id,
+    @name,
+    @enchantment_1,
+    @enchantment_2,
+    @enchantment_3,
+    @enchantment_4,
+    @enchantment_5,
+    @name_lang_enus,
+    @name_lang_engb,
+    @name_lang_kokr,
+    @name_lang_frfr,
+    @name_lang_dede,
+    @name_lang_encn,
+    @name_lang_zhcn,
+    @name_lang_entw,
+    @name_lang_zhtw,
+    @name_lang_eses,
+    @name_lang_esmx,
+    @name_lang_ruru,
+    @name_lang_ptpt,
+    @name_lang_ptbr,
+    @name_lang_itit,
+    @name_lang_unk,
+    @name_lang_mask
+);
+
+-- END: itemrandomproperties_dbc
