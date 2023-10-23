@@ -1,0 +1,31 @@
+
+meta:
+  pack: tannysa-chicken-quest
+  version: v1
+
+tannysa: &tannysaEntry 5566
+
+tables:
+  quest_template:
+    - id: *tannysaEntry
+      questtype: 0
+      questlevel: 10
+      minlevel: 10
+      rewarditem1: 10398 # mechanical chicken
+      rewardamount1: 1
+      allowableraces: 8 # Nelf
+      logtitle: 'The Perfect Gift'
+
+  quest_offer_reward:
+    - id: *tannysaEntry
+      rewardtext: |
+        Hello. I\'ve been waiting for the perfect gentleman to give this gift. It\'s my pet chicken, and I believe it\'s you he\'s taken a liken to.
+
+  creature_queststarter:
+    - id: *tannysaEntry
+      quest: *tannysaEntry
+  
+  creature_questender:
+    - id: *tannysaEntry
+      quest: *tannysaEntry
+
