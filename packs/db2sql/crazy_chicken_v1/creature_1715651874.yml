@@ -1,0 +1,190 @@
+creature:
+  - guid: 3110511
+    id1: 40001
+    id2: 0
+    id3: 0
+    map: 0
+    zoneId: 0
+    areaId: 0
+    spawnMask: 1
+    phaseMask: 1
+    equipment_id: 0
+    position_x: -10014.5
+    position_y: 88.476
+    position_z: 35.5236
+    orientation: 2.33767
+    spawntimesecs: 300
+    wander_distance: 0.0
+    currentwaypoint: 0
+    curhealth: 55
+    curmana: 0
+    MovementType: 0
+    npcflag: 0
+    unit_flags: 0
+    dynamicflags: 0
+    ScriptName: ''
+    VerifiedBuild:
+    CreateObject: 0
+    Comment:
+  - guid: 3110517
+    id1: 40001
+    id2: 0
+    id3: 0
+    map: 0
+    zoneId: 0
+    areaId: 0
+    spawnMask: 1
+    phaseMask: 1
+    equipment_id: 0
+    position_x: -9894.1
+    position_y: 63.1481
+    position_z: 31.577
+    orientation: 2.32588
+    spawntimesecs: 300
+    wander_distance: 0.0
+    currentwaypoint: 0
+    curhealth: 86
+    curmana: 0
+    MovementType: 0
+    npcflag: 0
+    unit_flags: 0
+    dynamicflags: 0
+    ScriptName: ''
+    VerifiedBuild:
+    CreateObject: 0
+    Comment:
+  - guid: 3110519
+    id1: 40001
+    id2: 0
+    id3: 0
+    map: 0
+    zoneId: 0
+    areaId: 0
+    spawnMask: 1
+    phaseMask: 1
+    equipment_id: 0
+    position_x: -9881.1
+    position_y: 89.011
+    position_z: 33.5064
+    orientation: 3.22122
+    spawntimesecs: 300
+    wander_distance: 0.0
+    currentwaypoint: 0
+    curhealth: 55
+    curmana: 0
+    MovementType: 0
+    npcflag: 0
+    unit_flags: 0
+    dynamicflags: 0
+    ScriptName: ''
+    VerifiedBuild:
+    CreateObject: 0
+    Comment:
+  - guid: 3110520
+    id1: 40001
+    id2: 0
+    id3: 0
+    map: 0
+    zoneId: 0
+    areaId: 0
+    spawnMask: 1
+    phaseMask: 1
+    equipment_id: 0
+    position_x: -9938.64
+    position_y: 147.995
+    position_z: 33.1875
+    orientation: 5.0669
+    spawntimesecs: 300
+    wander_distance: 0.0
+    currentwaypoint: 0
+    curhealth: 102
+    curmana: 0
+    MovementType: 0
+    npcflag: 0
+    unit_flags: 0
+    dynamicflags: 0
+    ScriptName: ''
+    VerifiedBuild:
+    CreateObject: 0
+    Comment:
+  - guid: 3110521
+    id1: 40001
+    id2: 0
+    id3: 0
+    map: 0
+    zoneId: 0
+    areaId: 0
+    spawnMask: 1
+    phaseMask: 1
+    equipment_id: 0
+    position_x: -9975.18
+    position_y: 130.643
+    position_z: 35.6204
+    orientation: 5.12972
+    spawntimesecs: 300
+    wander_distance: 0.0
+    currentwaypoint: 0
+    curhealth: 102
+    curmana: 0
+    MovementType: 0
+    npcflag: 0
+    unit_flags: 0
+    dynamicflags: 0
+    ScriptName: ''
+    VerifiedBuild:
+    CreateObject: 0
+    Comment:
+  - guid: 3110522
+    id1: 40001
+    id2: 0
+    id3: 0
+    map: 0
+    zoneId: 0
+    areaId: 0
+    spawnMask: 1
+    phaseMask: 1
+    equipment_id: 0
+    position_x: -9950.11
+    position_y: 94.3939
+    position_z: 36.7445
+    orientation: 5.87977
+    spawntimesecs: 300
+    wander_distance: 0.0
+    currentwaypoint: 0
+    curhealth: 71
+    curmana: 0
+    MovementType: 0
+    npcflag: 0
+    unit_flags: 0
+    dynamicflags: 0
+    ScriptName: ''
+    VerifiedBuild:
+    CreateObject: 0
+    Comment:
+  - guid: 3110523
+    id1: 40001
+    id2: 0
+    id3: 0
+    map: 0
+    zoneId: 0
+    areaId: 0
+    spawnMask: 1
+    phaseMask: 1
+    equipment_id: 0
+    position_x: -9953.05
+    position_y: 28.4663
+    position_z: 33.0095
+    orientation: 5.43993
+    spawntimesecs: 300
+    wander_distance: 0.0
+    currentwaypoint: 0
+    curhealth: 102
+    curmana: 0
+    MovementType: 0
+    npcflag: 0
+    unit_flags: 0
+    dynamicflags: 0
+    ScriptName: ''
+    VerifiedBuild:
+    CreateObject: 0
+    Comment:

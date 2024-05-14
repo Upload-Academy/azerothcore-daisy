@@ -1,0 +1,27 @@
+
+-- START {{ data['guid']}}
+
+UPDATE creature
+SET
+{% if data['map'] != -1 -%}
+map = {{data['map']}},
+{% else -%}
+-- map ignored
+{% endif -%}
+{% if data['zone'] != -1 -%}
+zoneId = {{data['zone']}},
+{% else -%}
+-- zoneId ignored
+{% endif -%}
+{% if data['area'] != -1 -%}
+areaId = {{data['area']}},
+{% else -%}
+-- areaId ignored
+{% endif -%}
+position_x = {{data['x']}},
+position_y = {{data['y']}},
+position_z = {{data['z']}},
+orientation = {{data['o']}}
+WHERE guid = {{data['guid']}};
+
+-- END {{ data['guid'] -}}

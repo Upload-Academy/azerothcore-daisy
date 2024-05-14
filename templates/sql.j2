@@ -4,7 +4,7 @@ SET
 {%- for v in data['variables'] %}
 
 {%- if v['type'] == "string" %}
-{%- set value = "'{}'".format(v['value']) %}
+{%- set value = "\"{}\"".format(v['value']) %}
 {%- else %}
 {%- set value = v['value'] %}
 {%- endif %}
@@ -28,12 +28,13 @@ DELETE FROM {{data['table']['name']}} WHERE
 ;
 
 INSERT INTO {{data['table']['name']}} (
-{%- for v in data['table']['columns'] %}
+{%- for v in data['table']['columns'] -%}
+{%- if v[0] == "_" -%}{%- set col = v[1:] -%}{%- else -%}{%- set col = v -%}{%- endif -%}
 {%- if loop.last %}
-    {{v}}
+    `{{ col }}`
 {%- else %}
-    {{v}},
-{%- endif %}
+    `{{ col }}`,
+{%- endif -%}
 {%- endfor %}
 )
 VALUES (

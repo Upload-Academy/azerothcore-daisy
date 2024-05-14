@@ -28,6 +28,12 @@ def parse_tmpl(file):
     fd = open(file, 'r')
     return Template(fd.read())
 
+def is_special_keyword(column):
+    if column == "class":
+        return True
+
+    return False
+
 def main():
     tables = config['extractor']['tables']
     dbc = db()
@@ -107,25 +113,29 @@ def main():
                 final_value = o['Default'] or ""
                 field_type = "string"
             
-            document[data['table']['name'].lower()][o['Field'].lower()] = final_value
+            parsed_field = o['Field'].lower()
+            if is_special_keyword(parsed_field):
+                parsed_field = f"_{parsed_field}"
+
+            document[data['table']['name'].lower()][parsed_field] = final_value
 
             # SQL related worked
             # Populate the SQL data
             if o['Key'] == 'PRI':
                 data['table']['conditions'].append({
-                    "column": o['Field'].lower(),
+                    "column": parsed_field,
                     "comparison": "=",
-                    "value": f"@{o['Field'].lower()}",
+                    "value": f"@{parsed_field}",
                 })
 
             data['variables'].append({
-                "key": o['Field'].lower(),
-                "value": f"{{{o['Field'].lower()}}}",
+                "key": parsed_field,
+                "value": f"{{{parsed_field}}}",
                 "type": field_type,
                 "nullable": field_nullable,
             })
-            data['table']['columns'].append(o['Field'].lower())
-            data['table']['values'].append(f"@{o['Field'].lower()}")
+            data['table']['columns'].append(parsed_field)
+            data['table']['values'].append(f"@{parsed_field}")
 
         py_fd.write(function_template.render(data=data))
         sql_fd.write(sql_template.render(data=data))

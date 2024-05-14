@@ -4,16 +4,19 @@ daisy:
   templates: renders/extractor # path where templates are found
   output_to: renders/daisy # path where Daisy puts her final results
 
+db2yaml:
+  output_to: renders/db2sql
+
 extractor:
   database:
     db: acore_world
-    hostname: "192.168.88.145"
-    username: "acore"
-    password: "acore"
+    hostname: "127.0.0.1"
+    username: "azerothcore"
+    password: "azerothcore"
   templates: templates
   output_to: renders/extractor
 
-  # These are the tables that are read and rednered by the 
+  # These are the tables that are read and rendered by the 
   # extractor into SQL, Python, and YAML templates.
   tables:
     - achievement_category_dbc

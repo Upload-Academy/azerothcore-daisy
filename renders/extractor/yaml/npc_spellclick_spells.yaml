@@ -1,5 +1,0 @@
-npc_spellclick_spells:
-  npc_entry: 0
-  spell_id: 0
-  cast_flags: 0
-  user_type: '0'

@@ -2,5 +2,5 @@ venv/
 *.pyo
 *.pyc
 data/
-renders/daisy/
+renders/
 __pycache__/
