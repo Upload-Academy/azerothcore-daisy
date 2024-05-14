@@ -13,7 +13,7 @@ yaml.preserve_quotes = True
 yaml.indent(mapping=2, sequence=4, offset=2)
 
 config = None
-with open('config.yaml', 'r') as fd:
+with open('db2yaml.yaml', 'r') as fd:
     config = yaml.load(fd)
 
 def db():

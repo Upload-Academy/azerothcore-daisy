@@ -1,4 +1,6 @@
 
+import os
+import argparse
 import pymysql
 import ruamel.yaml
 
@@ -8,8 +10,6 @@ yaml = ruamel.yaml.YAML()
 yaml.preserve_quotes = True
 
 config = None
-with open('config.yaml', 'r') as fd:
-    config = yaml.load(fd)
 
 def db():
     serverIP = config['extractor']['database']['hostname']
@@ -35,6 +35,17 @@ def is_special_keyword(column):
     return False
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-c", "--config", help="Config file", required=False, default="./extractor.yaml")
+    args = parser.parse_args()
+
+    with open(args.config, 'r') as fd:
+        global config
+        config = yaml.load(fd)
+
+    if not os.path.exists(config['extractor']['output_to']):
+        os.makedirs(config['extractor']['output_to'])
+
     tables = config['extractor']['tables']
     dbc = db()
 
@@ -43,9 +54,18 @@ def main():
     cursorObject = dbc.cursor()
 
     for table in tables:
-        sql_fd = open(f"{config['extractor']['output_to']}/sql/{table}.sql", "w")
-        yaml_fd = open(f"{config['extractor']['output_to']}/yaml/{table}.yaml", "w")
-        py_fd = open(f"{config['extractor']['output_to']}/py/{table}.py", "w")
+        sql_path = f"{config['extractor']['output_to']}/sql"
+        if not os.path.exists(sql_path): os.makedirs(sql_path)
+
+        yaml_path = f"{config['extractor']['output_to']}/yaml"
+        if not os.path.exists(yaml_path): os.makedirs(yaml_path)
+        
+        py_path = f"{config['extractor']['output_to']}/py"
+        if not os.path.exists(py_path): os.makedirs(py_path)
+
+        sql_fd = open(f"{sql_path}/{table}.sql", "w")
+        yaml_fd = open(f"{yaml_path}/{table}.yaml", "w")
+        py_fd = open(f"{py_path}/{table}.py", "w")
 
         cursorObject.execute(f"DESCRIBE {config['extractor']['database']['db']}.{table}")
         indexList = cursorObject.fetchall()

@@ -3,4 +3,7 @@ venv/
 *.pyc
 data/
 renders/
+mappings/
+modules/
+packs/
 __pycache__/

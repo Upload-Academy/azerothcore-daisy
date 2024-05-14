@@ -1,0 +1,13 @@
+---
+daisy:
+  # You configure your pack here
+  pack:
+    name: Crazy Chickens
+    version: 1.0.0
+    author: Michael Crilly
+    homepage: https://github.com/Upload-Academy/azerothcore-module-wos
+    module: ./modules/crazy_chickens/data/sql/db-world
+    files: ./packs/crazy_chickens
+    scripts:
+      - chicken.lua
+      - magic_chicken.lua

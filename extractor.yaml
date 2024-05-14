@@ -1,11 +1,4 @@
-
-daisy:
-  packs: packs # path where packs are found
-  templates: renders/extractor # path where templates are found
-  output_to: renders/daisy # path where Daisy puts her final results
-
-db2yaml:
-  output_to: renders/db2sql
+---
 
 extractor:
   database:
@@ -14,7 +7,7 @@ extractor:
     username: "azerothcore"
     password: "azerothcore"
   templates: templates
-  output_to: renders/extractor
+  output_to: mappings
 
   # These are the tables that are read and rendered by the 
   # extractor into SQL, Python, and YAML templates.

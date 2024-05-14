@@ -1,6 +1,7 @@
 
 import argparse
 import os
+import sys
 import shutil
 import ruamel.yaml
 import importlib
@@ -14,7 +15,7 @@ yaml.preserve_quotes = True
 templateLoader = jinja2.FileSystemLoader(searchpath="./templates")
 templateEnv = jinja2.Environment(loader=templateLoader)
 
-config = None
+pack = None
 
 def parse_yaml(this, constants=False):
     if constants:
@@ -31,9 +32,6 @@ def parse_yaml(this, constants=False):
         return yaml.load(fd.read())
 
 def moves(data):
-    if 'meta' not in data:
-        return False, "No meta key in data"
-    
     if 'move' not in data:
         return False, "No move key in data"
 
@@ -41,7 +39,7 @@ def moves(data):
         return False, "No move(s) defined"
 
     for m in data['move']:
-        final_file_path = f"{config['daisy']['output_to']}/{data['meta']['pack']}-{data['meta']['version']}-moves.sql"
+        final_file_path = make_pack_path(data, "moves")
         final_result = open(final_file_path, "a")
         template = templateEnv.get_template('sql_move_creature.j2')
         result = template.render(data=m)
@@ -51,9 +49,6 @@ def moves(data):
     return True, None
 
 def deletes(data):
-    if 'meta' not in data:
-        return False, "No meta key in data"
-    
     if 'delete' not in data:
         return False, "No delete key in data"
 
@@ -61,7 +56,7 @@ def deletes(data):
         return False, "No delete(s) defined"
 
     for x in data['delete']:
-        final_file_path = f"{config['daisy']['output_to']}/{data['meta']['pack']}-{data['meta']['version']}-deletes.sql"
+        final_file_path = make_pack_path(data, "deletes")
         final_result = open(final_file_path, "a")
         template = templateEnv.get_template('sql_delete_creature.j2')
         result = template.render(data=x)
@@ -71,9 +66,6 @@ def deletes(data):
     return True, None
 
 def updates(data):
-    if 'meta' not in data:
-        return False, "No meta key in data"
-    
     if 'update' not in data:
         return False, "No update key in data"
 
@@ -92,9 +84,6 @@ def updates(data):
 
 
 def tables(data):
-    if 'meta' not in data:
-        return False, "No meta key in data"
-
     if 'tables' not in data:
         return False, "No tables key in data"
     
@@ -108,11 +97,11 @@ def tables(data):
 
             # Open the YAML file containing the table's column fields and their
             # default values
-            defaults = parse_yaml(f"{config['daisy']['templates']}/yaml/{tk}.yaml")
+            defaults = parse_yaml(f"mappings/yaml/{tk}.yaml")
 
             # Dynamically load the Python module that contains the wrapper function around
             # the SQL template and the data structure it expects to see
-            module = importlib.import_module(f"{config['daisy']['templates'].replace('/', '.')}.py.{tk}", package=None)
+            module = importlib.import_module(f"mappings.py.{tk}", package=None)
 
             # Get the function from the module
             sqlfunc = getattr(module, f"sql_new_{tk}")
@@ -122,77 +111,86 @@ def tables(data):
             merged = {**defaults[tk], **entry}
 
             # And finally, write the .sql file, ready to be imported into the DB
-            final_result.write(sqlfunc(merged, f"{config['daisy']['templates']}/sql/{tk}.sql"))
+            final_result.write(sqlfunc(merged, f"mappings/sql/{tk}.sql"))
             final_result.close()
 
     return True, None
 
 def make_pack_path(data, filename):
-    p = f"{config['daisy']['output_to']}/{data['meta']['pack']}-{data['meta']['version']}-{filename}.sql"
+    safe_name = data['pack']['name'].replace(' ', '_')
+    safe_version = data['pack']['version'].replace(' ', '_')
+    p = f"{data['pack']['module']}/{safe_name}-{safe_version}-{filename}.sql"
     return p
 
-def find_packs(name, path):
+def find_code(name, path):
     all_packs = []
     
     for root, dirs, files in os.walk(path):
-        if root == "./packs/_constants":
+        if root == f"{path}/_constants":
             continue 
 
         for filename in files:
-            # if filename == "constants.yaml":
-            #     continue
-
             if name in filename:
                 all_packs.append(os.path.join(root, filename))
     
     return all_packs
 
+def exit_on_missing_key(p, k):
+    if not k in p:
+        print(f'Error in "{p}": missing key "{k}"')
+        sys.exit(1)
+
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-c", "--config", help="Extractor templates", required=False, default="./config.yaml")
-    parser.add_argument("-t", "--templates", help="Extractor templates", required=False, default=None)
-    parser.add_argument("-p", "--packs", help="Packs to render", required=False, default=None)
-    parser.add_argument("-o", "--output", help="Where to store renders", required=False, default=None)
+    parser.add_argument("-p", "--pack", help="Pack file", required=True, default="./pack.yaml")
     args = parser.parse_args()
 
-    with open(args.config, 'r') as fd:
-        config = yaml.load(fd)
+    with open(args.pack, 'r') as fd:
+        pack = yaml.load(fd)
 
-    if args.templates != None:
-        config['daisy']['templates'] = args.templates
+    exit_on_missing_key(pack, 'daisy')
+    exit_on_missing_key(pack['daisy'], 'pack')
+
+    root = pack['daisy']['pack']
     
-    if args.packs != None:
-        config['daisy']['packs'] = args.packs
+    exit_on_missing_key(root, 'name')
+    exit_on_missing_key(root, 'version')
+    exit_on_missing_key(root, 'author')
+    exit_on_missing_key(root, 'homepage')
+    exit_on_missing_key(root, 'module')
+    exit_on_missing_key(root, 'files')
 
-    if args.output != None:
-        config['daisy']['output_to'] = args.output
+    module = root['module']
+    if not os.path.exists(module):
+        os.makedirs(module)
 
-    # We have to delete any and all previously generated SQL files
-    # otherwise we'll open then for appending, and they will just
-    # keep growing. We want them to be _replaced_
-    shutil.rmtree(f"{config['daisy']['output_to']}/", ignore_errors=True)
-    os.mkdir(config['daisy']['output_to'])
+    name = root['name']
+    version = root['version']
+    author = root['author']
+    homepage = root['homepage']
+    files = root['files']
 
-    packs = find_packs(".yaml", "./packs")
-    for pack in packs:
-        data  = parse_yaml(pack, constants=True)
+    files = find_code(".yaml", files)
+    for code in files:
+        parsed  = parse_yaml(code, constants=True)
+        parsed['pack'] = root
 
-        result, err = deletes(data)
+        result, err = deletes(parsed)
         if not result:
             # print(f"Warning in deletes() for '{pack}': {err}")
             pass
         
-        result, err = moves(data)
+        result, err = moves(parsed)
         if not result:
             # print(f"Warning in moves() for '{pack}': {err}")
             pass
 
-        result, err = updates(data)
+        result, err = updates(parsed)
         if not result:
             # print(f"Warning in moves() for '{pack}': {err}")
             pass
 
-        result, err = tables(data)
+        result, err = tables(parsed)
         if not result:
             # print(f"Warning in tables() for '{pack}': {err}")
             pass

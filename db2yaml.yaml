@@ -1,0 +1,4 @@
+---
+
+db2yaml:
+  output_to: renders/db2sql
