@@ -1,4 +1,5 @@
 
+import argparse
 import os
 import shutil
 import ruamel.yaml
@@ -14,8 +15,6 @@ templateLoader = jinja2.FileSystemLoader(searchpath="./templates")
 templateEnv = jinja2.Environment(loader=templateLoader)
 
 config = None
-with open('config.yaml', 'r') as fd:
-    config = yaml.load(fd)
 
 def parse_yaml(this, constants=False):
     if constants:
@@ -82,7 +81,7 @@ def updates(data):
         return False, "No update(s) defined"
 
     for x in data['update']:
-        final_file_path = f"{make_pack_path(data)}/updates.sql"
+        final_file_path = make_pack_path(data, "updates")
         final_result = open(final_file_path, "a")
         template = templateEnv.get_template('generic_update.j2')
         result = template.render(data=x)
@@ -104,7 +103,7 @@ def tables(data):
 
     for ti, tk in enumerate(data['tables']):
         for ei, entry in enumerate(data['tables'][tk]):
-            final_file_path = f"{make_pack_path(data)}/{tk}.sql"
+            final_file_path = make_pack_path(data, tk)
             final_result = open(final_file_path, "a")
 
             # Open the YAML file containing the table's column fields and their
@@ -128,10 +127,8 @@ def tables(data):
 
     return True, None
 
-def make_pack_path(data):
-    p = f"{config['daisy']['output_to']}/{data['meta']['pack']}/{data['meta']['version']}"
-    if not os.path.exists(p):
-        os.makedirs(p)
+def make_pack_path(data, filename):
+    p = f"{config['daisy']['output_to']}/{data['meta']['pack']}-{data['meta']['version']}-{filename}.sql"
     return p
 
 def find_packs(name, path):
@@ -151,6 +148,25 @@ def find_packs(name, path):
     return all_packs
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-c", "--config", help="Extractor templates", required=False, default="./config.yaml")
+    parser.add_argument("-t", "--templates", help="Extractor templates", required=False, default=None)
+    parser.add_argument("-p", "--packs", help="Packs to render", required=False, default=None)
+    parser.add_argument("-o", "--output", help="Where to store renders", required=False, default=None)
+    args = parser.parse_args()
+
+    with open(args.config, 'r') as fd:
+        config = yaml.load(fd)
+
+    if args.templates != None:
+        config['daisy']['templates'] = args.templates
+    
+    if args.packs != None:
+        config['daisy']['packs'] = args.packs
+
+    if args.output != None:
+        config['daisy']['output_to'] = args.output
+
     # We have to delete any and all previously generated SQL files
     # otherwise we'll open then for appending, and they will just
     # keep growing. We want them to be _replaced_
@@ -160,7 +176,7 @@ def main():
     packs = find_packs(".yaml", "./packs")
     for pack in packs:
         data  = parse_yaml(pack, constants=True)
-        
+
         result, err = deletes(data)
         if not result:
             # print(f"Warning in deletes() for '{pack}': {err}")

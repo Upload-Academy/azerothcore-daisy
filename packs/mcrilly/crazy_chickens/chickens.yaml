@@ -17,6 +17,10 @@ meta:
       0: Alliance
       1: Horde
 
+  scripts:
+    - chicken.lua
+    - magic_chicken.lua
+
 
 # Recommended structure:
 #   Example: ABCDXX
