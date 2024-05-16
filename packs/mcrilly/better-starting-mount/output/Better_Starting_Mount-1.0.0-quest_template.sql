@@ -3,8 +3,8 @@
 SET
 @id := 91100000,
 @questtype := 0,
-@questlevel := 10,
-@minlevel := 10,
+@questlevel := 5,
+@minlevel := 5,
 @questsortid := 0,
 @questinfoid := 0,
 @suggestedgroupnum := 0,
@@ -330,8 +330,8 @@ VALUES (
 SET
 @id := 91100001,
 @questtype := 0,
-@questlevel := 10,
-@minlevel := 10,
+@questlevel := 5,
+@minlevel := 5,
 @questsortid := 0,
 @questinfoid := 0,
 @suggestedgroupnum := 0,

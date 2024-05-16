@@ -10,7 +10,7 @@ SET
 @emotedelay2 := 0,
 @emotedelay3 := 0,
 @emotedelay4 := 0,
-@rewardtext := "Looks like you're some kind of great hero the Warchief thinks highly of. They told me to give you this mount. Hope it helps, but don't think you'll get riding lessons for free. I gotta charge something, hero or not.
+@rewardtext := "Looks like you're some kind of great hero the King thinks highly of. I was ordered to give you this mount. Hope it helps, but don't think you'll get riding lessons for free. I gotta charge something, hero or not.
 ",
 @verifiedbuild := 0;
 

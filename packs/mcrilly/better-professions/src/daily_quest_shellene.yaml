@@ -1,0 +1,53 @@
+
+vars:
+  shellene: &shelleneCreatureID 14497
+  shelleneDaily: &shelleneQuestID 0101130001
+
+update:
+  - table: creature_template
+    columns:
+      npcflag: *CREATURE_NPC_FLAGS_QUEST_GIVER
+    where:
+      entry:
+        - *shelleneCreatureID
+
+tables:
+
+  quest_template:
+    - id: *shelleneQuestID
+      questtype: *QUEST_TYPE_ENABLED
+      questlevel: -1
+      minlevel: 1
+      logtitle: "Healing Wounds"
+      logdescription: Donate bandages and potions to the orphanage.
+      questdescription: |
+        We need bandages and healing potions to ease the pain of our orphanes. Some of them have crippling disabilities or nasty wounds from their abusive parents. Any and all donations really help us out.
+      questcompletionlog: |
+        Quest complete
+      objectivetext1: 'Donate 10x Linen Bandages'
+      objectivetext2: 'Donate 10x Minor Healing Potions'
+      requireditemid1: *ITEM_CONSUMABLE_FIRSTAID_LINENBANDAGE
+      requireditemcount1: 10
+      requireditemid2: *ITEM_CONSUMABLE_HERBALISM_MINORHEALINGPOTION
+      requireditemcount2: 10
+      rewardfactionid1: *FACTION_ALLIANCE_STORMWIND
+      rewardfactionvalueid1: 10
+
+  quest_template_addon:
+    - id: *shelleneQuestID
+      specialflags: *QUEST_FLAGS_REPEATABLE
+
+  quest_offer_reward:
+    - id: *shelleneQuestID
+      emote1: *NPC_EMOTE_ONESHOT_CHEER
+      emotedelay1: 750
+      rewardtext: |
+        Thank you! The kids will be thrilled! We don't have much, but here... you can have whatever the kids have found around the city and dumped in this box.
+
+  creature_queststarter:
+    - id: *shelleneCreatureID
+      quest: *shelleneQuestID
+  
+  creature_questender:
+    - id: *shelleneCreatureID
+      quest: *shelleneQuestID

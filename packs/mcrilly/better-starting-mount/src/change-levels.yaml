@@ -17,10 +17,12 @@ vars  :
   ridingTrainerHumanRandalHunterQuest: &ridingTrainerHumanRandalHunterQuest 91100000
   ridingTrainerOrcKildarQuest: &ridingTrainerOrcKildarQuest 91100001
 
+  levelRequirement: &levelRequirement 5
+
 update:
   - table: item_template
     columns:
-      requiredlevel: 10
+      requiredlevel: *levelRequirement
     where: 
       entry: # these OR-ed together: a OR b or C etc
         - *mountAllianceHumanBasic
@@ -37,7 +39,7 @@ update:
   - table: npc_trainer
     columns:
       moneycost: 100
-      reqlevel: 10
+      reqlevel: *levelRequirement
     where:
       SpellID:
         - 33388
@@ -46,8 +48,8 @@ tables:
   quest_template:
     - id: *ridingTrainerHumanRandalHunterQuest
       questtype: 0
-      questlevel: 10
-      minlevel: 10
+      questlevel: *levelRequirement
+      minlevel: *levelRequirement
       rewarditem1: *mountAllianceHumanBasic
       rewardamount1: 1
       allowableraces: *RACE_HUMAN
@@ -55,8 +57,8 @@ tables:
     
     - id: *ridingTrainerOrcKildarQuest
       questtype: 0
-      questlevel: 10
-      minlevel: 10
+      questlevel: *levelRequirement
+      minlevel: *levelRequirement
       rewarditem1: *mountHordeOrcBasic
       rewardamount1: 1
       allowableraces: *RACE_ORC
