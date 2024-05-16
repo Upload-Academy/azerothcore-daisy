@@ -20,10 +20,11 @@ tables:
       minlevel: 1
       logtitle: "Healing Wounds"
       logdescription: Donate bandages and potions to the orphanage.
+      areadescription: |
+        $N, we're in desparate need of bandages and healing potions to ease the pain of our orphanes. Some of them have crippling disabilities or nasty wounds from their abusive parents. Any and all donations really help them out.
       questdescription: |
-        We need bandages and healing potions to ease the pain of our orphanes. Some of them have crippling disabilities or nasty wounds from their abusive parents. Any and all donations really help us out.
-      questcompletionlog: |
-        Quest complete
+        $N, we're in desparate need of bandages and healing potions to ease the pain of our orphanes. Some of them have crippling disabilities or nasty wounds from their abusive parents. Any and all donations really help them out.
+      questcompletionlog: "Quest complete"
       objectivetext1: 'Donate 10x Linen Bandages'
       objectivetext2: 'Donate 10x Minor Healing Potions'
       requireditemid1: *ITEM_CONSUMABLE_FIRSTAID_LINENBANDAGE
@@ -37,10 +38,16 @@ tables:
     - id: *shelleneQuestID
       specialflags: *QUEST_FLAGS_REPEATABLE
 
+  quest_request_items:
+    - id: *shelleneQuestID
+      emoteoncomplete: *NPC_EMOTE_ONESHOT_CHEER
+      emoteonincomplete: *NPC_EMOTE_ONESHOT_EXCLAMATION
+      completiontext: Wow! Thank you!
+
   quest_offer_reward:
     - id: *shelleneQuestID
-      emote1: *NPC_EMOTE_ONESHOT_CHEER
-      emotedelay1: 750
+      # emote1: *NPC_EMOTE_ONESHOT_CHEER
+      # emotedelay1: 750
       rewardtext: |
         Thank you! The kids will be thrilled! We don't have much, but here... you can have whatever the kids have found around the city and dumped in this box.
 

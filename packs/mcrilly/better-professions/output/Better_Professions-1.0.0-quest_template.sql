@@ -77,11 +77,11 @@ SET
 @allowableraces := 0,
 @logtitle := "Healing Wounds",
 @logdescription := "Donate bandages and potions to the orphanage.",
-@questdescription := "We need bandages and healing potions to ease the pain of our orphanes. Some of them have crippling disabilities or nasty wounds from their abusive parents. Any and all donations really help us out.
+@questdescription := "$N, we're in desparate need of bandages and healing potions to ease the pain of our orphanes. Some of them have crippling disabilities or nasty wounds from their abusive parents. Any and all donations really help them out.
 ",
-@areadescription := "",
-@questcompletionlog := "Quest complete
+@areadescription := "$N, we're in desparate need of bandages and healing potions to ease the pain of our orphanes. Some of them have crippling disabilities or nasty wounds from their abusive parents. Any and all donations really help them out.
 ",
+@questcompletionlog := "Quest complete",
 @requirednpcorgo1 := 0,
 @requirednpcorgo2 := 0,
 @requirednpcorgo3 := 0,

@@ -2,15 +2,15 @@
 -- START quest_offer_reward
 SET
 @id := 101130001,
-@emote1 := 4,
+@emote1 := 0,
 @emote2 := 0,
 @emote3 := 0,
 @emote4 := 0,
-@emotedelay1 := 750,
+@emotedelay1 := 0,
 @emotedelay2 := 0,
 @emotedelay3 := 0,
 @emotedelay4 := 0,
-@rewardtext := "You're a saint... thank you! The kids will be thrilled!
+@rewardtext := "Thank you! The kids will be thrilled! We don't have much, but here... you can have whatever the kids have found around the city and dumped in this box.
 ",
 @verifiedbuild := 0;
 
