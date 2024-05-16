@@ -1,9 +1,8 @@
 venv/
 *.pyo
 *.pyc
+__pycache__/
 data/
 renders/
 mappings/
 modules/
-packs/
-__pycache__/

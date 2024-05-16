@@ -1,0 +1,10 @@
+---
+daisy:
+  pack:
+    name: Tannysa's Gift
+    version: 1.0.0
+    author: Michael Crilly
+    homepage: https://github.com/Upload-Academy/azerothcore-daisy
+    source: packs/mcrilly/tannysa-gift/src
+    build: packs/mcrilly/tannysa-gift/build
+

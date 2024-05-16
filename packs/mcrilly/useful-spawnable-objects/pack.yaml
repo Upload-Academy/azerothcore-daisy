@@ -1,0 +1,8 @@
+daisy:
+  pack:
+    name: Useful Spawnable Objects
+    version: 1.0.0
+    author: Michael Crilly
+    home: https://github.com/Upload-Academy/azerothcore-daisy
+    source: packs/mcrilly/useful-spawnable-objects/src
+    build: packs/mcrilly/useful-spawnable-objects/output

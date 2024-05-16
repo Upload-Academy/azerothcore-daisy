@@ -1,19 +1,26 @@
 
+-- START OF UPDATE
 UPDATE {{data['table']}}
 SET
 {%- for k,v in data['columns'].items() %}
 {%- if not loop.last %}
 {%- if v is number %}
-`{{k}}` = {{v}},
+    `{{k}}` = {{v}},
 {%- else %}
-`{{k}}` = '{{v}}',
+    `{{k}}` = '{{v}}',
 {% endif -%}
 {%- else %}
 {%- if v is number %}
-`{{k}}` = {{v}}
+    `{{k}}` = {{v}}
 {%- else %}
-`{{k}}` = '{{v}}'
+    `{{k}}` = '{{v}}'
 {% endif -%}
 {% endif -%}
 {% endfor %}
-WHERE {{data['index_key']}} = {{data['index_value']}};
+WHERE 
+{%- for k,v in data['where'].items() %}
+    `{{k}}` IN ({{v|join(',')}});
+{% endfor -%}
+
+
+-- END OF UPDATE

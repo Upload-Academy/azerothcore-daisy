@@ -7,12 +7,14 @@ import ruamel.yaml
 import importlib
 import jinja2
 
+from pathlib import Path
+
 DEBUGGING = os.getenv("DEBUGGING") or False
 
 yaml = ruamel.yaml.YAML()
 yaml.preserve_quotes = True
 
-templateLoader = jinja2.FileSystemLoader(searchpath="./templates")
+templateLoader = jinja2.FileSystemLoader(searchpath="templates/")
 templateEnv = jinja2.Environment(loader=templateLoader)
 
 pack = None
@@ -20,7 +22,7 @@ pack = None
 def parse_yaml(this, constants=False):
     if constants:
         results = None
-        with open('packs/_constants/constants.yaml', 'r') as fd:
+        with open("packs/_constants/constants.yaml", 'r') as fd:
             results = fd.read()
 
         with open(this, 'r') as fd:
@@ -116,20 +118,24 @@ def tables(data):
 
     return True, None
 
-def make_pack_path(data, filename):
-    safe_name = data['pack']['name'].replace(' ', '_')
-    safe_version = data['pack']['version'].replace(' ', '_')
-    p = f"{data['pack']['module']}/{safe_name}-{safe_version}-{filename}.sql"
+def make_safe_name(name, version):
+    safe_name = name.replace(' ', '_')
+    safe_version = version.replace(' ', '_')
+    return f"{safe_name}-{safe_version}"
+
+def make_pack_path(data, filename, ext="sql"):
+    safe_name = make_safe_name(data['pack']['name'], data['pack']['version'])
+    p = f"{data['pack']['build']}/{safe_name}-{filename}.{ext}"
     return p
 
 def find_code(name, path):
     all_packs = []
     
     for root, dirs, files in os.walk(path):
-        if root == f"{path}/_constants":
-            continue 
-
         for filename in files:
+            if filename == "_constants.yaml":
+                continue 
+
             if name in filename:
                 all_packs.append(os.path.join(root, filename))
     
@@ -140,12 +146,37 @@ def exit_on_missing_key(p, k):
         print(f'Error in "{p}": missing key "{k}"')
         sys.exit(1)
 
+def new_pack(args):
+    os.makedirs(f"packs/{args.new}/src")
+    with open(f"packs/{args.new}/pack.yaml", "w") as fd:
+        yaml.dump(
+            {
+                "daisy": {
+                    "pack": {
+                        "name": "New Pack",
+                        "version": "1.0.0",
+                        "author": "Some Awesome Person",
+                        "homepage": "https://",
+                        "source": f"packs/{args.new}/src",
+                        "build": f"packs/{args.new}/output",
+                    }
+                }
+            }, fd)
+
+    sys.exit(0)
+
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-p", "--pack", help="Pack file", required=True, default="./pack.yaml")
+    parser.add_argument("-p", "--pack", help="Pack file", default="./pack.yaml")
+    parser.add_argument("-n", "--new", help="Create a new Pack file: namespace/packname", required=False)
     args = parser.parse_args()
 
+    if args.new:
+        new_pack(args)
+        sys.exit(0)
+
     with open(args.pack, 'r') as fd:
+        global pack
         pack = yaml.load(fd)
 
     exit_on_missing_key(pack, 'daisy')
@@ -157,20 +188,19 @@ def main():
     exit_on_missing_key(root, 'version')
     exit_on_missing_key(root, 'author')
     exit_on_missing_key(root, 'homepage')
-    exit_on_missing_key(root, 'module')
-    exit_on_missing_key(root, 'files')
+    exit_on_missing_key(root, 'source')
+    exit_on_missing_key(root, 'build')
 
-    module = root['module']
-    if not os.path.exists(module):
-        os.makedirs(module)
+    build = root['build']
+    if os.path.exists(build):
+        shutil.rmtree(build, ignore_errors=True)
+        os.makedirs(build)
+    else:
+        os.makedirs(build)
 
-    name = root['name']
-    version = root['version']
-    author = root['author']
-    homepage = root['homepage']
-    files = root['files']
+    source = root['source']
 
-    files = find_code(".yaml", files)
+    files = find_code(".yaml", source)
     for code in files:
         parsed  = parse_yaml(code, constants=True)
         parsed['pack'] = root
@@ -194,6 +224,24 @@ def main():
         if not result:
             # print(f"Warning in tables() for '{pack}': {err}")
             pass
+
+    sql_files = find_code(".sql", source)
+    for sql_code in sql_files:
+        safe_name = make_safe_name(root['name'], root['version'])
+        basename = os.path.basename(sql_code)
+        dst = f"{build}/{safe_name}-{basename}"
+        shutil.copyfile(sql_code, f"{dst}")
+
+    lua_files = find_code(".lua", source)
+    for lua_code in lua_files:
+        safe_name = make_safe_name(root['name'], root['version'])
+        basename = os.path.basename(lua_code)
+        dst = f"{build}/lua_scripts/{safe_name}-{basename}"
+        script_path = f"{build}/lua_scripts"
+        if not os.path.exists(script_path): os.makedirs(script_path)
+        shutil.copyfile(lua_code, f"{dst}")
+
+    
 
 if __name__ == "__main__":
     main()

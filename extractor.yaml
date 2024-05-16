@@ -4,8 +4,8 @@ extractor:
   database:
     db: acore_world
     hostname: "127.0.0.1"
-    username: "azerothcore"
-    password: "azerothcore"
+    username: "acore"
+    password: "acore"
   templates: templates
   output_to: mappings
 

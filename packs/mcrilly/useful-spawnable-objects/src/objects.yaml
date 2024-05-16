@@ -1,0 +1,46 @@
+
+variables:
+  tent: &tent 523900
+  netted_storage_box: &netted_storage_box 523901
+  storage_boxes: &storage_boxes 523902
+  orc_bench: &orc_bench 523903
+  orc_tent_1: &orc_tent_1 523904
+  orc_tent_2: &orc_tent_2 523905
+  orc_tent_3: &orc_tent_3 523906
+
+tables:
+  gameobject_template:
+    - entry: *tent
+      displayedid: 7194
+      type: 5
+      name: Tent
+    
+    - entry: *netted_storage_box
+      displayedid: 6808
+      type: 5
+      name: Netted Storage Boxes
+    
+    - entry: *storage_box
+      displayedid: 36
+      type: 5
+      name: Storage Boxes
+    
+    - entry: *orc_bench
+      displayedid: 6362
+      type: 5
+      name: Orc Bench
+    
+    - entry: *orc_tent_1
+      displayedid: 8421
+      type: 5
+      name: Orc Tent 1
+    
+    - entry: *orc_tent_2
+      displayedid: 8422
+      type: 5
+      name: Orc Tent 2
+    
+    - entry: *orc_tent_3
+      displayedid: 8423
+      type: 5
+      name: Orc Tent 3

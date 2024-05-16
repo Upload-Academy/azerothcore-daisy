@@ -1,0 +1,86 @@
+
+vars  :
+  mountAllianceHumanBasic: &mountAllianceHumanBasic 2411
+  mountAllianceDwarfBasic: &mountAllianceDwarfBasic 5864
+  mountAllianceNightElfBasic: &mountAllianceNightElfBasic 8629
+  mountAllianceGnomeBasic: &mountAllianceGnomeBasic 13322
+  mountAllianceDraineiBasic: &mountAllianceDraineiBasic 28481
+  
+  mountHordeOrcBasic: &mountHordeOrcBasic 5665
+  mountHordeUndeadBasic: &mountHordeUndeadBasic 13331
+  mountHordeTaurenBasic: &mountHordeTaurenBasic 15277
+  mountHordeTrollBasic: &mountHordeTrollBasic 8588
+  mountHordeBloodElfBasic: &mountHordeBloodElfBasic 29221
+  
+  ridingTrainerHumanRandalHunter: &ridingTrainerHumanRandalHunter 4732
+  ridingTrainerOrcKildar: &ridingTrainerOrcKildar 4752
+  ridingTrainerHumanRandalHunterQuest: &ridingTrainerHumanRandalHunterQuest 91100000
+  ridingTrainerOrcKildarQuest: &ridingTrainerOrcKildarQuest 91100001
+
+update:
+  - table: item_template
+    columns:
+      requiredlevel: 10
+    where: 
+      entry: # these OR-ed together: a OR b or C etc
+        - *mountAllianceHumanBasic
+        - *mountAllianceDwarfBasic
+        - *mountAllianceNightElfBasic
+        - *mountAllianceGnomeBasic
+        - *mountAllianceDraineiBasic
+        - *mountHordeOrcBasic
+        - *mountHordeUndeadBasic
+        - *mountHordeTaurenBasic
+        - *mountHordeTrollBasic
+        - *mountHordeBloodElfBasic
+
+  - table: npc_trainer
+    columns:
+      moneycost: 100
+      reqlevel: 10
+    where:
+      SpellID:
+        - 33388
+
+tables:
+  quest_template:
+    - id: *ridingTrainerHumanRandalHunterQuest
+      questtype: 0
+      questlevel: 10
+      minlevel: 10
+      rewarditem1: *mountAllianceHumanBasic
+      rewardamount1: 1
+      allowableraces: *RACE_HUMAN
+      logtitle: "The Hero's Mount"
+    
+    - id: *ridingTrainerOrcKildarQuest
+      questtype: 0
+      questlevel: 10
+      minlevel: 10
+      rewarditem1: *mountHordeOrcBasic
+      rewardamount1: 1
+      allowableraces: *RACE_ORC
+      logtitle: "The Hero's Mount"
+
+  quest_offer_reward:
+    - id: *ridingTrainerHumanRandalHunterQuest
+      rewardtext: |
+        Looks like you're some kind of great hero the King thinks highly of. I was ordered to give you this mount. Hope it helps, but don't think you'll get riding lessons for free. I gotta charge something, hero or not.
+    
+    - id: *ridingTrainerOrcKildarQuest
+      rewardtext: |
+        Looks like you're some kind of great hero the Warchief thinks highly of. They told me to give you this mount. Hope it helps, but don't think you'll get riding lessons for free. I gotta charge something, hero or not.
+
+  creature_queststarter:
+    - id: *ridingTrainerHumanRandalHunter
+      quest: *ridingTrainerHumanRandalHunterQuest
+    
+    - id: *ridingTrainerOrcKildar
+      quest: *ridingTrainerOrcKildarQuest
+  
+  creature_questender:
+    - id: *ridingTrainerHumanRandalHunter
+      quest: *ridingTrainerHumanRandalHunterQuest
+    
+    - id: *ridingTrainerOrcKildar
+      quest: *ridingTrainerOrcKildarQuest

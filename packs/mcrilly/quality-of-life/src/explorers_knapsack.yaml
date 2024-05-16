@@ -1,0 +1,16 @@
+
+update:
+  - table: item_template
+    columns:
+      requiredlevel: 10
+    where:
+      entry:
+        - 42433
+
+tables:
+  playercreateinfo_item:
+    - race: 0
+      class: 0
+      itemid: 16057
+      amount: 1
+      note: "Explorer's Knapsack"

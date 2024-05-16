@@ -1,0 +1,440 @@
+entry_ids: # this key can be called anything
+  custom: # these sub-keys can be called anything too
+    pa_maclure_quest_id: &pa_maclure_quest_id 500100 # what matters is the &anchors
+    crazy_chicken: &crazy_chicken 500100
+    magic_chicken: &magic_chicken 500101
+
+  factions:
+    anti_player_faction: &anti_player_faction 38 # mangy wolf
+
+  npcs:
+    pa_maclure_id: &pa_maclure_id 250
+
+update:
+  - table: creature_template
+    columns:
+      npcflag: 2
+    where:
+      entry:
+        - *pa_maclure_id
+
+# This key is a must
+tables: # it has to be tables
+  quest_template: # this is a table name in the database
+    - id: *pa_maclure_quest_id
+      questtype: *QUEST_TYPE_ENABLED
+      questlevel: 3
+      minlevel: 2
+      rewardmoney: 120 
+      logtitle: Freaky Chickens!
+      logdescription: Some weird, freaky chickens have spawned on the farm and they need to be killed!
+      questdescription: |
+        I got them weird magic chickens poppin' up all over me farm! They jus' keep comin' an' comin'. Lots o' folks been tryin' to kill 'em, but they don't stay dead. Can ya help thin 'em out a bit 'til we figger how to stop 'em for good?
+      questcompletionlog: |
+        Quest complete
+      objectivetext1: 'Kill 10 Crazy Chickens'
+      objectivetext2: 'Kill 10 Magic Chickens'
+      requirednpcorgo1: *crazy_chicken
+      requirednpcorgocount1: 10
+      requirednpcorgo2: *magic_chicken
+      requirednpcorgocount2: 10
+
+  quest_offer_reward:
+    - id: *pa_maclure_quest_id
+      rewardtext: |
+        Thanks! Theyll probly be back soon, but I wont bother ya no more.
+
+  creature_queststarter:
+    - id: *pa_maclure_id
+      quest: *pa_maclure_quest_id
+  
+  creature_questender:
+    - id: *pa_maclure_id
+      quest: *pa_maclure_quest_id
+
+  creature_template:
+    - entry: *crazy_chicken
+      modelid1: *MODEL_ID_CHICKEN_WHITE
+      modelid2: *MODEL_ID_CHICKEN_BROWN
+      name: "Crazy Chicken"
+      subname: "Pecky"
+      type: *CREATURE_TYPE_BEAST
+      minlevel: 2
+      maxlevel: 5
+      mingold: 5
+      maxgold: 15
+      scale: 2.5
+      damagemodifier: 2.0
+      experiencemodifier: 3.0
+      faction: *anti_player_faction
+      unit_class: 1
+    
+    - entry: *magic_chicken
+      modelid1: *MODEL_ID_CHICKEN_WHITE
+      modelid2: *MODEL_ID_CHICKEN_BROWN
+      name: "Magic Chicken"
+      subname: "Healz"
+      type: *CREATURE_TYPE_BEAST
+      minlevel: 2
+      maxlevel: 5
+      mingold: 8
+      maxgold: 21
+      scale: 2.5
+      damagemodifier: 2.0
+      experiencemodifier: 3.0
+      faction: *anti_player_faction
+      unit_class: 1
+
+  creature:
+    - guid: 3110511
+      id1: *magic_chicken
+      id2: 0
+      id3: 0
+      map: 0
+      zoneId: 0
+      areaId: 0
+      spawnMask: 1
+      phaseMask: 1
+      equipment_id: 0
+      position_x: -10014.5
+      position_y: 88.476
+      position_z: 35.5236
+      orientation: 2.33767
+      spawntimesecs: 300
+      wander_distance: 5.0
+      currentwaypoint: 0
+      curhealth: 55
+      curmana: 0
+      MovementType: 0
+      npcflag: 0
+      unit_flags: 0
+      dynamicflags: 0
+      ScriptName: ''
+      VerifiedBuild:
+      CreateObject: 0
+      Comment:
+    - guid: 3110517
+      id1: *magic_chicken
+      id2: 0
+      id3: 0
+      map: 0
+      zoneId: 0
+      areaId: 0
+      spawnMask: 1
+      phaseMask: 1
+      equipment_id: 0
+      position_x: -9894.1
+      position_y: 63.1481
+      position_z: 31.577
+      orientation: 2.32588
+      spawntimesecs: 300
+      wander_distance: 5.0
+      currentwaypoint: 0
+      curhealth: 100
+      curmana: 0
+      MovementType: 0
+      npcflag: 0
+      unit_flags: 0
+      dynamicflags: 0
+      ScriptName: ''
+      VerifiedBuild:
+      CreateObject: 0
+      Comment:
+    - guid: 3110519
+      id1: *magic_chicken
+      id2: 0
+      id3: 0
+      map: 0
+      zoneId: 0
+      areaId: 0
+      spawnMask: 1
+      phaseMask: 1
+      equipment_id: 0
+      position_x: -9881.1
+      position_y: 89.011
+      position_z: 33.5064
+      orientation: 3.22122
+      spawntimesecs: 300
+      wander_distance: 5.0
+      currentwaypoint: 0
+      curhealth: 55
+      curmana: 0
+      MovementType: 0
+      npcflag: 0
+      unit_flags: 0
+      dynamicflags: 0
+      ScriptName: ''
+      VerifiedBuild:
+      CreateObject: 0
+      Comment:
+    - guid: 3110520
+      id1: *magic_chicken
+      id2: 0
+      id3: 0
+      map: 0
+      zoneId: 0
+      areaId: 0
+      spawnMask: 1
+      phaseMask: 1
+      equipment_id: 0
+      position_x: -9938.64
+      position_y: 147.995
+      position_z: 33.1875
+      orientation: 5.0669
+      spawntimesecs: 300
+      wander_distance: 5.0
+      currentwaypoint: 0
+      curhealth: 102
+      curmana: 0
+      MovementType: 0
+      npcflag: 0
+      unit_flags: 0
+      dynamicflags: 0
+      ScriptName: ''
+      VerifiedBuild:
+      CreateObject: 0
+      Comment:
+    - guid: 3110521
+      id1: *magic_chicken
+      id2: 0
+      id3: 0
+      map: 0
+      zoneId: 0
+      areaId: 0
+      spawnMask: 1
+      phaseMask: 1
+      equipment_id: 0
+      position_x: -9975.18
+      position_y: 130.643
+      position_z: 35.6204
+      orientation: 5.12972
+      spawntimesecs: 300
+      wander_distance: 5.0
+      currentwaypoint: 0
+      curhealth: 102
+      curmana: 0
+      MovementType: 0
+      npcflag: 0
+      unit_flags: 0
+      dynamicflags: 0
+      ScriptName: ''
+      VerifiedBuild:
+      CreateObject: 0
+      Comment:
+    - guid: 3110522
+      id1: *magic_chicken
+      id2: 0
+      id3: 0
+      map: 0
+      zoneId: 0
+      areaId: 0
+      spawnMask: 1
+      phaseMask: 1
+      equipment_id: 0
+      position_x: -9950.11
+      position_y: 94.3939
+      position_z: 36.7445
+      orientation: 5.87977
+      spawntimesecs: 300
+      wander_distance: 5.0
+      currentwaypoint: 0
+      curhealth: 71
+      curmana: 0
+      MovementType: 0
+      npcflag: 0
+      unit_flags: 0
+      dynamicflags: 0
+      ScriptName: ''
+      VerifiedBuild:
+      CreateObject: 0
+      Comment:
+    - guid: 3110523
+      id1: *magic_chicken
+      id2: 0
+      id3: 0
+      map: 0
+      zoneId: 0
+      areaId: 0
+      spawnMask: 1
+      phaseMask: 1
+      equipment_id: 0
+      position_x: -9953.05
+      position_y: 28.4663
+      position_z: 33.0095
+      orientation: 5.43993
+      spawntimesecs: 300
+      wander_distance: 5.0
+      currentwaypoint: 0
+      curhealth: 102
+      curmana: 0
+      MovementType: 0
+      npcflag: 0
+      unit_flags: 0
+      dynamicflags: 0
+      ScriptName: ''
+      VerifiedBuild:
+      CreateObject: 0
+      Comment:
+
+    - guid: 3110510
+      id1: *crazy_chicken
+      id2: 0
+      id3: 0
+      map: 0
+      zoneId: 0
+      areaId: 0
+      spawnMask: 1
+      phaseMask: 1
+      equipment_id: 0
+      position_x: -10015.9
+      position_y: 89.6577
+      position_z: 35.5673
+      orientation: 0.594087
+      spawntimesecs: 300
+      wander_distance: 5.0
+      currentwaypoint: 0
+      curhealth: 100
+      curmana: 0
+      MovementType: 0
+      npcflag: 0
+      unit_flags: 0
+      dynamicflags: 0
+      ScriptName: ''
+      VerifiedBuild:
+      CreateObject: 0
+      Comment:
+    - guid: 3110512
+      id1: *crazy_chicken
+      id2: 0
+      id3: 0
+      map: 0
+      zoneId: 0
+      areaId: 0
+      spawnMask: 1
+      phaseMask: 1
+      equipment_id: 0
+      position_x: -9977.36
+      position_y: 93.1891
+      position_z: 34.7093
+      orientation: 5.8327
+      spawntimesecs: 300
+      wander_distance: 5.0
+      currentwaypoint: 0
+      curhealth: 100
+      curmana: 0
+      MovementType: 0
+      npcflag: 0
+      unit_flags: 0
+      dynamicflags: 0
+      ScriptName: ''
+      VerifiedBuild:
+      CreateObject: 0
+      Comment:
+    - guid: 3110513
+      id1: *crazy_chicken
+      id2: 0
+      id3: 0
+      map: 0
+      zoneId: 0
+      areaId: 0
+      spawnMask: 1
+      phaseMask: 1
+      equipment_id: 0
+      position_x: -9958.21
+      position_y: 90.0449
+      position_z: 33.5177
+      orientation: 0.762948
+      spawntimesecs: 300
+      wander_distance: 5.0
+      currentwaypoint: 0
+      curhealth: 55
+      curmana: 0
+      MovementType: 0
+      npcflag: 0
+      unit_flags: 0
+      dynamicflags: 0
+      ScriptName: ''
+      VerifiedBuild:
+      CreateObject: 0
+      Comment:
+    - guid: 3110514
+      id1: *crazy_chicken
+      id2: 0
+      id3: 0
+      map: 0
+      zoneId: 0
+      areaId: 0
+      spawnMask: 1
+      phaseMask: 1
+      equipment_id: 0
+      position_x: -9945.11
+      position_y: 120.518
+      position_z: 33.0187
+      orientation: 4.77633
+      spawntimesecs: 300
+      wander_distance: 5.0
+      currentwaypoint: 0
+      curhealth: 71
+      curmana: 0
+      MovementType: 0
+      npcflag: 0
+      unit_flags: 0
+      dynamicflags: 0
+      ScriptName: ''
+      VerifiedBuild:
+      CreateObject: 0
+      Comment:
+    - guid: 3110515
+      id1: *crazy_chicken
+      id2: 0
+      id3: 0
+      map: 0
+      zoneId: 0
+      areaId: 0
+      spawnMask: 1
+      phaseMask: 1
+      equipment_id: 0
+      position_x: -9916.03
+      position_y: 124.373
+      position_z: 34.5267
+      orientation: 0.87682
+      spawntimesecs: 300
+      wander_distance: 5.0
+      currentwaypoint: 0
+      curhealth: 100
+      curmana: 0
+      MovementType: 0
+      npcflag: 0
+      unit_flags: 0
+      dynamicflags: 0
+      ScriptName: ''
+      VerifiedBuild:
+      CreateObject: 0
+      Comment:
+    - guid: 3110516
+      id1: *crazy_chicken
+      id2: 0
+      id3: 0
+      map: 0
+      zoneId: 0
+      areaId: 0
+      spawnMask: 1
+      phaseMask: 1
+      equipment_id: 0
+      position_x: -9895.31
+      position_y: 64.4294
+      position_z: 31.5361
+      orientation: 2.33766
+      spawntimesecs: 300
+      wander_distance: 5.0
+      currentwaypoint: 0
+      curhealth: 102
+      curmana: 0
+      MovementType: 0
+      npcflag: 0
+      unit_flags: 0
+      dynamicflags: 0
+      ScriptName: ''
+      VerifiedBuild:
+      CreateObject: 0
+      Comment:

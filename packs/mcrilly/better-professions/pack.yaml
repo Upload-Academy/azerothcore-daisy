@@ -1,0 +1,8 @@
+daisy:
+  pack:
+    name: Better Professions
+    version: 1.0.0
+    author: Michael Crilly
+    homepage: https://github.com/Upload-Academy/azerothcore-daisy
+    source: packs/mcrilly/better-professions/src
+    build: packs/mcrilly/better-professions/output

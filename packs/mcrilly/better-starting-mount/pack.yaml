@@ -1,0 +1,8 @@
+daisy:
+  pack:
+    name: Better Starting Mount
+    version: 1.0.0
+    author: Michael Crilly
+    homepage: https://github.com/Upload-Academy/azerothcore-daisy
+    source: packs/mcrilly/better-starting-mount/src
+    build: packs/mcrilly/better-starting-mount/output

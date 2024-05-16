@@ -1,0 +1,10 @@
+---
+daisy:
+  pack:
+    name: Quality of Life
+    version: 1.0.0
+    author: Michael Crilly
+    homepage: https://github.com/Upload-Academy/azerothcore-daisy
+    source: packs/mcrilly/quality-of-life/src
+    build: packs/mcrilly/quality-of-life/build
+

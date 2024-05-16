@@ -1,6 +1,6 @@
 # WoS Daisy
 
-Woof! Daisy is a World of Solocraft project.
+Woof! Daisy is a World of Solocraft project by [Michael Crilly](https://crilly.au/).
 
 Daisy is a set of Python tools that can extract (`extractor.py`) information about the tables in an [AzerothCore](https://www.azerothcore.org/) database, specifically the `acore_world` database, but that can be configured. Once this data is extracted, Daisy can then generate all the templates and files needed to make manipulating an AzerothCore database much, much easier using her second tool: `daisy.py`.
 
@@ -14,111 +14,122 @@ So Daisy is designed to compliment K3 for a lot of things. It's aimed at people 
 
 ## Packs
 
-A "Pack" is a unit of work that is sharable. Under the `packs/` directory at the root of this repository, you'll see examples. These are, in simple terms, just directories that contain YAML files. No directories are actually required at all: you can simply define a flat YAML file at `./packs/my.yaml` and it'll be loaded. The key to a Pack is the `meta.*` block inside that YAML file:
+A "Pack" is a unit of work that is sharable. It's made of two things:
+
+1. A Pack file
+1. A collection of YAML describing what you want to do
+
+Under the `packs/` directory at the root of this repository, you'll see examples, such as `packs/mcrilly/chickens/`. There's a file there called `pack.yaml` that looks like this:
 
 ```yaml
-# packs/mcrilly/example/data.yaml
-meta:
-  pack: example
-  version: 0.1.0
-
-tables:
-  creature_template:
-    - entry: 910001
-      modelid1: 7106
-      name: "Rixxle"
-      subname: "Totally Legit Warez"
-      minlevel: 60
-      maxlevel: 60
-      npcflag: 1
-      faction: 120
-
-  creature:
-    - guid: 910001
-      id1: 910001
-      map: 0
-      position_x: -11280.18
-      position_y: 1433.82
-      position_z: 89.41
-      orientation: 6.17
-      comment: "Some random goblin"
+---
+daisy:
+  pack:
+    name: Crazy Chickens
+    version: 1.0.0
+    author: Michael Crilly
+    homepage: https://github.com/Upload-Academy/azerothcore-module-wos
+    source: packs/mcrilly/chickens/src
+    build: modules/wos/build
 ```
 
-The `meta.pack` variable defines the name of the Pack. The `meta.version` variable defines its current version. This can be anything.
+This describes the Pack to Daisy. She uses two _important_ fields to do her job: `source` and `build`.
 
-Creating a Pack simply involves placing YAML files inside of `packs/` with that `meta.*` key and variables in place, and you're done. Every YAML file _must_ have the `meta.*` document in there. 
+The `source` file is an absolute or relative path to the YAML files you want to parse. If this path is _relative_, then it's relative to _where you execute Daisy_. The `source` field in this example is: `packs/mcrilly/chickens/src`, which is relative to the `daisy.py` Python script.
 
-This structure might change in the future, and Daisy is absolutely going to support downloading Packs from remote HTTPS servers, to make sharing even easier.
+The `build` _directory_ (not a file like the Pack) is where the _results_ of Daisy's work will be written. This will contain all the SQL files that are rendered given the YAML files you've made. This is _also relative_ to where you execute Daisy from, unless you use an absolute path like `/my/awesome/absolute/path`. If the `build` path does not exist it will be created along with all its non-existent parent directories.
+
+The `build` key above demonstrates that the output of Daisy can be just about anywhere on your file system, which might be useful for people who want Daisy to write directly into the (external) module's `data/` directory.
+
+Continuing with the example Pack file, the only file inside of `source` is `chicken.yaml`. The names of these files is irrelevant - they can be called anything you like. Inside of these files is where you start writing your table definitions:
+
+```yaml
+# This key is a must
+tables: # it has to be tables
+  quest_template: # this is a table name in the database
+    - id: *pa_maclure_quest_id
+      questtype: *QUEST_TYPE_ENABLED
+      questlevel: 3
+      minlevel: 2
+      rewardmoney: 120 
+      logtitle: Freaky Chickens!
+      logdescription: Some weird, freaky chickens have spawned on the farm and they need to be killed!
+      questdescription: |
+        I got them weird magic chickens poppin' up all over me farm! They jus' keep comin' an' comin'. Lots o' folks been tryin' to kill 'em, but they don't stay dead. Can ya help thin 'em out a bit 'til we figger how to stop 'em for good?
+      questcompletionlog: |
+        Quest complete
+      objectivetext1: 'Kill 10 Crazy Chickens'
+      objectivetext2: 'Kill 10 Magic Chickens'
+      requirednpcorgo1: *crazy_chicken
+      requirednpcorgocount1: 10
+      requirednpcorgo2: *magic_chicken
+      requirednpcorgocount2: 10
+```
+
+The `tables` keyword is a _reversed_ word. You must only use it to define what tables (here: `quest_template`) you want to write content for. That's how Daisy works: you create a key in the `tables` map to tell Daisy what AzerothCore table you want to manipulate. Then you provide a list of objects under that table name, which are based on the table's columns! That's it.
+
+
+## Reserved Words
+
+Other reserved words include `move`, `update`, and `delete`. These are documented below.
+
+### Move (a game object or creature)
+
+TBC.
+
+### Update (an existing table and row(s))
+
+TBC.
+
+### Delete (existing data from a table)
+
+TBC.
 
 ## Installation & Usage
 
 All instructions assume a Linux or macOS installation. You need Python 3.10 as a minimum.
 
-1. Clone this repository
-1. Create a Python 3 virtual environment: `python3 -m venv venv`
-1. Activate that new virtual environment: `source venv/bin/activate`
-1. Install all the required modules and packages into the virtual environment: `pip install -r requirements.txt`
+1. Fork (not clone) this repository
+1. Clone your fork
+1. _Source_(not execute) the activate script: `. activate.sh`
 
 To use Daisy, you have to run two tools in order:
 
-1. Make sure that `config.yaml` has the correct database information in it
-1. Run the extractor: `python extractor.py`
+1. Make sure that `extractor.yaml` has the correct database information in it
+1. Run the extractor: `extractor`
 
-This will overwrite the files in (assuming a default configuration) `renders/extractor/*`. Next, run Daisy...
+This will create files in (assuming a default configuration) `mappings/*`. We've not included the `mappings/` directory in this repository as it's best you pull the datafrom your AzerothCore database to ensure maximum compatibility. 
 
-For this, you must create a "pack":
+Next, run Daisy...
 
-1. Create (via any structure you like) a `.yaml` file under `packs/` (I recommend: `username/pack_purpose`)
-1. Create a key in the YAML as `meta` and provide two values:
-    1. A `pack` key with a string value as the pack's name
-    1. A `version` key with a semantic version (but it can be anything you like really)
-1. Enter values into the `.yaml` file under the `tables` key
-1. Each entry is for a specific table in the `config.extractor.tables` list (these are the actual table names from `acore_world`)
+### Creating a Pack
 
-> Note: see the `packs/mcrilly/random_goblin.yaml` pack for an example
+To executer/use Daisy you must create a "pack". A quick way of getting a template in place is to use the `-n` flag:
 
-Here's an example:
-
-```yaml
-meta:
-  pack: example
-  version: 0.1.0
-
-tables:
-  creature_template:
-    - entry: 910001
-      modelid1: 7106
-      name: "Rixxle"
-      subname: "Totally Legit Warez"
-      minlevel: 60
-      maxlevel: 60
-      npcflag: 129
-      faction: 120
-
-  creature:
-    - guid: 910001
-      id1: 910001
-      map: 0
-      position_x: -11280.18
-      position_y: 1433.82
-      position_z: 89.41
-      orientation: 6.17
+```shell
+daisy -n organisation/pack_name
 ```
+
+So you might replace `organisation` with your GitHub username and `pack_name` with something that describes your Pack's objectives in a few words.
+
+Manually, you can do this:
+
+1. Create (via any structure you like) a `pack.yaml` (or whatever name you like) file under `packs/` (I recommend: `username/pack_title/pack.yaml`)
+1. Use the above example to structure your Pack's information: `source` and `build` are critical
+1. Enter values into the `.yaml` files under your `source` directory using the `tables` key
+1. Each entry is for a specific table in the `extractor.tables` configuration list (these are the actual table names from `acore_world`)
+
+> Note: see the `packs/mcrilly/chickens/src/chicken.yaml` pack for an example.
 
 > Note how there is a distinct lack of columns here. Compared to the actual structure of the table, the number of columns, above, is greatly reduced. That's where the `renders/extractor/yaml/` files come in - they contain the other columns and their default values. You data, above, it merged (and overrides) the defaults, so every column is populated.
 
 And now when you run Daisy:
 
 ```shell
-python daisy.py
+daisy -p packs/mcrilly/chickens/src/chicken.yaml
 ```
 
-You end up with two `.sql` files in (by default) `renders/daisy/`:
-
-- `<pack>-<version>-creature_template.sql`
-- `<pack>-<version>-creature.sql`
-
-Notice how the filenames match the table names? That's essentially how all of this works. We also include the pack and pack version so we can "namespace" changes to the database.
+You end up with `.sql` files in `build` directory. Notice how the filenames match the table names? That's essentially how all of this works. We also include the pack and pack version so we can "namespace" changes to the database across modules.
 
 ## YAML Anchors
 

@@ -1,8 +1,4 @@
 
-meta:
-  pack: tannysa-chicken-quest
-  version: v1
-
 tannysa: &tannysaEntry 5566
 
 tables:
@@ -19,7 +15,7 @@ tables:
   quest_offer_reward:
     - id: *tannysaEntry
       rewardtext: |
-        Hello. I\'ve been waiting for the perfect gentleman to give this gift. It\'s my pet chicken, and I believe it\'s you he\'s taken a liken to.
+        Hello. I've been waiting for the perfect gentleman to give this gift. It's my pet chicken, and I believe it's you he's taken a liking to.
 
   creature_queststarter:
     - id: *tannysaEntry
