@@ -1,0 +1,1479 @@
+
+tables:
+  creature_template:
+    - entry: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      modelid1: *MODEL_HUMAN_FEMALE_01
+      name: "Eliza Thornfield"
+      minlevel: 12
+      faction: 12
+
+  creature:
+    - guid: *NPC_ELIZA_THORNFIELD_ENTRY_GUID
+      id1: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      map: 0
+      zoneid: 12
+      areaid: 87
+      position_x: -9472.091797
+      position_y: 53.068123
+      position_z: 57.074425
+      orientation: 4.635926
+      currentwaypoint: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      movementtype: 2 # waypoint
+
+  creature_addon:
+    - guid: *NPC_ELIZA_THORNFIELD_ENTRY_GUID
+      path_id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+
+  waypoint_data:
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 1
+      position_x: -9467.28
+      position_y: 54.4442
+      position_z: 56.8735
+      orientation: 0.0
+      delay: 160000 # 3m-ish
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 2
+      position_x: -9454.5
+      position_y: 58.102
+      position_z: 56.0585
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 3
+      position_x: -9446.1
+      position_y: 53.3513
+      position_z: 56.3305
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 4
+      position_x: -9440.82
+      position_y: 51.4052
+      position_z: 56.3224
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 5
+      position_x: -9425.28
+      position_y: 33.77
+      position_z: 57.3735
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 6
+      position_x: -9409.08
+      position_y: 15.3967
+      position_z: 59.3733
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 7
+      position_x: -9390.56
+      position_y: -5.60658
+      position_z: 61.0185
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 8
+      position_x: -9377.4
+      position_y: -20.5425
+      position_z: 62.5735
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 9
+      position_x: -9379.19
+      position_y: -30.596
+      position_z: 63.179
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 10
+      position_x: -9373.93
+      position_y: -37.4338
+      position_z: 64.3567
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 11
+      position_x: -9369.66
+      position_y: -46.0632
+      position_z: 66.1506
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 12
+      position_x: -9354.92
+      position_y: -55.9967
+      position_z: 66.1619
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 13
+      position_x: -9356.23
+      position_y: -59.9343
+      position_z: 66.3228
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 14
+      position_x: -9357.44
+      position_y: -66.7046
+      position_z: 64.8075
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 15
+      position_x: -9362.64
+      position_y: -74.4142
+      position_z: 63.9016
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 16
+      position_x: -9368.25
+      position_y: -82.7447
+      position_z: 64.057
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 17
+      position_x: -9372.02
+      position_y: -90.594
+      position_z: 64.1447
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 18
+      position_x: -9381.95
+      position_y: -87.6652
+      position_z: 63.1847
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 19
+      position_x: -9383.03
+      position_y: -83.4906
+      position_z: 63.5127
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 20
+      position_x: -9377.24
+      position_y: -74.9276
+      position_z: 64.4364
+      orientation: 0.0
+      delay: 10000 # 10s
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 21
+      position_x: -9383.01
+      position_y: -76.8533
+      position_z: 64.4364
+      orientation: 4.164171
+      delay: 10000 # 10s
+      move_type: 0
+      action: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 22
+      position_x: -9380.59
+      position_y: -78.1187
+      position_z: 64.4364
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 23
+      position_x: -9382.83
+      position_y: -84.8564
+      position_z: 63.3735
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 24
+      position_x: -9378.65
+      position_y: -88.8313
+      position_z: 63.5254
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 25
+      position_x: -9366.27
+      position_y: -87.8376
+      position_z: 64.8011
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 26
+      position_x: -9356.37
+      position_y: -86.2543
+      position_z: 65.7504
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 27
+      position_x: -9346.27
+      position_y: -86.9535
+      position_z: 65.664
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 28
+      position_x: -9339.71
+      position_y: -83.3307
+      position_z: 66.9282
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 29
+      position_x: -9332.05
+      position_y: -79.1035
+      position_z: 68.1418
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 30
+      position_x: -9321.1
+      position_y: -73.065
+      position_z: 68.8704
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 31
+      position_x: -9318.4
+      position_y: -69.4527
+      position_z: 68.5286
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 32
+      position_x: -9314.77
+      position_y: -63.5105
+      position_z: 67.1921
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 33
+      position_x: -9309.85
+      position_y: -62.6435
+      position_z: 67.3426
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 34
+      position_x: -9299.34
+      position_y: -60.7931
+      position_z: 67.2084
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 35
+      position_x: -9280.8
+      position_y: -70.6487
+      position_z: 68.1095
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 36
+      position_x: -9262.65
+      position_y: -82.1623
+      position_z: 69.0054
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 37
+      position_x: -9239.28
+      position_y: -97.5683
+      position_z: 70.6981
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 38
+      position_x: -9228.98
+      position_y: -104.355
+      position_z: 71.0578
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 39
+      position_x: -9211.62
+      position_y: -106.466
+      position_z: 71.3408
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 40
+      position_x: -9187.29
+      position_y: -109.422
+      position_z: 71.1093
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 41
+      position_x: -9169.92
+      position_y: -111.534
+      position_z: 71.8809
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 42
+      position_x: -9156.48
+      position_y: -106.738
+      position_z: 73.2835
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 43
+      position_x: -9135.38
+      position_y: -94.3031
+      position_z: 76.0126
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 44
+      position_x: -9120.3
+      position_y: -85.4192
+      position_z: 79.2477
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 45
+      position_x: -9111.64
+      position_y: -80.316
+      position_z: 81.4934
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 46
+      position_x: -9096.63
+      position_y: -65.6313
+      position_z: 84.3795
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 47
+      position_x: -9081.62
+      position_y: -50.9504
+      position_z: 86.8402
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 48
+      position_x: -9079.28
+      position_y: -48.6595
+      position_z: 87.1676
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 49
+      position_x: -9061.09
+      position_y: -44.0818
+      position_z: 88.3403
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 50
+      position_x: -9051.8
+      position_y: -46.7505
+      position_z: 88.3317
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 51
+      position_x: -9048.22
+      position_y: -58.0841
+      position_z: 88.3411
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 52
+      position_x: -9049.96
+      position_y: -71.7243
+      position_z: 88.1094
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 53
+      position_x: -9051.7
+      position_y: -85.4709
+      position_z: 87.9844
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 54
+      position_x: -9041.31
+      position_y: -97.0905
+      position_z: 87.9486
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 55
+      position_x: -9034.18
+      position_y: -98.7194
+      position_z: 87.6206
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 56
+      position_x: -9016.3
+      position_y: -88.9071
+      position_z: 86.73
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 57
+      position_x: -9006.54
+      position_y: -83.5517
+      position_z: 86.387
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 58
+      position_x: -9002.92
+      position_y: -85.4365
+      position_z: 86.1577
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 59
+      position_x: -8990.28
+      position_y: -98.6019
+      position_z: 85.5714
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 60
+      position_x: -8974.07
+      position_y: -110.908
+      position_z: 84.4724
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 61
+      position_x: -8956.51
+      position_y: -113.704
+      position_z: 83.541
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 62
+      position_x: -8943.94
+      position_y: -115.302
+      position_z: 82.8333
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 63
+      position_x: -8924.58
+      position_y: -122.986
+      position_z: 81.8423
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 64
+      position_x: -8915.08
+      position_y: -135.866
+      position_z: 80.4281
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 65
+      position_x: -8912.0
+      position_y: -142.054
+      position_z: 82.2118
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 66
+      position_x: -8904.1
+      position_y: -159.589
+      position_z: 81.939
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 67
+      position_x: -8908.43
+      position_y: -166.344
+      position_z: 81.939
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 68
+      position_x: -8910.78
+      position_y: -173.362
+      position_z: 81.939
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 69
+      position_x: -8907.37
+      position_y: -184.783
+      position_z: 81.939
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 70
+      position_x: -8915.33
+      position_y: -203.53
+      position_z: 81.9388
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 71
+      position_x: -8911.64
+      position_y: -204.402
+      position_z: 82.1202
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 72
+      position_x: -8905.36
+      position_y: -205.251
+      position_z: 81.9407
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 73
+      position_x: -8900.73
+      position_y: -198.146
+      position_z: 81.9407
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 74
+      position_x: -8901.21
+      position_y: -197.862
+      position_z: 81.9407
+      orientation: 2.606735
+      delay: 60000 # 1m
+      move_type: 0
+      action: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 75
+      position_x: -8902.75
+      position_y: -200.903
+      position_z: 81.9407
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 76
+      position_x: -8906.36
+      position_y: -205.91
+      position_z: 81.9407
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 77
+      position_x: -8914.55
+      position_y: -203.207
+      position_z: 81.9403
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 78
+      position_x: -8910.4
+      position_y: -191.416
+      position_z: 81.9403
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 79
+      position_x: -8905.17
+      position_y: -181.977
+      position_z: 81.9379
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 80
+      position_x: -8898.83
+      position_y: -174.283
+      position_z: 81.5781
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 81
+      position_x: -8889.08
+      position_y: -166.421
+      position_z: 81.9397
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 82
+      position_x: -8890.88
+      position_y: -162.785
+      position_z: 81.9397
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 83
+      position_x: -8896.93
+      position_y: -159.945
+      position_z: 81.9397
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 84
+      position_x: -8903.47
+      position_y: -158.551
+      position_z: 81.9397
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 85
+      position_x: -8909.27
+      position_y: -146.082
+      position_z: 81.9473
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 86
+      position_x: -8911.91
+      position_y: -140.415
+      position_z: 82.2149
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 87
+      position_x: -8915.07
+      position_y: -133.614
+      position_z: 80.5579
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 88
+      position_x: -8922.63
+      position_y: -128.354
+      position_z: 81.3841
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 89
+      position_x: -8936.39
+      position_y: -118.28
+      position_z: 82.2644
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 90
+      position_x: -8943.81
+      position_y: -115.638
+      position_z: 82.8206
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 91
+      position_x: -8958.89
+      position_y: -115.858
+      position_z: 83.5407
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 92
+      position_x: -8973.68
+      position_y: -111.689
+      position_z: 84.3938
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 93
+      position_x: -8985.91
+      position_y: -103.257
+      position_z: 85.4239
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 94
+      position_x: -8998.9
+      position_y: -90.1801
+      position_z: 85.812
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 95
+      position_x: -9003.91
+      position_y: -88.6525
+      position_z: 86.084
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 96
+      position_x: -9013.24
+      position_y: -93.2447
+      position_z: 86.4957
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 97
+      position_x: -9038.04
+      position_y: -99.7841
+      position_z: 87.8489
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 98
+      position_x: -9043.97
+      position_y: -98.1853
+      position_z: 87.9854
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 99
+      position_x: -9049.87
+      position_y: -87.7534
+      position_z: 87.9983
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 100
+      position_x: -9049.68
+      position_y: -78.3181
+      position_z: 88.1838
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 101
+      position_x: -9047.34
+      position_y: -64.001
+      position_z: 88.1555
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 102
+      position_x: -9045.2
+      position_y: -51.1692
+      position_z: 88.2038
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 103
+      position_x: -9042.8
+      position_y: -50.0794
+      position_z: 88.2122
+      orientation: 0.0
+      delay: 45000 # 45s
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 104
+      position_x: -9050.58
+      position_y: -46.0703
+      position_z: 88.317
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 105
+      position_x: -9060.76
+      position_y: -44.2373
+      position_z: 88.38
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 106
+      position_x: -9068.65
+      position_y: -45.8632
+      position_z: 88.0743
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 107
+      position_x: -9082.39
+      position_y: -56.6952
+      position_z: 86.3802
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 108
+      position_x: -9102.38
+      position_y: -70.7817
+      position_z: 83.3696
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 109
+      position_x: -9115.72
+      position_y: -80.0628
+      position_z: 80.6444
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 110
+      position_x: -9129.06
+      position_y: -89.3439
+      position_z: 77.2695
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 111
+      position_x: -9138.6
+      position_y: -95.9806
+      position_z: 75.5195
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 112
+      position_x: -9146.51
+      position_y: -98.4062
+      position_z: 74.5129
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 113
+      position_x: -9166.61
+      position_y: -107.752
+      position_z: 72.146
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 114
+      position_x: -9185.5
+      position_y: -109.598
+      position_z: 71.0743
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 115
+      position_x: -9200.34
+      position_y: -107.356
+      position_z: 71.3862
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 116
+      position_x: -9216.45
+      position_y: -104.92
+      position_z: 71.3199
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 117
+      position_x: -9230.17
+      position_y: -98.8444
+      position_z: 71.3063
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 118
+      position_x: -9244.63
+      position_y: -92.4355
+      position_z: 70.6965
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 119
+      position_x: -9264.33
+      position_y: -77.8641
+      position_z: 68.9812
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 120
+      position_x: -9281.35
+      position_y: -65.2702
+      position_z: 68.1872
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 121
+      position_x: -9304.62
+      position_y: -59.2442
+      position_z: 66.8654
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 122
+      position_x: -9328.23
+      position_y: -56.6739
+      position_z: 66.2985
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 123
+      position_x: -9350.56
+      position_y: -43.9142
+      position_z: 65.0181
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 124
+      position_x: -9369.86
+      position_y: -27.5315
+      position_z: 63.0772
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 125
+      position_x: -9390.21
+      position_y: -5.65669
+      position_z: 61.0285
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 126
+      position_x: -9407.96
+      position_y: 16.0015
+      position_z: 59.3136
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 127
+      position_x: -9422.56
+      position_y: 33.8262
+      position_z: 57.3242
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 128
+      position_x: -9438.49
+      position_y: 44.9457
+      position_z: 56.8041
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 129
+      position_x: -9452.7
+      position_y: 58.6287
+      position_z: 56.0171
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 130
+      position_x: -9463.4
+      position_y: 67.2882
+      position_z: 56.1227
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 131
+      position_x: -9473.45
+      position_y: 55.9148
+      position_z: 56.6807
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      point: 132
+      position_x: -9479.09
+      position_y: 53.2282
+      position_z: 56.8416
+      orientation: 1.502468
+      delay: 3600000 # 1h
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0

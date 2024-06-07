@@ -1,0 +1,32 @@
+
+tables:
+  broadcast_text:
+    - id: *SW_GUARD_01_GUID_WP_ACTION_02
+      maletext: "Good day to you"
+      femaletext: "Good day to you"
+      flags: 1
+    
+    - id: *SW_GUARD_01_GUID_WP_ACTION_03
+      maletext: "I need a break!"
+      femaletext: "I need a break!"
+      flags: 1
+    
+    - id: *SW_GUARD_01_GUID_WP_ACTION_03
+      maletext: "I need a break!"
+      femaletext: "I need a break!"
+      flags: 1
+    
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP_ACTION_01
+      maletext: "My, what a big weapon you have!"
+      femaletext: "My, what a big weapon you have!"
+      flags: 1
+    
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP_ACTION_03
+      maletext: "I never win anything!"
+      femaletext: "I never win anything!"
+      flags: 1
+    
+    - id: *NPC_RENATO_GALLINA_GUID_WP_ACTION_01
+      maletext: "I may have had a bit too much wine at breakfast"
+      femaletext: "I may have had a bit too much wine at breakfast"
+      flags: 1

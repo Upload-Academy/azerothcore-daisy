@@ -1,0 +1,8 @@
+daisy:
+  pack:
+    name: The Great Collection
+    version: 1.0.0
+    author: Michael Crilly
+    homepage: https://github.com/Upload-Academy/azerothcore-daisy
+    source: packs/mcrilly/the-great-collection/src
+    build: packs/mcrilly/the-great-collection/output

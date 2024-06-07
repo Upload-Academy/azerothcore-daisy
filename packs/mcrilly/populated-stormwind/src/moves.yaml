@@ -1,0 +1,10 @@
+
+move:
+  - guid: *NPC_RENATO_GALLINA_GUID
+    map: -1
+    zone: -1
+    area: -1
+    x: -8852.334961
+    y: 617.283997
+    z: 95.986671
+    o: 4.460112

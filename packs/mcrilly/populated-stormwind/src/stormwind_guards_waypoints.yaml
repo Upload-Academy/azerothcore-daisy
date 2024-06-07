@@ -1,0 +1,465 @@
+
+tables:
+  waypoint_data:
+    - id: *SW_GUARD_01_GUID_WP
+      point: 1
+      position_x: -8826.53
+      position_y: 614.393
+      position_z: 94.3375
+      orientation: 0.0
+      delay: 600000 # 10m
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 2
+      position_x: -8810.67
+      position_y: 629.072
+      position_z: 94.228
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 3
+      position_x: -8812.1
+      position_y: 637.05
+      position_z: 94.228
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 4
+      position_x: -8817.21
+      position_y: 644.708
+      position_z: 94.228
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 5
+      position_x: -8831.26
+      position_y: 640.887
+      position_z: 94.4621
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 6
+      position_x: -8839.45
+      position_y: 643.323
+      position_z: 95.6101
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 7
+      position_x: -8852.58
+      position_y: 649.104
+      position_z: 96.2739
+      orientation: 3.224061
+      delay: 150000 # 2.5m
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 8
+      position_x: -8853.4
+      position_y: 643.666
+      position_z: 96.433
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 9
+      position_x: -8866.8
+      position_y: 639.6
+      position_z: 95.8527
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 10
+      position_x: -8872.77
+      position_y: 632.541
+      position_z: 95.7877
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 11
+      position_x: -8870.15
+      position_y: 624.457
+      position_z: 95.483
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 12
+      position_x: -8862.7
+      position_y: 605.888
+      position_z: 92.4367
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 13
+      position_x: -8866.24
+      position_y: 597.432
+      position_z: 92.2682
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 14
+      position_x: -8876.31
+      position_y: 592.149
+      position_z: 92.903
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 15
+      position_x: -8884.29
+      position_y: 597.613
+      position_z: 94.1289
+      orientation: 2.222687
+      delay: 2500 # 2.5s
+      move_type: 0
+      action: *SW_GUARD_01_GUID_WP_ACTION_01
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 16
+      position_x: -8857.61
+      position_y: 577.371
+      position_z: 95.3752
+      orientation: 0.0
+      delay: 5000 # 5s
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 17
+      position_x: -8860.84
+      position_y: 584.532
+      position_z: 93.4057
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 18
+      position_x: -8854.05
+      position_y: 591.469
+      position_z: 92.8688
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: *SW_GUARD_01_GUID_WP_ACTION_02
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 19
+      position_x: -8847.04
+      position_y: 598.595
+      position_z: 92.6791
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 20
+      position_x: -8834.07
+      position_y: 616.817
+      position_z: 93.4893
+      orientation: 0.0
+      delay:  90000 # 1.5m
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 21
+      position_x: -8833.22
+      position_y: 628.268
+      position_z: 93.9951
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 22
+      position_x: -8828.41
+      position_y: 647.378
+      position_z: 94.5544
+      orientation: 4.430439
+      delay: 1320000 # 22m ?
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 23
+      position_x: -8835.22
+      position_y: 642.185
+      position_z: 95.2405
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 24
+      position_x: -8842.39
+      position_y: 650.849
+      position_z: 96.7062
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 25
+      position_x: -8849.95
+      position_y: 662.439
+      position_z: 97.3104
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 26
+      position_x: -8840.29
+      position_y: 670.008
+      position_z: 98.0172
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 27
+      position_x: -8825.8
+      position_y: 672.696
+      position_z: 98.3806
+      orientation: 0.0
+      delay: 900000 # 15m
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 28
+      position_x: -8819.55
+      position_y: 678.819
+      position_z: 97.8676
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 29
+      position_x: -8809.52
+      position_y: 682.451
+      position_z: 99.6266
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 30
+      position_x: -8788.67
+      position_y: 681.391
+      position_z: 102.028
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 31
+      position_x: -8792.84
+      position_y: 674.616
+      position_z: 101.741
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 32
+      position_x: -8793.95
+      position_y: 670.405
+      position_z: 101.496
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 33
+      position_x: -8795.86
+      position_y: 664.933
+      position_z: 99.2357
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 34
+      position_x: -8798.2
+      position_y: 658.711
+      position_z: 95.9219
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 35
+      position_x: -8802.76
+      position_y: 641.989
+      position_z: 94.2289
+      orientation: 0.0
+      delay: 180000
+      move_type: 0
+      action: *SW_GUARD_01_GUID_WP_ACTION_03
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 36
+      position_x: -8798.39
+      position_y: 635.968
+      position_z: 94.2289
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 37
+      position_x: -8805.62
+      position_y: 631.039
+      position_z: 94.2289
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 38
+      position_x: -8798.75
+      position_y: 623.002
+      position_z: 96.774
+      orientation: 5.518896
+      delay: 2500 # 2.5s
+      move_type: 0
+      action: *SW_GUARD_01_GUID_WP_ACTION_01
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 39
+      position_x: -8800.52
+      position_y: 622.888
+      position_z: 96.774
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 40
+      position_x: -8804.97
+      position_y: 628.477
+      position_z: 94.2288
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 41
+      position_x: -8820.65
+      position_y: 618.061
+      position_z: 94.6541
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *SW_GUARD_01_GUID_WP
+      point: 42
+      position_x: -8826.63
+      position_y: 614.283
+      position_z: 94.3216
+      orientation: 1.087682
+      delay: 3600000 # 60m
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0

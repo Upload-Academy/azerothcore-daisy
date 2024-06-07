@@ -1,0 +1,371 @@
+
+tables:
+  creature_template:
+    - entry: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      modelid1: *MODEL_HUMAN_FEMALE_02
+      name: "Marian Ashford"
+      minlevel: 12
+      faction: 12
+      npcflag: *CREATURE_NPC_FLAGS_QUEST_GIVER
+
+  creature:
+    - guid: *NPC_MARIAN_ASHFORD_ENTRY_GUID
+      id1: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      map: 0
+      zoneid: 12
+      areaid: 87
+      position_x: -9376.537109
+      position_y: -78.766510
+      position_z: 64.437859
+      orientation: 3.331397
+      currentwaypoint: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      movementtype: 2 # waypoint
+
+  creature_addon:
+    - guid: *NPC_MARIAN_ASHFORD_ENTRY_GUID
+      path_id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+
+  quest_template:
+    - id: *NPC_MARIAN_ASHFORD_DAILY_QUEST_LIGHT_LEATHER
+      questtype: *QUEST_TYPE_ENABLED
+      questlevel: -1
+      minlevel: 3
+      logtitle: "Leather me up!"
+      questdescription: Let me tell you $N, we're always looking for Light Leather and we're willing to pay well for it.
+      logdescription: Bring us all the Light Leather you can create and we'll pay you very well for it.
+      questcompletionlog: "Hand in Light Leather"
+      objectivetext1: 'Supply 20x Light Leather'
+      requireditemid1: *ITEM_GATHERING_SKINNING_LIGHT_LEATHER
+      requireditemcount1: 20
+      rewardfactionid1: *FACTION_ALLIANCE_STORMWIND
+      rewardfactionvalueid1: 10
+      questsortid: 1519
+      rewardmoney: 500
+    
+    - id: *NPC_MARIAN_ASHFORD_DAILY_QUEST_LIGHT_KIT
+      questtype: *QUEST_TYPE_ENABLED
+      questlevel: -1
+      minlevel: 3
+      logtitle: "Leather Kits are in!"
+      questdescription: Light Amor Kits are actually vital for our troops. Not many people realise this, $N. If you can supply 20 of them, we can pay you well.
+      logdescription: Supply us with the Light Amor Kits that we need and we will pay you well.
+      questcompletionlog: "Hand in Light Amor Kits"
+      objectivetext1: 'Supply 20x Light Armor Kits'
+      requireditemid1: *ITEM_CRAFTING_LEATHERWORKING_LIGHT_ARMOR_KIT
+      requireditemcount1: 20
+      rewardfactionid1: *FACTION_ALLIANCE_STORMWIND
+      rewardfactionvalueid1: 10
+      questsortid: 1519
+      rewardmoney: 500
+    
+    - id: *NPC_MARIAN_ASHFORD_DAILY_QUEST_HEAVY_KIT
+      questtype: *QUEST_TYPE_ENABLED
+      questlevel: -1
+      minlevel: 3
+      logtitle: "REALLY leather me up!"
+      questdescription: The Medium Armor Kits are serious pieces of, um, kit. We need a constant supply of 20 of them. We pay very well.
+      logdescription: Supply us with all the Medium Armor Kits you can make and we'll pay you well.
+      questcompletionlog: "Hand in Medium Armor Kits"
+      objectivetext1: 'Supply 20x Medium Armor Kits'
+      requireditemid1: *ITEM_CRAFTING_LEATHERWORKING_MEDIUM_ARMOR_KIT
+      requireditemcount1: 20
+      rewardfactionid1: *FACTION_ALLIANCE_STORMWIND
+      rewardfactionvalueid1: 10
+      questsortid: 1519
+      rewardmoney: 500
+
+  quest_template_addon:
+    - id: *NPC_MARIAN_ASHFORD_DAILY_QUEST_LIGHT_LEATHER
+      specialflags: *QUEST_FLAGS_REPEATABLE
+    
+    - id: *NPC_MARIAN_ASHFORD_DAILY_QUEST_LIGHT_KIT
+      specialflags: *QUEST_FLAGS_REPEATABLE
+    
+    - id: *NPC_MARIAN_ASHFORD_DAILY_QUEST_HEAVY_KIT
+      specialflags: *QUEST_FLAGS_REPEATABLE
+
+  quest_request_items:
+    - id: *NPC_MARIAN_ASHFORD_DAILY_QUEST_LIGHT_LEATHER
+      emoteoncomplete: *NPC_EMOTE_ONESHOT_CHEER
+      emoteonincomplete: *NPC_EMOTE_ONESHOT_EXCLAMATION
+      completiontext: "Excellent! Here's your pay, and remember to keep 'em comin!"
+    
+    - id: *NPC_MARIAN_ASHFORD_DAILY_QUEST_LIGHT_KIT
+      emoteoncomplete: *NPC_EMOTE_ONESHOT_CHEER
+      emoteonincomplete: *NPC_EMOTE_ONESHOT_EXCLAMATION
+      completiontext: "Excellent! Here's your pay, and remember to keep 'em comin!"
+    
+    - id: *NPC_MARIAN_ASHFORD_DAILY_QUEST_HEAVY_KIT
+      emoteoncomplete: *NPC_EMOTE_ONESHOT_CHEER
+      emoteonincomplete: *NPC_EMOTE_ONESHOT_EXCLAMATION
+      completiontext: "Excellent! Here's your pay, and remember to keep 'em comin!"
+
+  quest_offer_reward:
+    - id: *NPC_MARIAN_ASHFORD_DAILY_QUEST_LIGHT_LEATHER
+      rewardtext: "Excellent! Here's your pay, and remember to keep 'em comin!"
+    
+    - id: *NPC_MARIAN_ASHFORD_DAILY_QUEST_LIGHT_KIT
+      rewardtext: "Excellent! Here's your pay, and remember to keep 'em comin!"
+    
+    - id: *NPC_MARIAN_ASHFORD_DAILY_QUEST_HEAVY_KIT
+      rewardtext: "Excellent! Here's your pay, and remember to keep 'em comin!"
+
+  creature_queststarter:
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      quest: *NPC_MARIAN_ASHFORD_DAILY_QUEST_LIGHT_LEATHER
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      quest: *NPC_MARIAN_ASHFORD_DAILY_QUEST_LIGHT_KIT
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      quest: *NPC_MARIAN_ASHFORD_DAILY_QUEST_HEAVY_KIT
+  
+  creature_questender:
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      quest: *NPC_MARIAN_ASHFORD_DAILY_QUEST_LIGHT_LEATHER
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      quest: *NPC_MARIAN_ASHFORD_DAILY_QUEST_LIGHT_KIT
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      quest: *NPC_MARIAN_ASHFORD_DAILY_QUEST_HEAVY_KIT
+
+  waypoint_data:
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      point: 1
+      position_x: -9376.54
+      position_y: -78.7665
+      position_z: 64.4379
+      orientation: 3.331397
+      delay: *WAYPOINT_DELAY_5M
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      point: 2
+      position_x: -9379.91
+      position_y: -78.9962
+      position_z: 64.4379
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      point: 3
+      position_x: -9385.41
+      position_y: -83.4533
+      position_z: 63.6208
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      point: 4
+      position_x: -9394.55
+      position_y: -87.4208
+      position_z: 64.7745
+      orientation: 3.924386
+      delay: 10000 # 10s
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      point: 5
+      position_x: -9399.54
+      position_y: -87.5844
+      position_z: 63.9794
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      point: 6
+      position_x: -9407.04
+      position_y: -87.8385
+      position_z: 61.6667
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      point: 7
+      position_x: -9413.29
+      position_y: -88.0675
+      position_z: 60.6352
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      point: 8
+      position_x: -9418.32
+      position_y: -91.3187
+      position_z: 59.8043
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      point: 9
+      position_x: -9422.61
+      position_y: -92.5862
+      position_z: 58.1901
+      orientation: 3.918997
+      delay: *WAYPOINT_DELAY_10M
+      move_type: 0
+      action: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      point: 10
+      position_x: -9419.9
+      position_y: -96.7933
+      position_z: 58.5457
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      point: 11
+      position_x: -9415.85
+      position_y: -103.105
+      position_z: 59.2487
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      point: 12
+      position_x: -9411.8
+      position_y: -109.416
+      position_z: 58.5665
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      point: 13
+      position_x: -9406.33
+      position_y: -108.816
+      position_z: 59.1203
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      point: 14
+      position_x: -9403.1
+      position_y: -104.112
+      position_z: 60.5578
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      point: 15
+      position_x: -9399.45
+      position_y: -97.5832
+      position_z: 62.7613
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      point: 16
+      position_x: -9395.35
+      position_y: -94.7268
+      position_z: 63.4551
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      point: 17
+      position_x: -9386.31
+      position_y: -88.4081
+      position_z: 63.2817
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      point: 18
+      position_x: -9383.02
+      position_y: -83.3183
+      position_z: 63.5281
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      point: 19
+      position_x: -9379.68
+      position_y: -78.3871
+      position_z: 64.4373
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      point: 20
+      position_x: -9375.62
+      position_y: -68.0962
+      position_z: 64.4364
+      orientation: 2.577419
+      delay: *WAYPOINT_DELAY_20M
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      point: 21
+      position_x: -9378.69
+      position_y: -74.8485
+      position_z: 64.4366
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      point: 22
+      position_x: -9376.54
+      position_y: -78.7665
+      position_z: 64.4379
+      orientation: 3.331397
+      delay: *WAYPOINT_DELAY_15M
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0

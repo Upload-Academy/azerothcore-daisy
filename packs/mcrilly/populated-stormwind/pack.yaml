@@ -1,0 +1,8 @@
+daisy:
+  pack:
+    name: Populated Stormwind
+    version: 1.0.0
+    author: Michael Crilly
+    homepage: https://github.com/Upload-Academy/azerothcore-daisy
+    source: packs/mcrilly/populated-stormwind/src
+    build: packs/mcrilly/populated-stormwind/output

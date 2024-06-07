@@ -1,0 +1,59 @@
+
+tables:
+  waypoint_scripts:
+    - id: *SW_GUARD_01_GUID_WP_ACTION_01
+      command: *SCRIPT_COMMAND_EMOTE
+      datalong: *NPC_EMOTE_ONESHOT_WAVE
+      guid: *SW_GUARD_01_GUID_WP_ACTION_01
+    
+    - id: *SW_GUARD_01_GUID_WP_ACTION_02
+      command: *SCRIPT_COMMAND_TALK
+      datalong: 0
+      dataint: *SW_GUARD_01_GUID_WP_ACTION_02
+      guid: *SW_GUARD_01_GUID_WP_ACTION_02
+    
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP_ACTION_01
+      command: *SCRIPT_COMMAND_TALK
+      datalong: 0
+      dataint: *NPC_STEPHANIE_TURNER_GUID_WP_ACTION_01
+      guid: *NPC_STEPHANIE_TURNER_GUID_WP_ACTION_01
+    
+    # Same as 01 so that our NPC says something _and_
+    # does the talking emote too
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP_ACTION_01
+      command: *SCRIPT_COMMAND_EMOTE
+      datalong: *NPC_EMOTE_ONESHOT_TALK
+      # (but it always needs a unique GUID)
+      guid: *NPC_STEPHANIE_TURNER_GUID_WP_ACTION_02
+
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP_ACTION_03
+      command: *SCRIPT_COMMAND_TALK
+      datalong: 0
+      dataint: *NPC_STEPHANIE_TURNER_GUID_WP_ACTION_03
+      guid: *NPC_STEPHANIE_TURNER_GUID_WP_ACTION_03
+
+    # Same as 01 so that our NPC says something _and_
+    # does the talking emote too
+    - id: *NPC_RENATO_GALLINA_GUID_WP_ACTION_01
+      command: *SCRIPT_COMMAND_EMOTE
+      datalong: *NPC_EMOTE_ONESHOT_TALK
+      # (but it always needs a unique GUID)
+      guid: *NPC_RENATO_GALLINA_GUID_WP_ACTION_01
+
+    - id: *NPC_RENATO_GALLINA_GUID_WP_ACTION_01
+      command: *SCRIPT_COMMAND_TALK
+      datalong: 0
+      dataint: *NPC_RENATO_GALLINA_GUID_WP_ACTION_01
+      guid: *NPC_RENATO_GALLINA_GUID_WP_ACTION_02
+
+      # Eliza Thornfield
+    - id: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+      command: *SCRIPT_COMMAND_EMOTE
+      datalong: *NPC_EMOTE_STATE_USESTANDING
+      guid: *NPC_ELIZA_THORNFIELD_ENTRY_ID
+
+      # Marian Ashford
+    - id: *NPC_MARIAN_ASHFORD_ENTRY_ID
+      command: *SCRIPT_COMMAND_EMOTE
+      datalong: *NPC_EMOTE_ONESHOT_KNEEL
+      guid: *NPC_MARIAN_ASHFORD_ENTRY_ID

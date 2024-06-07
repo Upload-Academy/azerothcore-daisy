@@ -1,0 +1,21 @@
+
+update:
+  - table: creature_template
+    columns:
+      name: Clone Master Jean
+      subname: Explorers' League
+      npcflag: *CREATURE_NPC_FLAGS_GOSSIP
+      faction: *FACTION_ALLIANCE_IRONFORGE
+    where:
+      entry:
+        - 39623
+
+move:
+  - guid: *CLONE_MASTER_JEAN
+    map: -1
+    zone: -1
+    area: -1
+    x: -4756.029785
+    y: -1238.868774
+    z: 501.657104
+    o: 6.049512

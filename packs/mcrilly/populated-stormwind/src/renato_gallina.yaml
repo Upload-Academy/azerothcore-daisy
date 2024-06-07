@@ -1,0 +1,404 @@
+
+tables:
+  creature_addon:
+    - guid: *NPC_RENATO_GALLINA_GUID
+      path_id: *NPC_RENATO_GALLINA_GUID_WP
+
+  waypoint_data:
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 1
+      position_x: -8852.44
+      position_y: 617.279
+      position_z: 95.9867
+      orientation: 0.0
+      delay: 1200000 # 20m
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 2
+      position_x: -8855.7
+      position_y: 616.058
+      position_z: 95.9836
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 3
+      position_x: -8855.77
+      position_y: 613.559
+      position_z: 95.375
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 4
+      position_x: -8853.33
+      position_y: 607.213
+      position_z: 92.2894
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 5
+      position_x: -8861.56
+      position_y: 601.532
+      position_z: 92.1434
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 6
+      position_x: -8871.9
+      position_y: 594.391
+      position_z: 92.5396
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 7
+      position_x: -8877.96
+      position_y: 593.774
+      position_z: 93.1325
+      orientation: 3.020906
+      delay: 15000 # 15s
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 8
+      position_x: -8869.26
+      position_y: 569.819
+      position_z: 94.499
+      orientation: 3.103370
+      delay: 180000 # 3m
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 9
+      position_x: -8863.2
+      position_y: 579.152
+      position_z: 94.3586
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 10
+      position_x: -8863.73
+      position_y: 592.405
+      position_z: 92.25
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 11
+      position_x: -8864.19
+      position_y: 603.646
+      position_z: 92.4176
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 12
+      position_x: -8864.48
+      position_y: 610.802
+      position_z: 92.9368
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 13
+      position_x: -8867.38
+      position_y: 614.507
+      position_z: 93.6647
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 14
+      position_x: -8871.99
+      position_y: 624.906
+      position_z: 95.6451
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 15
+      position_x: -8875.94
+      position_y: 633.824
+      position_z: 96.0926
+      orientation: 0.341909
+      delay: 600000 # 10m
+      move_type: 0
+      action: *NPC_RENATO_GALLINA_GUID_WP_ACTION_01
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 16
+      position_x: -8872.26
+      position_y: 634.304
+      position_z: 95.7875
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 17
+      position_x: -8867.29
+      position_y: 641.271
+      position_z: 95.8596
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 18
+      position_x: -8866.19
+      position_y: 650.933
+      position_z: 96.1016
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 19
+      position_x: -8860.26
+      position_y: 656.117
+      position_z: 96.3444
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 20
+      position_x: -8848.86
+      position_y: 657.789
+      position_z: 97.1259
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 21
+      position_x: -8845.2
+      position_y: 659.949
+      position_z: 97.7139
+      orientation: 4.832030
+      delay: 1800000 # 30m
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 22
+      position_x: -8844.38
+      position_y: 653.102
+      position_z: 96.9179
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 23
+      position_x: -8833.8
+      position_y: 639.598
+      position_z: 94.7374
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 24
+      position_x: -8827.29
+      position_y: 627.483
+      position_z: 93.9935
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 25
+      position_x: -8819.14
+      position_y: 615.688
+      position_z: 94.9469
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 26
+      position_x: -8811.7
+      position_y: 605.976
+      position_z: 96.0208
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 27
+      position_x: -8803.26
+      position_y: 601.267
+      position_z: 96.5671
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 28
+      position_x: -8797.65
+      position_y: 599.899
+      position_z: 97.6822
+      orientation: 4.057611
+      delay: 600000 # 10m
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 29
+      position_x: -8801.08
+      position_y: 599.5
+      position_z: 96.986
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 30
+      position_x: -8812.78
+      position_y: 612.945
+      position_z: 95.2728
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 31
+      position_x: -8829.34
+      position_y: 619.037
+      position_z: 94.1178
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 32
+      position_x: -8839.2
+      position_y: 615.606
+      position_z: 92.8812
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 33
+      position_x: -8852.81
+      position_y: 607.541
+      position_z: 92.3267
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 34
+      position_x: -8855.39
+      position_y: 611.328
+      position_z: 94.1626
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 35
+      position_x: -8857.85
+      position_y: 614.948
+      position_z: 95.9807
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_RENATO_GALLINA_GUID_WP
+      point: 36
+      position_x: -8853.38
+      position_y: 618.72
+      position_z: 95.9845
+      orientation: 0.700033
+      delay: 3600000 # 1h
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+

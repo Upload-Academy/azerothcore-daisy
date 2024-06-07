@@ -16,4 +16,4 @@ export DAISY_ROOT=$(pwd)
 
 alias daisy="$(which python) $(pwd)/daisy.py"
 alias extractor="$(which python) $(pwd)/extractor.py"
-alias db2sql="$(which python) $(pwd)/db2sql.py"
+alias db2yaml="$(which python) $(pwd)/db2yaml.py"

@@ -20,7 +20,7 @@ tables:
       type: 5
       name: Netted Storage Boxes
     
-    - entry: *storage_box
+    - entry: *storage_boxes
       displayedid: 36
       type: 5
       name: Storage Boxes

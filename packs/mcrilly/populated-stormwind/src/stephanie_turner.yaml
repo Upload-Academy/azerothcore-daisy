@@ -1,0 +1,931 @@
+
+tables:
+  creature_addon:
+    - guid: *NPC_STEPHANIE_TURNER_GUID
+      path_id: *NPC_STEPHANIE_TURNER_GUID_WP
+
+  waypoint_data:
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 1
+      position_x: -8836.12
+      position_y: 613.866
+      position_z: 93.336
+      orientation: 0.0
+      delay: 1500000 # 25m
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 2
+      position_x: -8840.92
+      position_y: 608.823
+      position_z: 92.8997
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 3
+      position_x: -8885.97
+      position_y: 574.327
+      position_z: 92.7701
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 4
+      position_x: -8888.73
+      position_y: 569.545
+      position_z: 92.4984
+      orientation: 5.307143
+      delay: 3000 # 3s
+      move_type: 0
+      action: *NPC_STEPHANIE_TURNER_GUID_WP_ACTION_01
+      action_chance: 33
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 5
+      position_x: -8895.84
+      position_y: 562.519
+      position_z: 92.7576
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 6
+      position_x: -8921.7
+      position_y: 540.276
+      position_z: 94.3606
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 7
+      position_x: -8918.23
+      position_y: 533.625
+      position_z: 94.9595
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 8
+      position_x: -8903.99
+      position_y: 502.556
+      position_z: 93.8543
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 9
+      position_x: -8898.96
+      position_y: 495.57
+      position_z: 94.0891
+      orientation: 4.231699
+      delay: 60000 # 1m
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 10
+      position_x: -8904.83
+      position_y: 500.434
+      position_z: 93.8589
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 11
+      position_x: -8928.39
+      position_y: 503.472
+      position_z: 93.8682
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 12
+      position_x: -8957.95
+      position_y: 510.557
+      position_z: 96.5971
+      orientation: 0.0
+      delay: 300000 # 5m
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 13
+      position_x: -8970.67
+      position_y: 498.627
+      position_z: 96.6253
+      orientation: 0.0
+      delay: 45000 # 45s
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 14
+      position_x: -8976.99
+      position_y: 498.627
+      position_z: 96.4196
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 15
+      position_x: -8980.55
+      position_y: 497.439
+      position_z: 96.4437
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 16
+      position_x: -8989.9
+      position_y: 489.736
+      position_z: 96.569
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 17
+      position_x: -8997.59
+      position_y: 483.341
+      position_z: 96.6201
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 18
+      position_x: -9009.33
+      position_y: 474.009
+      position_z: 96.4749
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 19
+      position_x: -9018.14
+      position_y: 467.01
+      position_z: 95.2835
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 20
+      position_x: -9031.84
+      position_y: 456.122
+      position_z: 93.0565
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 21
+      position_x: -9042.06
+      position_y: 463.584
+      position_z: 93.2957
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 22
+      position_x: -9049.08
+      position_y: 470.552
+      position_z: 89.2917
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 23
+      position_x: -9048.36
+      position_y: 477.735
+      position_z: 86.726
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 24
+      position_x: -9055.46
+      position_y: 486.459
+      position_z: 81.861
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 25
+      position_x: -9064.68
+      position_y: 497.79
+      position_z: 75.5438
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 26
+      position_x: -9067.33
+      position_y: 501.039
+      position_z: 75.2385
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 27
+      position_x: -9068.3
+      position_y: 508.896
+      position_z: 75.3
+      orientation: 0.226175
+      delay: 420000 # 7m
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 28
+      position_x: -9068.72
+      position_y: 505.17
+      position_z: 75.4712
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 29
+      position_x: -9069.82
+      position_y: 495.232
+      position_z: 75.9918
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 30
+      position_x: -9068.42
+      position_y: 491.394
+      position_z: 76.8643
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 31
+      position_x: -9059.95
+      position_y: 479.012
+      position_z: 83.5614
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 32
+      position_x: -9053.16
+      position_y: 468.88
+      position_z: 89.1036
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 33
+      position_x: -9054.73
+      position_y: 462.72
+      position_z: 92.2607
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 34
+      position_x: -9056.08
+      position_y: 457.388
+      position_z: 93.2873
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 35
+      position_x: -9057.08
+      position_y: 453.431
+      position_z: 93.0561
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 36
+      position_x: -9068.72
+      position_y: 443.972
+      position_z: 93.0561
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 37
+      position_x: -9088.51
+      position_y: 428.005
+      position_z: 92.569
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 38
+      position_x: -9097.3
+      position_y: 424.335
+      position_z: 92.2239
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 39
+      position_x: -9104.73
+      position_y: 419.253
+      position_z: 93.2163
+      orientation: 3.741437
+      delay: 180000 # 3m
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 40
+      position_x: -9096.02
+      position_y: 418.353
+      position_z: 92.0602
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 41
+      position_x: -9078.65
+      position_y: 421.261
+      position_z: 92.7288
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 42
+      position_x: -9056.93
+      position_y: 438.342
+      position_z: 93.0566
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 43
+      position_x: -9039.25
+      position_y: 452.254
+      position_z: 93.0566
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 44
+      position_x: -9030.41
+      position_y: 459.21
+      position_z: 93.2512
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 45
+      position_x: -9020.59
+      position_y: 466.939
+      position_z: 95.0464
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 46
+      position_x: -9009.78
+      position_y: 475.441
+      position_z: 96.4787
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 47
+      position_x: -8985.22
+      position_y: 494.763
+      position_z: 96.4978
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 48
+      position_x: -8968.29
+      position_y: 508.078
+      position_z: 96.3496
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 49
+      position_x: -8967.98
+      position_y: 523.308
+      position_z: 96.5957
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 50
+      position_x: -8977.02
+      position_y: 533.109
+      position_z: 94.7551
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 51
+      position_x: -8978.4
+      position_y: 533.273
+      position_z: 94.5832
+      orientation: 2.871999
+      delay: 45000 # 45s
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 52
+      position_x: -8981.12
+      position_y: 544.191
+      position_z: 94.0758
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 53
+      position_x: -8978.56
+      position_y: 547.785
+      position_z: 93.8379
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 54
+      position_x: -8959.82
+      position_y: 559.341
+      position_z: 93.8563
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 55
+      position_x: -8946.86
+      position_y: 556.46
+      position_z: 93.8192
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 56
+      position_x: -8929.05
+      position_y: 547.323
+      position_z: 94.2807
+      orientation: 0.649137
+      delay: 10000 # 10s
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 57
+      position_x: -8921.45
+      position_y: 554.043
+      position_z: 94.1305
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 58
+      position_x: -8907.96
+      position_y: 561.898
+      position_z: 93.2849
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 59
+      position_x: -8893.58
+      position_y: 573.924
+      position_z: 92.4687
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 60
+      position_x: -8884.16
+      position_y: 581.797
+      position_z: 92.9956
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 61
+      position_x: -8884.53
+      position_y: 596.895
+      position_z: 94.1428
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 62
+      position_x: -8890.26
+      position_y: 607.584
+      position_z: 95.2581
+      orientation: 2.202108
+      delay: 180000 # 3m
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 63
+      position_x: -8886.16
+      position_y: 600.613
+      position_z: 95.2581
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 64
+      position_x: -8882.79
+      position_y: 594.265
+      position_z: 93.5837
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 65
+      position_x: -8873.98
+      position_y: 593.686
+      position_z: 92.7974
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 66
+      position_x: -8853.27
+      position_y: 607.679
+      position_z: 92.3584
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 67
+      position_x: -8837.51
+      position_y: 618.323
+      position_z: 92.9129
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 68
+      position_x: -8831.96
+      position_y: 630.035
+      position_z: 94.0759
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 69
+      position_x: -8827.15
+      position_y: 640.185
+      position_z: 94.2917
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 70
+      position_x: -8818.45
+      position_y: 645.115
+      position_z: 94.2648
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 71
+      position_x: -8808.1
+      position_y: 648.145
+      position_z: 94.3956
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 72
+      position_x: -8807.6
+      position_y: 653.664
+      position_z: 96.1952
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 73
+      position_x: -8804.87
+      position_y: 667.484
+      position_z: 96.1998
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 74
+      position_x: -8815.11
+      position_y: 668.521
+      position_z: 95.4241
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 75
+      position_x: -8822.29
+      position_y: 666.82
+      position_z: 95.4254
+      orientation: 3.660355
+      delay: 10000 # 10s
+      move_type: 0
+      action: *NPC_STEPHANIE_TURNER_GUID_WP_ACTION_03
+      action_chance: 50 # 50%
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 76
+      position_x: -8810.42
+      position_y: 666.172
+      position_z: 95.4238
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 77
+      position_x: -8805.03
+      position_y: 664.791
+      position_z: 96.2017
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 78
+      position_x: -8808.04
+      position_y: 652.869
+      position_z: 96.1972
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 79
+      position_x: -8807.77
+      position_y: 649.648
+      position_z: 94.5072
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 80
+      position_x: -8796.38
+      position_y: 638.352
+      position_z: 94.2291
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 81
+      position_x: -8806.79
+      position_y: 630.778
+      position_z: 94.2291
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 82
+      position_x: -8817.37
+      position_y: 631.065
+      position_z: 94.1871
+      orientation: 3.984725
+      delay: 120000 # 2m
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 83
+      position_x: -8828.17
+      position_y: 612.78
+      position_z: 94.4925
+      orientation: 0.0
+      delay: 0
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0
+    - id: *NPC_STEPHANIE_TURNER_GUID_WP
+      point: 84
+      position_x: -8832.28
+      position_y: 613.765
+      position_z: 94.1925
+      orientation: 2.174615
+      delay: 3600000 # 1h
+      move_type: 0
+      action: 0
+      action_chance: 100
+      wpguid: 0

@@ -19,19 +19,21 @@ templateEnv = jinja2.Environment(loader=templateLoader)
 
 pack = None
 
-def parse_yaml(this, constants=False):
-    if constants:
-        results = None
-        with open("packs/_constants/constants.yaml", 'r') as fd:
-            results = fd.read()
+def parse_yaml(pack, pack_constants = None, global_constants = True):
+    results = ""
 
-        with open(this, 'r') as fd:
+    if global_constants:
+        with open("packs/_constants/constants.yaml", 'r') as fd:
             results += fd.read()
 
-        return yaml.load(results)
-    
-    with open(this, 'r') as fd:
-        return yaml.load(fd.read())
+    if pack_constants:
+        with open(pack_constants) as fd:
+            results += fd.read()
+
+    with open(pack, 'r') as fd:
+        results += fd.read()
+
+    return yaml.load(results)
 
 def moves(data):
     if 'move' not in data:
@@ -133,9 +135,6 @@ def find_code(name, path):
     
     for root, dirs, files in os.walk(path):
         for filename in files:
-            if filename == "_constants.yaml":
-                continue 
-
             if name in filename:
                 all_packs.append(os.path.join(root, filename))
     
@@ -201,8 +200,27 @@ def main():
     source = root['source']
 
     files = find_code(".yaml", source)
+
+    # Do we have a "_constants.yaml" file in the pack? If so
+    # get the path from the 
+    pack_globals = [x for x in files if "_constants.yaml" in x]
+    if len(pack_globals) == 0:
+        pack_globals = None
+    else:
+        pack_globals = pack_globals[0]
+    
     for code in files:
-        parsed  = parse_yaml(code, constants=True)
+        if "_constants.yaml" in code:
+            # This file is loaded another way
+            # See below
+            continue 
+
+        parsed  = None
+        if pack_globals:
+            parsed = parse_yaml(code, pack_globals)
+        else:
+            parsed = parse_yaml(code)
+
         parsed['pack'] = root
 
         result, err = deletes(parsed)
@@ -217,7 +235,7 @@ def main():
 
         result, err = updates(parsed)
         if not result:
-            # print(f"Warning in moves() for '{pack}': {err}")
+            # print(f"Warning in updates() for '{pack}': {err}")
             pass
 
         result, err = tables(parsed)

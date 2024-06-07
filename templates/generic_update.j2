@@ -7,7 +7,11 @@ SET
 {%- if v is number %}
     `{{k}}` = {{v}},
 {%- else %}
+{%- if "'" in v %}
+    `{{k}}` = "{{v}}",
+{%- else %}
     `{{k}}` = '{{v}}',
+{%- endif -%}
 {% endif -%}
 {%- else %}
 {%- if v is number %}

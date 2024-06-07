@@ -20,12 +20,9 @@ tables:
       questlevel: -1
       minlevel: 1
       logtitle: "Healing Wounds"
-      logdescription: Donate bandages and potions to the orphanage.
-      areadescription: |
-        $N, we're in desparate need of bandages and healing potions to ease the pain of our orphanes. Some of them have crippling disabilities or nasty wounds from their abusive parents. Any and all donations really help them out.
-      questdescription: |
-        $N, we're in desparate need of bandages and healing potions to ease the pain of our orphanes. Some of them have crippling disabilities or nasty wounds from their abusive parents. Any and all donations really help them out.
-      questcompletionlog: "Quest complete"
+      questdescription: $N, we're in desparate need of bandages and healing potions to ease the pain of our orphanes. Some of them have crippling disabilities or nasty wounds from their abusive parents. Any and all donations really help them out.
+      logdescription: We're in desparate need of bandages and healing potions. Could you perhaps make us a set of ten bandages and ten potions? It'll go so far.
+      questcompletionlog: "Donate to the orphanage"
       objectivetext1: 'Donate 10x Linen Bandages'
       objectivetext2: 'Donate 10x Minor Healing Potions'
       requireditemid1: *ITEM_CONSUMABLE_FIRSTAID_LINENBANDAGE
@@ -34,27 +31,27 @@ tables:
       requireditemcount2: 10
       rewardfactionid1: *FACTION_ALLIANCE_STORMWIND
       rewardfactionvalueid1: 10
+      questsortid: 1519
     
     - id: *shelleneQuestCookingID
       questtype: *QUEST_TYPE_ENABLED
       questlevel: -1
       minlevel: 1
       logtitle: "Filling the Belly"
-      logdescription: Donate bread
-      areadescription: |
-        $N, as you know the orphanes often go hungry. If you could find the time to make and donate some bread it would mean the world to these kids. You'd be their hero!
-      questdescription: |
-        $N, as you know the orphanes often go hungry. If you could find the time to make and donate some bread it would mean the world to these kids. You'd be their hero!
-      questcompletionlog: "Quest complete"
+      questdescription: The kids run around so much and get so hungry, but we're so low on food I worry they won't even get to eat! Can you make and donate something as simple as some spice bread? It would means a lot to the kids.
+      logdescription: We're so low on food I worry they won't even get to eat! Can you make and donate ten simple spice breads? It would means a lot to the kids.
+      questcompletionlog: "Donate to the orphanage"
       objectivetext1: 'Donate 10x Spice Bread'
       requireditemid1: *ITEM_CONSUMABLE_COOKING_SPICE_BREAD
       requireditemcount1: 10
       rewardfactionid1: *FACTION_ALLIANCE_STORMWIND
       rewardfactionvalueid1: 10
+      questsortid: 1519
 
   quest_template_addon:
     - id: *shelleneQuestFirstAidID
       specialflags: *QUEST_FLAGS_REPEATABLE
+    
     - id: *shelleneQuestCookingID
       specialflags: *QUEST_FLAGS_REPEATABLE
 
@@ -62,16 +59,18 @@ tables:
     - id: *shelleneQuestFirstAidID
       emoteoncomplete: *NPC_EMOTE_ONESHOT_CHEER
       emoteonincomplete: *NPC_EMOTE_ONESHOT_EXCLAMATION
-      completiontext: Wow! Thank you!
+      completiontext: The kids are really suffering. Please do what you can to help.
+    
     - id: *shelleneQuestCookingID
       emoteoncomplete: *NPC_EMOTE_ONESHOT_CHEER
       emoteonincomplete: *NPC_EMOTE_ONESHOT_EXCLAMATION
-      completiontext: This is incredible! Thank you!
+      completiontext: Anything you can give us would be greatly appreciated.
 
   quest_offer_reward:
     - id: *shelleneQuestFirstAidID
       rewardtext: |
         Thank you! The kids will be thrilled! We don't have much, but here... you can have whatever the kids have found around the city and dumped in this box.
+    
     - id: *shelleneQuestCookingID
       rewardtext: |
         Thank you! You've just made our day! Now if you'll excuse me, I have to go get dinner ready.

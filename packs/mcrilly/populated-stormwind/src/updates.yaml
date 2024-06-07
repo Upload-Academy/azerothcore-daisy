@@ -1,0 +1,43 @@
+
+update:
+  # Stormwind Guard 01
+  - table: creature
+    columns:
+      currentwaypoint: *SW_GUARD_01_GUID_WP
+      movementtype: 2 # waypoint
+    where:
+      guid:
+        - *SW_GUARD_01_GUID
+
+  - table: creature_addon
+    columns:
+      path_id: *SW_GUARD_01_GUID_WP
+    where:
+      guid:
+        - *SW_GUARD_01_GUID
+
+  # Stephanie Turner
+  - table: creature
+    columns:
+      currentwaypoint: *NPC_STEPHANIE_TURNER_GUID_WP
+      movementtype: 2 # waypoint
+    where:
+      guid:
+        - *NPC_STEPHANIE_TURNER_GUID
+
+  # Renato Gallina
+  - table: creature
+    columns:
+      currentwaypoint: *NPC_RENATO_GALLINA_GUID_WP
+      movementtype: 2 # waypoint
+    where:
+      guid:
+        - *NPC_RENATO_GALLINA_GUID
+
+  - table: creature_addon
+    columns:
+      path_id: *NPC_RENATO_GALLINA_GUID_WP
+    where:
+      guid:
+        - *NPC_RENATO_GALLINA_GUID
+
