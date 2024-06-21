@@ -655,7 +655,7 @@ VALUES (
 -- EOF quest_template
 -- START quest_template
 SET
-@id := 4730,
+@id := 91100003,
 @questtype := 0,
 @questlevel := 5,
 @minlevel := 5,
@@ -982,7 +982,7 @@ VALUES (
 -- EOF quest_template
 -- START quest_template
 SET
-@id := 4772,
+@id := 91100004,
 @questtype := 0,
 @questlevel := 5,
 @minlevel := 5,
@@ -1309,7 +1309,7 @@ VALUES (
 -- EOF quest_template
 -- START quest_template
 SET
-@id := 20914,
+@id := 91100005,
 @questtype := 0,
 @questlevel := 5,
 @minlevel := 5,
@@ -2036,7 +2036,7 @@ SET
 @rewardfactionvalue5 := 0,
 @rewardfactionoverride5 := 0,
 @timeallowed := 0,
-@allowableraces := 2,
+@allowableraces := 16,
 @logtitle := "The Hero's Mount",
 @logdescription := "",
 @questdescription := "",
@@ -2290,7 +2290,7 @@ VALUES (
 -- EOF quest_template
 -- START quest_template
 SET
-@id := 3690,
+@id := 91100007,
 @questtype := 0,
 @questlevel := 5,
 @minlevel := 5,
@@ -2617,7 +2617,7 @@ VALUES (
 -- EOF quest_template
 -- START quest_template
 SET
-@id := 7953,
+@id := 91100008,
 @questtype := 0,
 @questlevel := 5,
 @minlevel := 5,
@@ -2944,7 +2944,7 @@ VALUES (
 -- EOF quest_template
 -- START quest_template
 SET
-@id := 16280,
+@id := 91100009,
 @questtype := 0,
 @questlevel := 5,
 @minlevel := 5,

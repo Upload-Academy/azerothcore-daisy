@@ -39,7 +39,7 @@ VALUES (
 -- EOF creature_queststarter
 -- START creature_queststarter
 SET
-@id := 4730,
+@id := 4753,
 @quest := 91100003;
 
 DELETE FROM creature_queststarter WHERE

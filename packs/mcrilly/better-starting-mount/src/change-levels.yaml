@@ -14,7 +14,7 @@ vars  :
   
   ridingTrainerHumanRandalHunter: &ridingTrainerHumanRandalHunter 4732
   ridingTrainerGnomeBinjyFeatherwhistle: &ridingTrainerGnomeBinjyFeatherwhistle 7954
-  ridingTrainerNightElfLelanai: &ridingTrainerNightElfLelanai 4730
+  ridingTrainerNightElfJartsam: &ridingTrainerNightElfJartsam 4753
   ridingTrainerDwarfUlthamIronhorn: &ridingTrainerDwarfUlthamIronhorn 4772
   ridingTrainerDraineiAalun: &ridingTrainerDraineiAalun 20914
 
@@ -26,7 +26,7 @@ vars  :
   
   ridingTrainerHumanRandalHunterQuest: &ridingTrainerHumanRandalHunterQuest 91100000
   ridingTrainerGnomeBinjyFeatherwhistleQuest: &ridingTrainerGnomeBinjyFeatherwhistleQuest 91100002
-  ridingTrainerNightElfLelanaiQuest: &ridingTrainerNightElfLelanaiQuest 91100003
+  ridingTrainerNightElfJartsamQuest: &ridingTrainerNightElfJartsamQuest 91100003
   ridingTrainerDwarfUlthamIronhornQuest: &ridingTrainerDwarfUlthamIronhornQuest 91100004
   ridingTrainerDraineiAalunQuest: &ridingTrainerDraineiAalunQuest 91100005
 
@@ -83,7 +83,7 @@ tables:
       allowableraces: *RACE_GNOME
       logtitle: "The Hero's Mount"
 
-    - id: *ridingTrainerNightElfLelanai
+    - id: *ridingTrainerNightElfJartsamQuest
       questtype: 0
       questlevel: *levelRequirement
       minlevel: *levelRequirement
@@ -92,7 +92,7 @@ tables:
       allowableraces: *RACE_NIGHT_ELF
       logtitle: "The Hero's Mount"
 
-    - id: *ridingTrainerDwarfUlthamIronhorn
+    - id: *ridingTrainerDwarfUlthamIronhornQuest
       questtype: 0
       questlevel: *levelRequirement
       minlevel: *levelRequirement
@@ -101,7 +101,7 @@ tables:
       allowableraces: *RACE_DWARF
       logtitle: "The Hero's Mount"
 
-    - id: *ridingTrainerDraineiAalun
+    - id: *ridingTrainerDraineiAalunQuest
       questtype: 0
       questlevel: *levelRequirement
       minlevel: *levelRequirement
@@ -125,10 +125,10 @@ tables:
       minlevel: *levelRequirement
       rewarditem1: *mountHordeUndeadBasic
       rewardamount1: 1
-      allowableraces: *RACE_ORC
+      allowableraces: *RACE_UNDEAD
       logtitle: "The Hero's Mount"
     
-    - id: *ridingTrainerTaurenKarStormsinger
+    - id: *ridingTrainerTaurenKarStormsingerQuest
       questtype: 0
       questlevel: *levelRequirement
       minlevel: *levelRequirement
@@ -137,7 +137,7 @@ tables:
       allowableraces: *RACE_TAUREN
       logtitle: "The Hero's Mount"
     
-    - id: *ridingTrainerTrollXarTi
+    - id: *ridingTrainerTrollXarTiQuest
       questtype: 0
       questlevel: *levelRequirement
       minlevel: *levelRequirement
@@ -146,7 +146,7 @@ tables:
       allowableraces: *RACE_TROLL
       logtitle: "The Hero's Mount"
     
-    - id: *ridingTrainerBloodElfPerascamin
+    - id: *ridingTrainerBloodElfPerascaminQuest
       questtype: 0
       questlevel: *levelRequirement
       minlevel: *levelRequirement
@@ -164,7 +164,7 @@ tables:
       rewardtext: |
         Looks like you're some kind of great hero the High Tinker thinks highly of. I was ordered to give you this mount. Hope it helps, but don't think you'll get riding lessons for free. I gotta charge something, hero or not.
     
-    - id: *ridingTrainerNightElfLelanaiQuest
+    - id: *ridingTrainerNightElfJartsamQuest
       rewardtext: |
         Looks like you're some kind of great hero the Arch Druid thinks highly of. I was ordered to give you this mount. Hope it helps, but don't think you'll get riding lessons for free. I gotta charge something, hero or not.
     
@@ -184,15 +184,15 @@ tables:
       rewardtext: |
         Looks like you're some kind of great hero the Banshee Queen thinks highly of. They told me to give you this mount. Hope it helps, but don't think you'll get riding lessons for free. I gotta charge something, hero or not.
     
-    - id: *ridingTrainerTaurenKarStormsinger
+    - id: *ridingTrainerTaurenKarStormsingerQuest
       rewardtext: |
         Looks like you're some kind of great hero the High Chieftain thinks highly of. They told me to give you this mount. Hope it helps, but don't think you'll get riding lessons for free. I gotta charge something, hero or not.
     
-    - id: *ridingTrainerTrollXarTi
+    - id: *ridingTrainerTrollXarTiQuest
       rewardtext: |
         Looks like you're some kind of great hero the Warchief thinks highly of. They told me to give you this mount. Hope it helps, but don't think you'll get riding lessons for free. I gotta charge something, hero or not.
     
-    - id: *ridingTrainerBloodElfPerascamin
+    - id: *ridingTrainerBloodElfPerascaminQuest
       rewardtext: |
         Looks like you're some kind of great hero the Regent Lord thinks highly of. They told me to give you this mount. Hope it helps, but don't think you'll get riding lessons for free. I gotta charge something, hero or not.
 
@@ -203,8 +203,8 @@ tables:
     - id: *ridingTrainerGnomeBinjyFeatherwhistle
       quest: *ridingTrainerGnomeBinjyFeatherwhistleQuest
     
-    - id: *ridingTrainerNightElfLelanai
-      quest: *ridingTrainerNightElfLelanaiQuest
+    - id: *ridingTrainerNightElfJartsam
+      quest: *ridingTrainerNightElfJartsamQuest
     
     - id: *ridingTrainerDwarfUlthamIronhorn
       quest: *ridingTrainerDwarfUlthamIronhornQuest
@@ -234,11 +234,11 @@ tables:
     - id: *ridingTrainerGnomeBinjyFeatherwhistle
       quest: *ridingTrainerGnomeBinjyFeatherwhistleQuest
     
+    - id: *ridingTrainerNightElfJartsam
+      quest: *ridingTrainerNightElfJartsamQuest
+    
     - id: *ridingTrainerDwarfUlthamIronhorn
       quest: *ridingTrainerDwarfUlthamIronhornQuest
-    
-    - id: *ridingTrainerNightElfLelanai
-      quest: *ridingTrainerNightElfLelanaiQuest
     
     - id: *ridingTrainerDraineiAalun
       quest: *ridingTrainerDraineiAalunQuest

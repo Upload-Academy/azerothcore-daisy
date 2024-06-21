@@ -39,8 +39,8 @@ VALUES (
 -- EOF creature_questender
 -- START creature_questender
 SET
-@id := 4772,
-@quest := 91100004;
+@id := 4753,
+@quest := 91100003;
 
 DELETE FROM creature_questender WHERE
     id=@id AND
@@ -58,8 +58,8 @@ VALUES (
 -- EOF creature_questender
 -- START creature_questender
 SET
-@id := 4730,
-@quest := 91100003;
+@id := 4772,
+@quest := 91100004;
 
 DELETE FROM creature_questender WHERE
     id=@id AND

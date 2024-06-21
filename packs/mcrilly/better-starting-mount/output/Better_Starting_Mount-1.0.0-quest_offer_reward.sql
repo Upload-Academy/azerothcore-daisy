@@ -323,7 +323,7 @@ VALUES (
 -- EOF quest_offer_reward
 -- START quest_offer_reward
 SET
-@id := 3690,
+@id := 91100007,
 @emote1 := 0,
 @emote2 := 0,
 @emote3 := 0,
@@ -369,7 +369,7 @@ VALUES (
 -- EOF quest_offer_reward
 -- START quest_offer_reward
 SET
-@id := 7953,
+@id := 91100008,
 @emote1 := 0,
 @emote2 := 0,
 @emote3 := 0,
@@ -415,7 +415,7 @@ VALUES (
 -- EOF quest_offer_reward
 -- START quest_offer_reward
 SET
-@id := 16280,
+@id := 91100009,
 @emote1 := 0,
 @emote2 := 0,
 @emote3 := 0,
