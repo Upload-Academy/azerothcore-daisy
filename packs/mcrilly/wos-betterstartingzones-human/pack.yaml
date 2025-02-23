@@ -1,0 +1,10 @@
+---
+daisy:
+  pack:
+    name: WOS Better Starting Zones for Humans
+    version: 1.0.0
+    author: Michael Crilly
+    homepage: https://github.com/Upload-Academy/azerothcore-daisy
+    source: packs/mcrilly/wos-betterstartingzones-human/src
+    build: packs/mcrilly/wos-betterstartingzones-human/build
+

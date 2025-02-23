@@ -1,0 +1,10 @@
+---
+
+db2yaml:
+  output_to: renders/db2sql
+
+database:
+  db: acore_world
+  hostname: "192.168.89.4"
+  username: "mike"
+  password: "badpassword"

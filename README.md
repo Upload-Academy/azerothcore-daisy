@@ -4,6 +4,28 @@ Woof! Daisy is a World of Solocraft project by [Michael Crilly](https://crilly.a
 
 Daisy is a set of Python tools that can extract (`extractor.py`) information about the tables in an [AzerothCore](https://www.azerothcore.org/) database, specifically the `acore_world` database, but that can be configured. Once this data is extracted, Daisy can then generate all the templates and files needed to make manipulating an AzerothCore database much, much easier using her second tool: `daisy.py`.
 
+## Quickstart
+
+All the commands below assume you're operating on macOS or Linux. Windows, without using the Windows Subsystem for Linux (v2) is a nightmare to develop on and isn't taken into consideration below. Sorry.
+
+1. Use `. activate.sh` to activate and source the contents of `activate.sh` (don't _execute_ it)
+   2. This gives your Bash aliases like `daisy`, `extractor`, and `db2yaml`
+3. Now configure `extractor.yaml` and set up the following keys to be accurate based on your set up...
+   4. `extractor.database.db`
+   5. `extractor.database.hostname`
+   6. `extractor.database.username`
+   7. `extractor.database.password`
+8. Now execute `extractor` (or if you're not using the aliases: `python3 extractor.py`)
+9. Now you can use `daisy -n org/pack` to create a new Pack
+   10. Replacing `org` with your organisation name or some username (or whatever)
+   11. And replacing `pack` with the name of the Pack, like `awesome-new-quests-v1`
+12. Edit `org/pack/pack.yaml` and update the meta data in there
+    13. I suggest leaving `daisy.pack.source` and `daisy.pack.build` alone for now
+12. Go and write some YAML in `org/pack/src/`
+13. And then run `daisy -p org/pack/pack.yaml` and you'll get SQL out into the path configured at `daisy.pack.build`, which defaults to `packs/<org>/<pack>/build`
+14. Import the `*.sql` files inside of the build directory into your MySQL instance...
+    15. Something _like_ `mysql -h <host> -u <user> -p acore_world < packs/<org>/<pack>/build`
+
 ## Why?
 
 Daisy exists because although this author loves [Keira3](https://github.com/azerothcore/Keira3) (and still uses it, in fact), they also love YAML, code, and doing things from the CLI. It's faster and easier to work with, and it makes it incredibly easy to share database changes in the form of YAML (see "Packs" below.)
@@ -91,20 +113,20 @@ All instructions assume a Linux or macOS installation. You need Python 3.10 as a
 
 1. Fork (not clone) this repository
 1. Clone your fork
-1. _Source_(not execute) the activate script: `. activate.sh`
+1. _Source_  (not execute) the activate script: `. activate.sh`
 
 To use Daisy, you have to run two tools in order:
 
 1. Make sure that `extractor.yaml` has the correct database information in it
 1. Run the extractor: `extractor`
 
-This will create files in (assuming a default configuration) `mappings/*`. We've not included the `mappings/` directory in this repository as it's best you pull the datafrom your AzerothCore database to ensure maximum compatibility. 
+This will create files in (assuming a default configuration) `mappings/*`. We've not included the `mappings/` directory in this repository as it's best you pull the data from your own local AzerothCore database to ensure maximum compatibility. 
 
 Next, run Daisy...
 
 ### Creating a Pack
 
-To executer/use Daisy you must create a "pack". A quick way of getting a template in place is to use the `-n` flag:
+To execute/use Daisy you must create a "pack". A quick way of getting a template in place is to use the `-n` flag:
 
 ```shell
 daisy -n organisation/pack_name
@@ -112,7 +134,7 @@ daisy -n organisation/pack_name
 
 So you might replace `organisation` with your GitHub username and `pack_name` with something that describes your Pack's objectives in a few words.
 
-Manually, you can do this:
+Or you can create a pack manually, like this:
 
 1. Create (via any structure you like) a `pack.yaml` (or whatever name you like) file under `packs/` (I recommend: `username/pack_title/pack.yaml`)
 1. Use the above example to structure your Pack's information: `source` and `build` are critical

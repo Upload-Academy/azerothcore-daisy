@@ -7,7 +7,7 @@ Some simple notes for the time being.
 ```yaml
 - table: creature_template
     columns:
-      npcflag: <new value>>
+      npcflag: <new value>
     where:
       entry:
         - <existing entry ID>

@@ -1,0 +1,62 @@
+creature:
+  - entry: 3678
+    difficulty_entry_1: 0
+    difficulty_entry_2: 0
+    difficulty_entry_3: 0
+    KillCredit1: 0
+    KillCredit2: 0
+    name: Disciple of Naralex
+    subname:
+    IconName:
+    gossip_menu_id: 201
+    minlevel: 20
+    maxlevel: 20
+    exp: 0
+    faction: 35
+    npcflag: 1
+    speed_walk: 1.0
+    speed_run: 1.14286
+    speed_swim: 1.0
+    speed_flight: 1.0
+    detection_range: 20.0
+    scale: 1.0
+    rank: 1
+    dmgschool: 0
+    DamageModifier: 1.7
+    BaseAttackTime: 2000
+    RangeAttackTime: 2000
+    BaseVariance: 1.0
+    RangeVariance: 1.0
+    unit_class: 2
+    unit_flags: 0
+    unit_flags2: 2048
+    dynamicflags: 0
+    family: 0
+    trainer_type: 0
+    trainer_spell: 0
+    trainer_class: 0
+    trainer_race: 0
+    type: 7
+    type_flags: 4096
+    lootid: 0
+    pickpocketloot: 0
+    skinloot: 0
+    PetSpellDataId: 0
+    VehicleId: 0
+    mingold: 0
+    maxgold: 0
+    AIName: SmartAI
+    MovementType: 0
+    HoverHeight: 1.0
+    HealthModifier: 3.0
+    ManaModifier: 3.0
+    ArmorModifier: 10.0
+    ExperienceModifier: 1.0
+    RacialLeader: 0
+    movementId: 0
+    RegenHealth: 1
+    mechanic_immune_mask: 529
+    spell_school_immune_mask: 0
+    flags_extra: 0
+    ScriptName: ''
+    VerifiedBuild: 12340

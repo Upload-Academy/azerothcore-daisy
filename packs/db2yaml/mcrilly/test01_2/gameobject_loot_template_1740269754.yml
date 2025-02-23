@@ -1,0 +1,11 @@
+gameobject_loot_template:
+  - Entry: 18509
+    Item: 1
+    Reference: 185090
+    Chance: 100.0
+    QuestRequired: 0
+    LootMode: 1
+    GroupId: 0
+    MinCount: 1
+    MaxCount: 1
+    Comment: Sealed Tome - (ReferenceTable)

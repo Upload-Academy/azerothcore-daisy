@@ -1,0 +1,106 @@
+
+vars:
+  a_curious_inquiry_undead: &a_curious_inquiry_undead 0202100001
+
+  a_curious_inquiry_undead_book_01: &a_curious_inquiry_undead_book_01 501000
+  a_curious_inquiry_undead_book_01_g: &a_curious_inquiry_undead_book_01_g 0202300002
+  a_curious_inquiry_undead_book_02: &a_curious_inquiry_undead_book_02 0202300003
+  a_curious_inquiry_undead_book_02_g: &a_curious_inquiry_undead_book_02_g 0202300004
+  a_curious_inquiry_undead_book_03: &a_curious_inquiry_undead_book_03 0202300005
+  a_curious_inquiry_undead_book_03_g: &a_curious_inquiry_undead_book_03_g 0202300006
+  a_curious_inquiry_undead_book_04: &a_curious_inquiry_undead_book_04 0202300007
+  a_curious_inquiry_undead_book_04_g: &a_curious_inquiry_undead_book_04_g 0202300008
+  a_curious_inquiry_undead_book_05: &a_curious_inquiry_undead_book_05 0202300009
+  a_curious_inquiry_undead_book_05_g: &a_curious_inquiry_undead_book_05_g 0202300010
+  a_curious_inquiry_undead_book_06: &a_curious_inquiry_undead_book_06 0202300011
+  a_curious_inquiry_undead_book_06_g: &a_curious_inquiry_undead_book_06_g 0202300012
+
+  pages:
+    undead_book_01_page_01:
+      id: &undead_book_01_page_01_entry 4000
+      text: &undead_book_01_page_01_text "Hello, world!"
+      nextpageid: &undead_book_01_page_01_nextpageid 4001
+    undead_book_01_page_02:
+      id: &undead_book_01_page_02_entry 4001
+      text: &undead_book_01_page_02_text "Goodbye, world!"
+
+  venya_marthand: &venya_marthand 28492
+
+tables:
+  page_text:
+    - id: *undead_book_01_page_01_entry
+      text: *undead_book_01_page_01_text
+      nextpageid: *undead_book_01_page_01_nextpageid
+    - id: *undead_book_01_page_02_entry
+      text: *undead_book_01_page_02_text
+
+  gameobject_template:
+    - entry: *a_curious_inquiry_undead_book_01
+      type: *GAMEOBJECT_TYPE_TEXT
+      name: "Tome of Heroic Memories"
+      displayid: 254
+      data0: *undead_book_01_page_01_entry
+      data1: 0
+      data2: 1
+      data3: 0
+      data4: 0
+      data5: 0
+      verifiedbuild: 12340
+
+#
+#  quest_template:
+#    - id: *a_curious_inquiry_undead
+#      questtype: *QUEST_TYPE_ENABLED
+#      questlevel: 3
+#      minlevel: 2
+#      rewardmoney: 500
+#      logtitle: A Curious Inquiry
+#      logdescription: Retrieve an old book for Venya Marthhand
+#      questdescription: |
+#        You know, you're actually the first person to ever ask me about my success. No one else seems too interested in the fact I fought for this town, that I helped keep it safe. No one else has asked: why or even HOW!
+#
+#        I'll tell you what. Prove to me that you're capable of growth, capable of learning, and I'll share with you what I know. There's a book I want. It's in a nearby, abandoned tower. It has records I want to study. Bring me this book and I'll tell you a story that'll change your life forever.
+#      questcompletionlog: |
+#        Quest complete
+#      objectivetext1: Find the book
+#      objectivetext2: Return it to the local hero
+#      questcompletionlog: "Find the book"
+#      objectivetext1: 'Bring back the book'
+#      requireditemid1: *ITEM_CONSUMABLE_COOKING_SPICE_BREAD
+#      requireditemcount1: 10
+#
+#  quest_offer_reward:
+#    - id: *a_curious_inquiry_undead
+#      rewardtext: |
+#        Very good. I'm impressed. You even brought it back in one piece.
+#
+#        *The hero flips through the pages quickly*
+#
+#        Just as I suspected. Anyway, let's talk about you. You want knowledge? Power? It won't come easy. Well, not too easy. All you have to do is... read. Do a lot of reading and you'll acquire a lot of knowledge. It's as simple as that... oh alright. I'll stop teasing.
+#
+#        Tomes of Heroic Memories. Have you heard of them? They're terribly rare. I've only ever found two of them. They cannot be picked up or carried, they can only be read there and then on the spot. Very odd little things. After they're read, they seem to disappear, too. That's even odder.
+#
+#        If you can find these Tomes throughout the land, they will grant you immense experience instantly. Experience so immense it's as if you've lived a whole another lifetime in an instant.
+#
+#        And that's my little secret: Tomes of Heroic Memories. I found two, read them, and here I am: respected, wise, and powerful.
+#
+#        Good luck.
+#
+#  quest_request_items:
+#    - id: *a_curious_inquiry_undead
+#      emoteoncomplete: *NPC_EMOTE_ONESHOT_CHEER
+#      emoteonincomplete: *NPC_EMOTE_ONESHOT_EXCLAMATION
+#      completiontext: Well, have you found it?
+#
+#  quest_offer_reward:
+#    - id: *a_curious_inquiry_undead
+#      rewardtext: |
+#        Well, off you go. You have reading to do.
+#
+#  creature_queststarter:
+#    - id: *venya_marthand
+#      quest: *a_curious_inquiry_undead
+#
+#  creature_questender:
+#    - id: *venya_marthand
+#      quest: *a_curious_inquiry_undead

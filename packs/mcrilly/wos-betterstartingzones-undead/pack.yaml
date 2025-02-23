@@ -1,0 +1,8 @@
+daisy:
+  pack:
+    name: Better Undead Starting Zones
+    version: 0.1.0
+    author: Michael Crilly
+    homepage: https://crilly.au/
+    source: packs/mcrilly/wos-betterstartingzones-undead/src
+    build: packs/mcrilly/wos-betterstartingzones-undead/output

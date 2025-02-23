@@ -31,7 +31,7 @@ def db():
         cursorclass=cursorType
     )
 
-def extract_creature(entry, columns):
+def extract_creature_template(entry, columns):
     dbc = db()
     cursorObject = dbc.cursor()
     
@@ -40,7 +40,7 @@ def extract_creature(entry, columns):
     else:
         columns_string = ','.join(columns)
     
-    cursorObject.execute(f"SELECT {columns_string} FROM creature WHERE id1 = {entry};")
+    cursorObject.execute(f"SELECT {columns_string} FROM creature_template WHERE entry = {entry};")
     result = cursorObject.fetchall()
     return False, result
 
@@ -55,6 +55,48 @@ def extract_waypoint_data(entry, columns):
 
     final_sql = f"SELECT {columns_string} FROM waypoint_data WHERE id = {entry};"
     print(final_sql)
+    cursorObject.execute(final_sql)
+    result = cursorObject.fetchall()
+    return False, result
+
+def extract_item_template(entry, columns):
+    dbc = db()
+    cursorObject = dbc.cursor()
+
+    if not columns or len(columns) <= 0:
+        columns_string = "*"
+    else:
+        columns_string = ','.join(columns)
+
+    final_sql = f"SELECT {columns_string} FROM item_template WHERE entry = {entry};"
+    cursorObject.execute(final_sql)
+    result = cursorObject.fetchall()
+    return False, result
+
+def extract_gameobject_template(entry, columns):
+    dbc = db()
+    cursorObject = dbc.cursor()
+
+    if not columns or len(columns) <= 0:
+        columns_string = "*"
+    else:
+        columns_string = ','.join(columns)
+
+    final_sql = f"SELECT {columns_string} FROM gameobject_template WHERE entry = {entry};"
+    cursorObject.execute(final_sql)
+    result = cursorObject.fetchall()
+    return False, result
+
+def extract_gameobject_loot_template(entry, columns):
+    dbc = db()
+    cursorObject = dbc.cursor()
+
+    if not columns or len(columns) <= 0:
+        columns_string = "*"
+    else:
+        columns_string = ','.join(columns)
+
+    final_sql = f"SELECT {columns_string} FROM gameobject_loot_template WHERE entry = {entry};"
     cursorObject.execute(final_sql)
     result = cursorObject.fetchall()
     return False, result
@@ -74,13 +116,49 @@ def main():
     if not os.path.exists(write_to_path):
         os.makedirs(write_to_path)
 
-    if args.table == "creature":
-        error, result = extract_creature(args.entry, args.columns)
+    if args.table == "item_template":
+        error, result = extract_item_template(args.entry, args.columns)
+        if error:
+            print(f"Error: {error}")
+
+        final = {
+            f"{args.table}": result
+        }
+
+        with open(f"{write_to_path}/{args.table}_{now_int}.yml", "w") as fd:
+            yaml.dump(final, fd)
+
+    if args.table == "gameobject_loot_template":
+        error, result = extract_gameobject_loot_template(args.entry, args.columns)
+        if error:
+            print(f"Error: {error}")
+
+        final = {
+            f"{args.table}": result
+        }
+
+        with open(f"{write_to_path}/{args.table}_{now_int}.yml", "w") as fd:
+            yaml.dump(final, fd)
+
+    if args.table == "gameobject_template":
+        error, result = extract_gameobject_template(args.entry, args.columns)
+        if error:
+            print(f"Error: {error}")
+
+        final = {
+            f"{args.table}": result
+        }
+
+        with open(f"{write_to_path}/{args.table}_{now_int}.yml", "w") as fd:
+            yaml.dump(final, fd)
+
+    if args.table == "creature_template":
+        error, result = extract_creature_template(args.entry, args.columns)
         if error:
             print(f"Error: {error}")
         
         final = {
-            "creature": result
+            f"{args.table}": result
         }
 
         with open(f"{write_to_path}/{args.table}_{now_int}.yml", "w") as fd:
