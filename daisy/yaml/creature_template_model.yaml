@@ -1,0 +1,7 @@
+creature_template_model:
+  creatureid: 0
+  idx: '0'
+  creaturedisplayid: 0
+  displayscale: '1'
+  probability: '0'
+  verifiedbuild: 0

@@ -1,0 +1,7 @@
+player_race_stats:
+  race: 0
+  strength: '0'
+  agility: '0'
+  stamina: '0'
+  intellect: '0'
+  spirit: '0'

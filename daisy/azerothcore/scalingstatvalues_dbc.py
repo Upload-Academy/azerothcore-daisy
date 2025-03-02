@@ -1,0 +1,28 @@
+def sql_new_scalingstatvalues_dbc(data, path):
+    with open(path, 'r') as fd:
+        return fd.read().format(
+            id = data['id'],
+            charlevel = data['charlevel'],
+            shoulderbudget = data['shoulderbudget'],
+            trinketbudget = data['trinketbudget'],
+            weaponbudget1h = data['weaponbudget1h'],
+            rangedbudget = data['rangedbudget'],
+            clothshoulderarmor = data['clothshoulderarmor'],
+            leathershoulderarmor = data['leathershoulderarmor'],
+            mailshoulderarmor = data['mailshoulderarmor'],
+            plateshoulderarmor = data['plateshoulderarmor'],
+            weapondps1h = data['weapondps1h'],
+            weapondps2h = data['weapondps2h'],
+            spellcasterdps1h = data['spellcasterdps1h'],
+            spellcasterdps2h = data['spellcasterdps2h'],
+            rangeddps = data['rangeddps'],
+            wanddps = data['wanddps'],
+            spellpower = data['spellpower'],
+            primarybudget = data['primarybudget'],
+            tertiarybudget = data['tertiarybudget'],
+            clothcloakarmor = data['clothcloakarmor'],
+            clothchestarmor = data['clothchestarmor'],
+            leatherchestarmor = data['leatherchestarmor'],
+            mailchestarmor = data['mailchestarmor'],
+            platechestarmor = data['platechestarmor'],
+        )

@@ -1,0 +1,6 @@
+spell_enchant_proc_data:
+  entry: 0
+  customchance: '0'
+  ppmchance: '0'
+  procex: '0'
+  attributemask: '0'

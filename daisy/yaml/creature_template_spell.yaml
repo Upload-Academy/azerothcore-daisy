@@ -1,0 +1,5 @@
+creature_template_spell:
+  creatureid: 0
+  index: '0'
+  spell: 0
+  verifiedbuild: 0
